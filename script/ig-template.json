@@ -1,0 +1,84 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "$PACKAGE_ID$",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "ehr"
+    }
+  ],
+  "url": "$CANONICAL$/ImplementationGuide/$PACKAGE_ID$",
+  "version": "2.0.1",
+  "name": "PHRSFMR2",
+  "title": "Personal Health Record System Functional Model, Release 2",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "EHR WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/ehr"
+        }
+      ]
+    }
+  ],
+  "description": "This is the base PHR-System Functional Model used in Functional Profiles.",
+  "packageId": "$PACKAGE_ID$",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "grouping": $GROUPINGS$,
+    "resource": $RESOURCES$,
+    "page": {
+      "name": "index.html",
+      "generation": "markdown",
+      "title": "Home Page",
+      "page": [
+        {
+          "name": "downloads.html",
+          "generation": "markdown",
+          "title": "Useful Downloads"
+        },
+        {
+          "name": "changes.html",
+          "generation": "markdown",
+          "title": "IG Change History"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "releaselabel"
+        },
+        "value": "CI Build"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "copyrightyear"
+        },
+        "value": "2023"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "shownav"
+        },
+        "value": "true"
+      }
+    ]
+  }
+}

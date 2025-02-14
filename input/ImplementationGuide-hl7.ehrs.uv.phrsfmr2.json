@@ -1,0 +1,110 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.ehrs.uv.phrsfmr2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "ehr"
+    }
+  ],
+  "url": "http://hl7.org/ehrs/uv/phrsfmr2/ImplementationGuide/hl7.ehrs.uv.phrsfmr2",
+  "version": "2.0.1",
+  "name": "PHRSFMR2",
+  "title": "Personal Health Record System Functional Model, Release 2",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "EHR WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/ehr"
+        }
+      ]
+    }
+  ],
+  "description": "This is the base PHR-System Functional Model used in Functional Profiles.",
+  "packageId": "hl7.ehrs.uv.phrsfmr2",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "grouping": [
+  {
+    "id": "PH",
+    "name": "Personal Health Section",
+    "description": "Personal Health PHR-S functions are the subset of PHR-S functions that enable an individual to manage information about his or her healthcare. These functions provide direction as to the individual’s ability to interact with a Personal Health Record in such a way so as to individualize the record and maintain a current and accurate record of his or her healthcare activities. The functions include activities such as managing wellness, prevention and encounters. These functions are designed to encourage and allow an individual to participate actively in their healthcare and better access the resources that allow for self-education and monitoring.\r\nAll functions within the Personal Health Section have an identifier starting with “PH”."
+  },
+  {
+    "id": "S",
+    "name": "Personal Health Support Section",
+    "description": "Supportive PHR-S functions are the subset of PHR-S functions that assist with the administrative and financial requirements associated with the delivery of healthcare. Supportive PHR-S functions also provide input to systems that perform medical research, promote public health, and seek to improve the quality of healthcare delivered.\r\nAll functions within the Supportive Section have an identifier starting with “S”."
+  },
+  {
+    "id": "RI",
+    "name": "Record Infrastructure Section",
+    "description": "The Record Infrastructure Section consists of functions common to EHR System record management, particularly those functions foundational to managing record lifecycle (origination, attestation, amendment, access/use, translation, transmittal/disclosure, receipt, de-identification, archive...) and record lifespan (persistence, indelibility, continuity, audit, encryption).\r\n\r\nThe RI and TI Sections are identical between the PHR and EHR System Functional Models, reflecting the need for common and compatible record management and trust infrastructures.  Note that there may be some functions more directly applicable to EHR systems than PHR systems.\r\n\r\nRI functions are core and foundational to all other functions of the Model (PH, S). RI functions may be implemented within the architecture of a single system or across a tightly coupled suite of systems (applications). All functions within the Record Infrastructure Section have an identifier starting with “RI”."
+  },
+  {
+    "id": "TI",
+    "name": "Trust Infrastructure Section",
+    "description": "The Trust Infrastructure (TI) Section consists of functions common to a PHR System infrastructure, particularly those functions foundational to system operations, security, efficiency and data integrity assurance, safeguards for privacy and confidentiality, and interoperability with other systems. TI functions are core and foundational to all other functions of the Model (Care Provision, Care Provision Support, Population Health, Administrative Support and Record Infrastructure). Note extensive reference to TI functions in Overarching Criteria. TI functions may be implemented within the architecture of a single system or across a tightly coupled suite of systems (applications).All functions within the Trust Infrastructure Section have an identifier starting with “TI”.\r\n\r\nThe RI and TI Sections are identical between the PHR and EHR System Functional Models, reflecting the need for common and compatible record management and trust infrastructures.  Note that there may be some functions more directly applicable to EHR systems than PHR systems."
+  },
+  {
+    "id": "OTH",
+    "name": "Other",
+    "description": ""
+  }
+],
+    "resource": [],
+    "page": {
+      "name": "index.html",
+      "generation": "markdown",
+      "title": "Home Page",
+      "page": [
+        {
+          "name": "downloads.html",
+          "generation": "markdown",
+          "title": "Useful Downloads"
+        },
+        {
+          "name": "changes.html",
+          "generation": "markdown",
+          "title": "IG Change History"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "releaselabel"
+        },
+        "value": "CI Build"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "copyrightyear"
+        },
+        "value": "2023"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "shownav"
+        },
+        "value": "true"
+      }
+    ]
+  }
+}
