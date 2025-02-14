@@ -1,8 +1,8 @@
 {
     "resourceType": "StructureDefinition",
     "id": "FunctionalModel",
-    "url": "http://hl7.org/ehrs/uv/ehrs-base/StructureDefinition/FunctionalModel",
-    "status": "draft",
+    "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FunctionalModel",
+    "status": "active",
     "name": "FunctionalModel",
     "title": "FunctionalModel",
     "description": "This StructureDefinition represents the base EHR-S FunctionalModel type",

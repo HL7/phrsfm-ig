@@ -1,0 +1,46 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-TI.5.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "TI_5_3_Standards_Based_Application_Integration",
+  "title": "TI.5.3 Standards-Based Application Integration (Function)",
+  "status": "active",
+  "description": "Integrate applications in a standards-based manner.",
+  "purpose": "A PHR-S often consists of multiple applications. Some of those applications may be within the PHR-S; others may be external to the PHR-S. The user of the PHR-S often benefits when those applications are integrated. Application integration can be accomplished in an ad-hoc fashion or in a standards-based fashion.\r\n\r\nThe method(s) by which applications may be integrated within an organization depends on that organization's approach to application integration. A given organization could conceivably employ multiple application integration approaches to meet various application integration requirements.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.5.3-01",
+      "label": "TI.5.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to integrate applications in a standards-based fashion when the system is composed of, and/or is extended by disparate applications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.5.3-02",
+      "label": "TI.5.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to integrate user (or system) authentication for the purposes application context management (e.g., Graphical User Interface application integration via HL7's Context Management Standard from the Clinical Context Object Work Group (CCOW))."
+    }
+  ]
+}

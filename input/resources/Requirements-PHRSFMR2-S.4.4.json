@@ -1,0 +1,61 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_4_Manage_PHR_Account_Holder_Education_Material_Updates",
+  "title": "S.4.4 Manage PHR Account Holder Education Material Updates (Function)",
+  "status": "active",
+  "description": "Receive and validate formatted inbound communications to facilitate and/or perform updating of PHR Account Holder education material.",
+  "purpose": "Materials may include information about a diagnosis, recommended diets, associated PHR Account Holder health organizations, international vaccinations needed for travel, or web links to similar educational information. These materials would be provided electronically and may require validation prior to inclusion in the system.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.4-01",
+      "label": "S.4.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL receive updates to educational materials."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.4-02",
+      "label": "S.4.4#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to determine the validity of educational material prior to updating the educational material."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.4-03",
+      "label": "S.4.4#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to determine the applicability of educational material prior to updating the educational material. For example, a healthcare professional could offer information stating that the PHR Account Holder's use of non-alcoholic wine will not adversely affect the PHR Account Holder's pregnancy. Another example is that the PHR Account Holder may need to be reminded that milk must not be consumed within three hours of taking Tetracycline (when attempting to fight infection); also the PHR Account Holder could be reminded that antacids or iron supplements have a tendency to interfere with the absorption of various types of medicines."
+    }
+  ]
+}

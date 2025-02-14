@@ -1,0 +1,31 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-RI.1.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "RI_1_1_Record_Lifecycle",
+  "title": "RI.1.1 Record Lifecycle (Function)",
+  "status": "active",
+  "description": "Manage Record Lifecycle",
+  "purpose": "As above References:\r\n- ISO 21089: Health Informatics -- Trusted End-to-End Information Flows\r\n- HL7 EHR Interoperability Model DSTU\r\n- HL7 Electronic Health Record Lifecycle Model DSTU",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-RI.1.1-01",
+      "label": "RI.1.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [RI.1.2.1](Requirements-PHRSFMR2-RI.1.2.1.html) (Manage Record Entries) as the final step to conclude each Record Lifecycle Event in [RI.1.1](Requirements-PHRSFMR2-RI.1.1.html) (Record Lifecycle) and all child functions."
+    }
+  ]
+}

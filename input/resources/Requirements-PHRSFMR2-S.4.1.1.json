@@ -1,0 +1,109 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.1.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_1_1_Capture_Genomic_Proteomic_Data_and_Documentation_from_External_Clinical_Sources",
+  "title": "S.4.1.1 Capture Genomic/Proteomic Data and Documentation from External Clinical Sources (Function)",
+  "status": "active",
+  "description": "Incorporate genomic/proteomic data and documentation from external sources.",
+  "purpose": "Mechanisms for incorporating external genomic/proteomic data and documentation (including identification of source) such as image documents, reports and other clinically relevant electronic data are available.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.1-01",
+      "label": "S.4.1.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture relevant family genomic history.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/molecularsequence.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.1-02",
+      "label": "S.4.1.1#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY capture and maintain genomic/proteomic information through interaction with other systems, applications, and modules."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.1-03",
+      "label": "S.4.1.1#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF laboratory results are received through an electronic interface, THEN the system SHALL render the data elements upon request."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.1-04",
+      "label": "S.4.1.1#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF laboratory results are received through an electronic interface, THEN the system SHALL capture and maintain the data elements in the PHR Account Holder record."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.1-05",
+      "label": "S.4.1.1#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to store imaged documents."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.1-06",
+      "label": "S.4.1.1#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage text-based externally-sourced documents and reports."
+    }
+  ]
+}

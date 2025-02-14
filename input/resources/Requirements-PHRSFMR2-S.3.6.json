@@ -1,0 +1,169 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_6_Manage_PHR_Data_Import_and_Export",
+  "title": "S.3.6 Manage PHR Data Import and Export (Function)",
+  "status": "active",
+  "description": "Allow the PHR Account Holder to manage the import to and export of data from a PHR-S.",
+  "purpose": "A PHR Account Holder needs to prescribe how data is exchanged with other systems including how data is imported to the PHR-S, and the parameters for data export (e.g., who, when, or the extent of data). Some import and export functions may be one-time events; other exchanges, for example, may occur at regular intervals (such as via a subscription service). The PHR Account Holder should be able to determine the information or data that he/she will accept into the PHR. The system should record the acknowledgement or refusal of data sent to the Account Holder’s PHR-S. Use of exported data should be constrained according its intended and permitted purpose of use (e.g., as described in the PHR-S manufacturer's Terms of Service and Terms of Use agreements).\r\n\r\nExample(s): The PHR Account Holder may desire to inform her General Practitioner that the PHR Account Holder has received a proposed dietary regimen from a Registered Dietitian / Nutrition specialist. The PHR Account Holder may also desire to send a copy of the proposed nutrition care plan to the General Practitioner.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-01",
+      "label": "S.3.6#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to exchange PHR Account Holder data content with another PHR system.",
+      "satisfiedBy": [
+        "https://hl7.org/fhir/uv/bulkdata/"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-02",
+      "label": "S.3.6#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to exchange PHR Account Holder data content with other systems."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-03",
+      "label": "S.3.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to exchange PHR Account Holder data content with other systems."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-04",
+      "label": "S.3.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to determine entities from which data may be imported into the PHR-S."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-05",
+      "label": "S.3.6#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to determine entities to which data may be exported from the PHR-S."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-06",
+      "label": "S.3.6#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to exchange information with an entity on a one-time basis."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-07",
+      "label": "S.3.6#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to exchange information with an entity on a recurring basis."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-08",
+      "label": "S.3.6#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to annotate incoming information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-09",
+      "label": "S.3.6#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to render a notification (i.e., an acknowledgment) of the receipt or the refusal to receive information that was sent from another system."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.6-10",
+      "label": "S.3.6#10",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to TI.1.5 (Non-Repudiation) to promote provenance regarding professionally-sourced clinical information."
+    }
+  ]
+}

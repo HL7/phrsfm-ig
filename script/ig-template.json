@@ -19,7 +19,7 @@
   "version": "2.0.1",
   "name": "PHRSFMR2",
   "title": "Personal Health Record System Functional Model, Release 2",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "publisher": "EHR WG",
   "contact": [
@@ -45,6 +45,11 @@
       "generation": "markdown",
       "title": "Home Page",
       "page": [
+        {
+          "name": "relationships.html",
+          "generation": "markdown",
+          "title": "Relationships Diagram"
+        },
         {
           "name": "downloads.html",
           "generation": "markdown",

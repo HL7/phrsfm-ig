@@ -1,3 +1,20 @@
 == Suppressed Messages ==
-# Known issues
-The link 'Requirements-EHRSFMR2.1-\$1.html' for "\$1" cannot be resolved
+# Don't know if we should
+% could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+
+# Experimental in fhir core
+% which is experimental, but this structure is not labeled as experimental
+
+# No Examples is right
+The Implementation Guide contains no examples for this extension
+
+# Acceptable "...must end in a period."
+%FMFLC10%
+%FMFLC12%
+%FMHC007%
+%FMHC005%
+
+# IG Publisher causes these
+Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
+The Extension 'http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version' definition is for a simple extension, so it must contain a value
+Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version|5.2.0)

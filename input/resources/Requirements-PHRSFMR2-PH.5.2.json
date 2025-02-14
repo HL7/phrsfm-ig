@@ -1,0 +1,376 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.5.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_5_2_Drug_Interaction_Checking",
+  "title": "PH.5.2 Drug Interaction Checking (Function)",
+  "status": "active",
+  "description": "Display warnings and severity levels of potential adverse interactions based on the data in the PHR Account Holder's medication and allergy list.",
+  "purpose": "Drug interaction and drug interference checking is a responsibility of the prescribing provider. However, the PHR Account Holder may be taking new over-the-counter medications or new prescription medications from providers without access to e-prescribing and may want to check for interactions and/or interferences. A complete interaction and interference check would take into consideration other prescribed medications, over-the-counter medications, allergies, relevant health conditions, age, weight, gender, diet and nutrition (e.g., mineral supplements, grapefruit juice, or pomegranate juice), environmental factors (e.g., phototoxic skin reactions to sunlight), absorption considerations (e.g., calcium interference with drug absorption), timing considerations (e.g., take immediately before sleeping), activity considerations (e.g., take before performing physical exercise), and relevant laboratory values such as creatinine clearance and liver function tests.\r\n\r\nExample(s): Each time a new medication or a new allergy is entered into the PHR, perform an automated check for potential interactions among all of the current medication and allergy entries in the PHR.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-01",
+      "label": "PH.5.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine and render an alert to the PHR Account Holder regarding potential contraindications between prescribed medications (i.e., those medications that have already been captured onto the PHR Account Holder's current medication list) and over-the-counter (i.e., non-prescription) medications being considered for self-treatment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-02",
+      "label": "PH.5.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine (possible) allergies, sensitivities, adverse reactions, interferences with medications, and/or intolerances to medications to facilitate allergy interaction checking decision support for medication (e.g., over-the-counter medication or a prescribed medication) orders including both prescribed medication and over-the-counter medication. For example, the PHR Account Holder might desire to compare the medications that are prescribed by two members of the PHR Account Holder’s care team, in order to learn about potential adverse reactions. Each time a new medication or a new allergy is entered into the PHR, the PHR-S could perform an automated check for potential interactions among all of the current medication and allergy entries in the PHR. Also, the PHR-S could analyze possible reactions for medications that appear within “families” or classes of medications. A complete interaction and interference check would take into consideration other prescribed medications, over-the-counter medications, allergies, relevant health conditions, age, weight, gender, diet and nutrition (e.g., mineral supplements, grapefruit juice, or pomegranate juice), environmental factors (e.g., phototoxic skin reactions to sunlight), absorption considerations (e.g., calcium interference with drug absorption), timing considerations (e.g., take immediately before sleeping), activity considerations (e.g., take before performing physical exercise), and relevant laboratory values such as creatinine clearance and liver function tests."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-03",
+      "label": "PH.5.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine drug-drug interactions for all medications in the medication list (including prescribed and/or over-the-counter medications)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-04",
+      "label": "PH.5.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain a list of drug interaction warnings that was presented to a PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-05",
+      "label": "PH.5.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage alerts (including overriding an alert) for adverse interactions or allergic reactions."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-06",
+      "label": "PH.5.2#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to maintain the severity level at which warnings ought to be displayed."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-07",
+      "label": "PH.5.2#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine and render duplicate therapies, such as two forms of the same medication (e.g., Percocet and acetaminophen), two medications with the same mechanism of action (e.g., two antihypertensives), or two medications in the same classification (e.g.,, two anticoagulants)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-08",
+      "label": "PH.5.2#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze and render educational information regarding the interaction between medications and nutrient intake. For example, when the system recognizes that the patient is taking an anti-coagulant (e.g., Coumadin) or a Non-Steroidal Anti-Inflammatory Drug (NSAID), then the system could offer education regarding the need to consider avoiding the intake of pomegranate juice, grapefruit juice, or alcoholic beverages."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-09",
+      "label": "PH.5.2#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage the reason for the capture, update, or removal of the allergy, no-longer-allergic, intolerance, sensitivity, and/or adverse reaction to drugs and/or medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-10",
+      "label": "PH.5.2#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage the source of allergy, intolerance, and/or adverse reaction information to drugs and/or medications (e.g., the source could be another system, a care provider, or the PHR Account Holder)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-11",
+      "label": "PH.5.2#11",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to tag as deactivated an allergy, intolerance, and/or adverse reaction to drugs and/or medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-12",
+      "label": "PH.5.2#12",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture as discrete data the reason for deactivation of an allergy, intolerance, and/or adverse reaction to drugs and/or medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-13",
+      "label": "PH.5.2#13",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render an allergy, intolerance, and/or adverse reaction to drugs and/or medications that has been tagged as deactivated."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-14",
+      "label": "PH.5.2#14",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture and render the date on which allergy to drug and/or medication information was entered."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-15",
+      "label": "PH.5.2#15",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture and render the approximate date of the allergy occurrence to drugs and/or medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-16",
+      "label": "PH.5.2#16",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture and render that the allergies to drugs and/or medications are \"Unknown\" or \"Unable to Assess Allergies\"."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-17",
+      "label": "PH.5.2#17",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture and render the reason for \"Unknown\" or \"Unable to Assess Allergies\" to drugs and/ or medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-18",
+      "label": "PH.5.2#18",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to tag records and render that the allergies are \"Unknown\" or \"Unable to Assess Allergies\" and need to be updated."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-19",
+      "label": "PH.5.2#19",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture free text allergies, intolerances, or adverse reactions and render them in a manner that distinguishes them from coded allergy, intolerance, or adverse reaction entries."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-20",
+      "label": "PH.5.2#20",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD tag and render an indication that automated interaction checking (e.g., drug-allergy checking) will not be applied against allergies, intolerances, and/or adverse reactions that were entered in free text format."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-21",
+      "label": "PH.5.2#21",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render historical information regarding drug-interactions and/or drug-interferences (e.g., showing the incidences of skin reactions that occurred when a certain medication was used at various times in the past few decades)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-22",
+      "label": "PH.5.2#22",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render historical information regarding the actions taken by the PHR Account Holder in response to drug-interactions and/or drug-interferences."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-23",
+      "label": "PH.5.2#23",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to link an allergy, intolerance, and/or adverse reaction with diagnostic results (e.g., laboratory or allergy test result)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.2-24",
+      "label": "PH.5.2#24",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY capture an indication that the PHR Account Holder was presented with, and acknowledged, a drug interaction and/or drug interference notification."
+    }
+  ]
+}

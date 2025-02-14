@@ -1,0 +1,151 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.6.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_6_2_Manage_Self_Assessments__i_e___Symptoms_",
+  "title": "PH.6.2 Manage Self-Assessments (i.e., Symptoms) (Function)",
+  "status": "active",
+  "description": "Manage information related to self-assessments.",
+  "purpose": "The PHR Account Holder may make a self-assessment regarding certain symptoms they may be experiencing, concluding that they need an encounter with a provider. This self-assessment should include a specific reason or reasons for the encounter (referred to as the chief complaint(s)) and personal observations or measurements that might be germane to the encounter.\r\n\r\nExample(s): The system SHALL provide the ability to document self-assessments using standard self-assessments germane to the age, gender, developmental state, and health condition as appropriate.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-01",
+      "label": "PH.6.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture self-assessments."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-02",
+      "label": "PH.6.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture self-assessments using templates (if available)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-03",
+      "label": "PH.6.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture self-assessments using standard self-assessments germane to the age, gender, developmental state, and health condition as appropriate."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-04",
+      "label": "PH.6.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture data relevant to a standard self-assessment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-05",
+      "label": "PH.6.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture PHR Account Holder's self-reported physical symptoms and daily functioning as structured or unstructured data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-06",
+      "label": "PH.6.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide to ability to capture PHR Account Holder's self-reported mental health status as structured or unstructured data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-07",
+      "label": "PH.6.2#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture other self-reported clinical measures (e.g., peak expiratory flow rate, size of lesions, or oxygen saturation)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-08",
+      "label": "PH.6.2#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY analyze and present percentile values when data with normative distributions are entered."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.2-09",
+      "label": "PH.6.2#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render normal ranges for data based on age and other parameters (such as height, weight, ethnic background, or gestational age)."
+    }
+  ]
+}

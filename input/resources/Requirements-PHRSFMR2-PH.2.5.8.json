@@ -1,0 +1,94 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.8",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_8_Maintain_Family_History",
+  "title": "PH.2.5.8 Maintain Family History (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder's Family Health History.",
+  "purpose": "The family history traditionally imparts the PHR Account Holder with certain risks and probabilities of illnesses that have a familial component. The major illnesses and cause of death of primary family members should be captured and displayed. For some illnesses of the PHR Account Holder a negative family history is also pertinent such as for cancer.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.8-01",
+      "label": "PH.2.5.8#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage family history according to organizational policy and/or jurisdictional law.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/familymemberhistory.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.8-02",
+      "label": "PH.2.5.8#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and transmit a request-for-correction to family history that was captured from an external source. Note: There could be multiple types of errors, both unintentional and intentional; the errors could also reside in multiple storage locations (primary, secondary, and intermediary); the errors could also reside in current records or in archived records; there could also be multiple sources (author, custodian-of-record, transcriptionist)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.8-03",
+      "label": "PH.2.5.8#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to annotate the family history with text comments (e.g., \"Great-grandmother Alice was lost at sea” and that \"Uncle Robert disagrees with the cause-of-death attributed to great-grandmother Alice\".)"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.8-04",
+      "label": "PH.2.5.8#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to enter missing information regarding the family history."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.8-05",
+      "label": "PH.2.5.8#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to exchange family history entries with the PHR Accounts of other family members according to user preference and/or consent, user role, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

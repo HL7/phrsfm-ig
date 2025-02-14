@@ -1,0 +1,31 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.6.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_6_1_Manage_Public_Health_Related_Updates",
+  "title": "S.4.6.1 Manage Public Health Related Updates (Function)",
+  "status": "active",
+  "description": "Provide the ability to update and maintain information regarding public health notifications.",
+  "purpose": "Public health updates may be applicable to entire geographic regions or specific to a specific locale or diagnosis. The system should allow the PHR Account Holder to identify the types of public health updates that are of interest. The system should also allow a PHR Account Holder to be notified of other public health occurrences which may affect an entire population.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.1-01",
+      "label": "S.4.6.1#01",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render notifications to the PHR Account Holder based on the recommendations of public health authorities according to PHR Account Holder's preferences and/or consents, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

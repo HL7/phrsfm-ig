@@ -1,0 +1,124 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.1.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_1_1_Manage_Personal_Observations_and_Care",
+  "title": "PH.3.1.1 Manage Personal Observations and Care (Function)",
+  "status": "active",
+  "description": "Provide the ability for the PHR Account Holder to enter personally-sourced data and to make it available electronically to authorized health care provider(s) or other authorized users or applications.",
+  "purpose": "A PHR system can help a PHR Account Holder capture and maintain self-generated health observational information. That observational information can appear in structured and unstructured formats and/or as several media types. of observational methods could include structured or unstructured text documents, audio files from telephone devices, calendar entries, text messages, scanned or digital images (including photographs), and personal drawings.\r\n\r\nExample(s): The system SHALL capture Account Holder's self-reported health observations such as symptoms, vital signs and other physical conditions.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.1-01",
+      "label": "PH.3.1.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability for the PHR Account Holder to capture self-generated health observations (e.g., symptoms, vital signs, physical observations, direct-to-consumer laboratory studies, home health devices, (e.g., a blood sugar measurement device or a telemetric cardiac measurement device)).",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/composition.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.1-02",
+      "label": "PH.3.1.1#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the PHR Account Holder's self-measured and externally-sourced vital signs (e.g., blood pressure, temperature, heart rate, respiratory rate, and severity of pain) according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.1-03",
+      "label": "PH.3.1.1#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY capture other self-reported clinical measures (e.g., peak expiratory flow rate, size of lesions, or oxygen saturation) as discrete elements of structured or unstructured data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.1-04",
+      "label": "PH.3.1.1#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture the PHR Account Holder's self-reported mental health status according to organizational policy (e.g., using certain privacy and security protections). For example, the PHR Account Holder might note that the medication that has been prescribed by his physician is causing feelings of anger and depression (and suicidal ideation). If the PHR Account Holder shares that information with a healthcare organization, that organization might note that the PHR Account Holder's self-reported mental health status must be masked for members of the care team who do not have explicit permissions to view that data (i.e., only authorized health care provider(s)). The vendor organization that hosts the PHR system software might have a policy that states that that the PHR Account Holder's self-reported mental health status will not be exported without explicit consents and/or authorizations by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.1-05",
+      "label": "PH.3.1.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system provides the ability to capture the PHR Account Holder's self-reported mental health status, THEN the system SHOULD provide the ability to capture corresponding consents and/or authorizations regarding the transmission of the PHR Account Holder's self-reported mental health status information according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.1-06",
+      "label": "PH.3.1.1#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain educational information that can be used by the PHR Account Holder to understand his or her condition(s)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.1-07",
+      "label": "PH.3.1.1#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain educational information that can be used by the PHR Account Holder to understand and choose from various self-care options."
+    }
+  ]
+}

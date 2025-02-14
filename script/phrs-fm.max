@@ -3,7 +3,7 @@
   <objects xmlns="">
     <object>
       <id>PHR_R2</id>
-      <name>PHR_R2</name>
+      <name>PHR-S-FM R2</name>
       <alias/>
       <stereotype>HL7-FM</stereotype>
       <type>Package</type>
@@ -270,7 +270,7 @@ Example(s): The PHR Account Holder may desire to see a summary-of-care record or
       <notes>$ST$Manage PHR Account Holder demographics, preferences, Advance Directives, consent directives and authorizations.$DE$The person that is the subject of the personal health record is referred to as the PHR Account Holder. The PHR Account Holder may also be represented by the parent/guardian, or a designated representative (proxy) assigned by the PHR Account Holder or otherwise authorized entity. The PHR includes relevant demographic information and other administrative statements necessary to provide care such as Advance Directives or consents for care.&#xD;
 &#xD;
 Example(s): Display and maintain demographics or preferences such as the PHR Account Holder's preferred first name or religious preferences.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R23</parentId>
       <tag name="Row" value="22"/>
@@ -3307,7 +3307,7 @@ For example, food intake information in the PHR-S that may be exchanged with ext
       <notes>$ST$Assist the PHR Account Holder with maintaining his or her wellness and management of their health conditions.$DE$A competency of the personal health record is to encourage thoughtful, prospective management of our own health maintenance and conditions.&#xD;
 &#xD;
 Example(s): The system should maintain a life-long schedule for surveillance evaluations, clinical trials, and other healthcare information-related research studies.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R23</parentId>
       <tag name="Row" value="251"/>
@@ -3320,7 +3320,7 @@ Example(s): The system should maintain a life-long schedule for surveillance eva
       <notes>$ST$Provide the ability for the PHR Account Holder to enter personally-sourced data and to make it available electronically to authorized Health Care Provider(s) or other Authorized Users or applications.$DE$The system should provide various ways for the PHR Account Holder to record self-generated health observations.&#xD;
 &#xD;
 Example(s): The system SHALL capture Account Holder's self-reported physical symptoms and daily functioning as structured or unstructured data.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2251</parentId>
       <tag name="Row" value="252"/>
@@ -3381,7 +3381,7 @@ Example(s): The system SHALL capture Account Holder's self-reported health obser
     <object>
       <id>PHR_R2257</id>
       <name>PH.3.1.1#04</name>
-      <notes>The system MAY provide the ability to capture the PHR Account Holder's self-reported mental health status according to organizational policy (e.g., using certain privacy and security protections). For example, the PHR Account Holder might note that the medication that has been prescribed by his physician is causing feelings of anger and depression (and suicidal ideation). If the PHR Account Holder shares that information with a healthcare organization,  that organization  might note that the PHR Account Holder's self-reported mental health status must be masked for members of the care team who do not have explicit permissions to view that data (i.e., only authorized health care provider(s)). The vendor organization that hosts the PHR system software  might have a policy that states that that the PHR Account Holder's self-reported mental health status will not be exported without explicit consents and/or authorizations by the PHR Account Holder.</notes>
+      <notes>The system MAY provide the ability to capture the PHR Account Holder's self-reported mental health status according to organizational policy (e.g., using certain privacy and security protections). For example, the PHR Account Holder might note that the medication that has been prescribed by his physician is causing feelings of anger and depression (and suicidal ideation). If the PHR Account Holder shares that information with a healthcare organization, that organization might note that the PHR Account Holder's self-reported mental health status must be masked for members of the care team who do not have explicit permissions to view that data (i.e., only authorized health care provider(s)). The vendor organization that hosts the PHR system software might have a policy that states that that the PHR Account Holder's self-reported mental health status will not be exported without explicit consents and/or authorizations by the PHR Account Holder.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>PHR_R2253</parentId>
@@ -3491,7 +3491,7 @@ Example(s): Develop and implement an exercise program for optimizing cardiac fit
     <object>
       <id>PHR_R2265</id>
       <name>PH.3.2#01</name>
-      <notes>The system SHOULD provide the ability to manage the PHR Account Holder's self-generated care plans.  Note: self-generated care plans can be constructed based on external recommendations from sources such as an established relationship with a care provider, an educational tool, or another informational resource.</notes>
+      <notes>The system SHOULD provide the ability to manage the PHR Account Holder's self-generated care plans. Note: self-generated care plans can be constructed based on external recommendations from sources such as an established relationship with a care provider, an educational tool, or another informational resource.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>PHR_R2264</parentId>
@@ -4083,7 +4083,7 @@ Example(s): The system should provide the ability to communicate the refills/ren
 - Recommendations&#xD;
 &#xD;
 Example(s): Implement a complex care plan in the form of tasks, reminders, alerts, and calendar entries.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2251</parentId>
       <tag name="Row" value="309"/>
@@ -4854,7 +4854,7 @@ Example(s): &#xD;
       <notes>$ST$The system may serve as a communication tool to help control public health risks and promote population wellness, as well as to target conditions for a specific population demographic and the PHR Account Holder specifically.$DE$A formal and well-defined communication channel between public health agencies and the PHR Account Holder's PHR-S is useful. It provides for monitoring public health threats through data and observations captured within the PHR-S. Additionally, it alerts the PHR Account Holder to take corrective actions in response to public health threats.&#xD;
 &#xD;
 Example(s): The system SHOULD provide the PHR Account Holder the ability to subscribe to population health web site information.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2251</parentId>
       <tag name="Row" value="367"/>
@@ -5302,7 +5302,7 @@ Example(s):&#xD;
 The PHR System could support the PHR Account Holder's need to understand particular medication- and nutrition- related handling and intake/administration requirements. These considerations could appear during drug-interaction checking, decision making educational investigations, care plan communications, and identification of duplicate therapies.&#xD;
 &#xD;
 Example(s): The system should provide assistance to select an appropriate Internet based decision support tool to provide guidance in managing a young child with vomiting and fever.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R23</parentId>
       <tag name="Row" value="401"/>
@@ -5959,7 +5959,7 @@ Example(s): Provide access to clinical decision support services that provide di
     <object>
       <id>PHR_R2452</id>
       <name>PH.5.4#08</name>
-      <notes>The system MAY provide the ability to analyze  the genetic profile of the PHR Account Holder and render findings/issues/alerts to the PHR Account Holder (for possible transmission to a member of the care team) according to user preference, organizational policy, and/or jurisdictional law. The ingredients of this analysis might only appear (collectively) in the PHR Account Holder's PHR. The results of such an analysis could be shared with certain members of the PHR Account Holder's care team for consideration. For example, the PHR Account Holder begins to feel sluggish and wonders why; the PHR system analyzes the PHR Account Holder's genetic profile and offers sickle cell anemia as a possible factor.</notes>
+      <notes>The system MAY provide the ability to analyze the genetic profile of the PHR Account Holder and render findings/issues/alerts to the PHR Account Holder (for possible transmission to a member of the care team) according to user preference, organizational policy, and/or jurisdictional law. The ingredients of this analysis might only appear (collectively) in the PHR Account Holder's PHR. The results of such an analysis could be shared with certain members of the PHR Account Holder's care team for consideration. For example, the PHR Account Holder begins to feel sluggish and wonders why; the PHR system analyzes the PHR Account Holder's genetic profile and offers sickle cell anemia as a possible factor.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>PHR_R2444</parentId>
@@ -6091,7 +6091,7 @@ Example(s): The system SHOULD provide the ability to present medication recommen
       <notes>$ST$Manage information for scheduling, preparation, and assimilation of knowledge gained by encounters with providers.$DE$Each interaction with a provider, including office visits, virtual visits, hospitalizations, telephone conversations, or diagnostic procedures, comprise an encounter. Some encounters are non-discretionary such as emergent admission to a level 1 trauma center. Many encounters are initiated by providers in the course of care such as a scheduled chemotherapy treatment. Some encounters are initiated by the PHR Account Holder requiring additional steps facilitated by their PHR-S.&#xD;
 &#xD;
 Example(s): The Account Holder makes a self-assessment that his or her chest pain warrants urgent evaluation and telephones an ambulance service. Access to the PHR Account Holder’s PHR information is provided to the ambulance crew and emergency room staff. The resulting assessments, updates to the current data set including problems, procedures, and medications, and new care plans from the hospital evaluation are then incorporated into the PHR Account Holder’s PHR-S during or shortly after the encounter concludes. The Primary Care Provider receives an alert to the changes.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R23</parentId>
       <tag name="Row" value="462"/>
@@ -6956,7 +6956,7 @@ All functions within the Supportive Section have an identifier starting with “
       <name>S.1 Provider Information</name>
       <alias>S.1</alias>
       <notes>$ST$The purpose of this section is to provide the system support to obtain a list of providers in an area and/or within a health plan panel and then maintain, or provide access to, current provider information.$DE$$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
       <tag name="Row" value="529"/>
@@ -7547,7 +7547,7 @@ Note: Healthcare facility transparency information that has been received or imp
       <name>S.2 Financial Management</name>
       <alias>S.2</alias>
       <notes>$ST$The purpose of this section is to provide the system support in managing financial information related to benefit plan coverage and service utilization.$DE$$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
       <tag name="Row" value="573"/>
@@ -8009,7 +8009,7 @@ In newer plan types such as Consumer Directed Health Plans (CDHP), this informat
       <name>S.3 Administration Management</name>
       <alias>S.3</alias>
       <notes>$ST$The purpose of this section is to provide the system support in managing the PHR-S and the interaction with other PHR and EHR systems. It also serves as a set of functions to manage documentation related to the PHR-S as well as legal documents that affect or may affect the PHR Account Holder.$DE$$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
       <tag name="Row" value="609"/>
@@ -8174,7 +8174,7 @@ The Conditions of Use document also helps indemnify the PHR sponsor against cert
       <name>S.3.3 Manage Legal and other Related Documents</name>
       <alias>S.3.3</alias>
       <notes>$ST$Manage legal and other related documents that allow or restrict the use or disclosure of the PHR Account Holder’s information.$DE$The PHR system should allow for the entry of documents related to the use or disclosure of the PHR Account Holder’s information. These documents may include scanned images or electronic images sent via attachment. The system does not judge the authenticity of the document. The PHR Account Holder should ensure they have the original document or approved copy of a document or other images. The system allows for multiple instances of the same document (e.g., multiple authorizations). The system allows document to be retired (for example, by moving the documents to an archival service and deleting those documents locally). Retired documents may continue to be tracked. The system allows for the removal of documents at the PHR Account Holder’s discretion.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2609</parentId>
       <tag name="Row" value="622"/>
@@ -9057,7 +9057,7 @@ Example(s): A PHR Account Holder may prefer to see summary information about med
       <name>S.4 Manage Other Resources</name>
       <alias>S.4</alias>
       <notes>$ST$The purpose of this section is to provide the system support to both allow the PHR Account Holder to participate in a variety of programs that may be directly related to areas of interest to the PHR Account Holder and to enable appropriate access and support for new, additional, or other uses of PHR information.$DE$$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
       <tag name="Row" value="691"/>
@@ -9068,7 +9068,7 @@ Example(s): A PHR Account Holder may prefer to see summary information about med
       <name>S.4.1 Manage Clinical Research Information</name>
       <alias>S.4.1</alias>
       <notes>$ST$Support a PHR Account Holder in clinical trials and provide research information.$DE$In seeking healthcare, the system should support the PHR Account Holder being able to obtain a list(s) of available clinical trials/research. The PHR Account Holder should be able to refine trials by geographic area, by disease, by treatment, by sponsor and maintain, or provide access to, current clinical trial/research information. The system should also support the PHR Account Holder’s participation in, and support of, appropriate new, additional, or other uses of their PHR information for clinical research which could include quality and performance analysis.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2691</parentId>
       <tag name="Row" value="692"/>
@@ -9747,7 +9747,7 @@ Example(s): Reminders could include a recommended immunization, prophylactic gui
       <name>S.4.6 Manage Public Health Information</name>
       <alias>S.4.6</alias>
       <notes>$ST$Manage the PHR Account Holder’s use of PHR-related Public Health Information and/or services.$DE$$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2691</parentId>
       <tag name="Row" value="745"/>
@@ -10179,7 +10179,7 @@ Examples of unstructured health record information include:&#xD;
 - multimedia (dictated report or a voice recording). &#xD;
 &#xD;
 Context may determine whether data are structured or unstructured. For example, a progress note might be standardized and structured in some systems (e.g., Subjective/Objective/Assessment/Plan) but unstructured in other systems. The PHR System manages Record Lifecycle Events for each Record Entry, including pre and post Event record states, continuity, persistence and related Record Audit Logs.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2776</parentId>
       <tag name="Row" value="777"/>
@@ -15755,7 +15755,7 @@ Reference: ISO 21089-2018, Section 15.25.$EX$</notes>
     <object>
       <id>PHR_R21210</id>
       <name>RI.1.1.25.1#09</name>
-      <notes>The system SHALL capture the data, document or other identifier for verified  Record Entry content.</notes>
+      <notes>The system SHALL capture the data, document or other identifier for verified Record Entry content.</notes>
       <stereotype>Criteria</stereotype>
       <type>Requirement</type>
       <parentId>PHR_R21201</parentId>
@@ -16208,7 +16208,7 @@ Reference: ISO 21089-2018, Section 15.27.$EX$</notes>
       <name>RI.1.2 Record Lifespan</name>
       <alias>RI.1.2</alias>
       <notes>$ST$Manage Record Lifespan$DE$Record Lifecycle Events (Function [[RI.1.1]]) are those required to manage Record Entries in persistent storage over the full course of Record Lifespan (Section [[RI.1.2]]). See Section [[RI.1.1]], Record Lifecycle, for further description.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2777</parentId>
       <tag name="Row" value="1245"/>
@@ -16583,7 +16583,7 @@ Reference: ISO 21089, Section 12.2.2$EX$</notes>
       <name>RI.1.3 Record States</name>
       <alias>RI.1.3</alias>
       <notes>$ST$Manage Record States$DE$Record Entries may reside in various states that must be managed. An important underlying principle for managing record states is the need to retain Record Entries that have been viewed for patient care purposes even if the Entry has not been completed or attested. This principle has important legal impact because it provides an account of what the provider viewed and relied on for clinical decision-making. For example, if Record Entry content was available in pending state and a clinician used the information to make decisions, it is important to retain the pending version even after the final version was available. Determining if Record Entry content was used for patient care may be challenging. Access logs could provide a mechanism to determine if the information was used.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2777</parentId>
       <tag name="Row" value="1274"/>
@@ -17211,7 +17211,7 @@ The RI and TI Sections are identical between the PHR and EHR System Functional M
       <name>TI.1 Security</name>
       <alias>TI.1</alias>
       <notes>$ST$Manage PHR-S security.$DE$PHR-S security consists of entity authentication, entity authorization, entity access control, patient access management, secure data exchange, attestation, patient privacy and confidentiality. PHR audit functions are described in [[TI.2]].$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R21320</parentId>
       <tag name="Row" value="1321"/>
@@ -22102,7 +22102,7 @@ An example of local registry usage is a PHR-S application sending a query messag
       <notes>$ST$Support semantic interoperability through the use of standard terminologies, standard terminology models and standard terminology services.$DE$The purpose of supporting terminology standards and services is to enable semantic interoperability. Interoperability is demonstrated by the consistency of human and machine interpretation of shared data and reports. It includes the capture and support of consistent data for templates and decision support logic.&#xD;
 &#xD;
 Terminology standards pertain to concepts, representations, synonyms, relationships and computable (machine-readable) definitions. Terminology services provide a common way for managing and retrieving these items, including historically correct version interpretation. Terminology services need to support legal requirements for retrospective health record information and system data.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R21320</parentId>
       <tag name="Row" value="1702"/>
@@ -22476,7 +22476,7 @@ The interaction and mapping of terminologies may be called into question in a le
       <notes>$ST$Provide automated health care delivery processes and seamless exchange of clinical, administrative, and financial information through standards-based solutions.$DE$Interoperability standards enable certain applications to be shared among PHR systems, resulting in a unified (logical) view of a given PHR system where several disparate systems may actually be participating transparently. Interoperability standards also enable certain information to be shared among PHR systems (including information that resides in regional, national, or international information exchanges). Interoperability standards also promote timely and efficient information capture, use, and re-use, often reducing the cumulative workload of the broad set of stakeholders.&#xD;
 &#xD;
 When health-related information is exchanged -- or when external applications are used to extend a PHR system -- the interoperability methods and underlying standards that were used in the process may need to be disclosed during a legal proceeding (especially when the resulting information becomes part of the patient's medical record).$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R21320</parentId>
       <tag name="Row" value="1730"/>
@@ -22500,7 +22500,7 @@ A variety of interaction modes are typically supported such as:&#xD;
 - Unstructured clinical document (e.g., dictated surgical note).&#xD;
 &#xD;
 Standard terminology is a fundamental part of interoperability and is described in function [[TI.4]]. Using a formal explicit information model further optimizes interoperability. An example of an information model is the HL7 Reference Information Model (RIM). Organizations typically need to deal with more than one information model and may need to develop a mapping between information models, a meta-model (that helps to explain and organize the various information models), or both.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R21730</parentId>
       <tag name="Row" value="1731"/>
@@ -23489,7 +23489,7 @@ A clinical model typically specifies the required data element(s) for one or mor
 Clinical Model Services specification.&#xD;
 The use of clinical models in a PHR system can vary. The clinical models can be used to specify which data elements should be visible in the user interface, which values should be allowed to select from pull down menus or check boxes. For record keeping, clinical models can define which data elements should be stored (for instance besides the values the user sees on the screen) and which terminology codes should in addition be stored with the data to maintain the meaning. Also, the clinical models can be used to specify the data exchange for a given use case.&#xD;
 Clinical models may be provided through a clinical model service internal or external to a PHR-S. Typical functions of clinical model services include the runtime provisions of the single clinical model or sets of clinical models. It is also possible to provide specifications for single data elements, and where applicable (versions) of value sets used to populate the data in the PHR-S in a standard manner. In addition, the clinical model service could provide mappings between values from different value sets, e.g., between different versions of value sets, or alternatively mappings between data elements, e.g., from source to target.$EX$</notes>
-      <stereotype>Function</stereotype>
+      <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R21320</parentId>
       <tag name="Row" value="1806"/>

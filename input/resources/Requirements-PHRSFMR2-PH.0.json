@@ -1,0 +1,274 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.0",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_0_Personal_Health",
+  "title": "PH.0 Personal Health (Function)",
+  "status": "active",
+  "description": "Manage information and functions related to self care and provider-based care over time.",
+  "purpose": "The personal health record (PHR) may be represented via multiple approaches including a personally-maintained paper record or via electronic means; also, the PHR may be represented within different contexts, for example, a minimal history of major health-related events versus a record of daily health and wellness activities. The functions with this PHR-S FM are a superset of functionality that detail certain functions that might be present in various PHR System implementations. The functions provide for both personal observations and health management, as well as by the PHR Account Holder's healthcare providers. The PHR should present a view to the PHR-S Account Holder that is tailored to their level of health literacy and language ability. Many realms already support a PHR Account Holder’s ability to withhold health information from providers and other persons at the PHR Account Holder’s discretion. Personal Health functions accommodate those realms by providing the PHR Account Holder the ability to withhold such information. Some realms may require, through jurisdictional law, rules, or regulations, clear indications in the record that some information has been withheld. When jurisdictional law requires such indications, the system can display such indications. If the jurisdiction provides individuals with an option to indicate or not indicate that information has been withheld, the PHR Account Holder can exercise that option (e.g., turn on a flag or not turn on a flag). In the PHR-S FM, there are times when the actions/activities related to the PHR Account Holder may also apply to the PHR Account Holder Proxy.\r\n\r\nExternal data sources might include: an EHR system; a pharmacy; a care team member; a medical device; a paper scan of birth certificate; a wiki; a family member; a public health organization; a laboratory; a clinical trial study; a local high school health department. The external data could be structured or non-structured. The context for the arriving data could be due to a single event (such as an immunization) or due to a set of associated events (such as occurs during a transition of care).\r\n\r\nExample(s): The PHR Account Holder may desire to see a summary-of-care record or an ad hoc view of the health record (e.g., the list of medications that is referenced by providers or pharmacists.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-01",
+      "label": "PH.0#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL capture, maintain, and render the explicit source of all data in the PHR-S (specifically including any metadata that identifies the author, creator, or custodian of the data).",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/meta.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-02",
+      "label": "PH.0#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability for the PHR Account Holder to control-access to the PHR Account Holder’s self-created data (including the intended and/or permitted use of the data) according to organizational policy and/or jurisdictional law (e.g., depending on the vendor’s terms-and-conditions-of-use agreement or the system's configuration parameters)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-03",
+      "label": "PH.0#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL audit each access to the PHR Account Holder’s data according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-04",
+      "label": "PH.0#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to control access to the PHR-S by restricting the input of data from external sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-05",
+      "label": "PH.0#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to analyze and determine whether to accept or reject data arriving from an external source according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-06",
+      "label": "PH.0#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD manage data arriving from an external source by accepting or rejecting the data based on predefined rules and according to organizational policy and/or jurisdictional law. For example, the PHR-S rejects data that was sent from the local clinic that has not been accepted by the PHR Account Holder after three months."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-07",
+      "label": "PH.0#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability for the PHR Account Holder to control access to the PHR Account Holder's data by removing access to the PHR Account Holder's data according to organizational policy and/or jurisdictional law. Note: access to the PHR Account Holder's data could be controlled at a global and/or granular level."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-08",
+      "label": "PH.0#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to control access to the PHR Account Holder's data by restricting its use and/or disclosure according to user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-09",
+      "label": "PH.0#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL transmit an indication that information has been withheld by the PHR Account Holder to any stakeholder with whom the information is shared according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-10",
+      "label": "PH.0#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD NOT transmit an indication that information has been withheld by the PHR Account Holder to any stakeholder with whom the information is shared unless required according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-11",
+      "label": "PH.0#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to capture, maintain, and render the reason that the PHR Account Holder is withholding certain information from the downstream user. For example, the PHR Account Holder could choose to not share information with members of his care team that inadvertently appears in his record (such as a record that has arrived from an unknown individual)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-12",
+      "label": "PH.0#12",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render an indication regarding the sort order of a list according to scope of practice, organizational policy, and/or jurisdictional law. Note: Since the user's assumptions regarding the sort order of a given list might be a patient safety issue, and since there are many lists that could be presented in various sort orders within a PHR system, an indicator can be presented for any list whose sort order could result in a troublesome interpretation of that list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-13",
+      "label": "PH.0#13",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for authorized users to configure a default sort order for given lists (e.g., to reduce the confusion when the same list is sorted by severity one day and then by date-of-onset the next day) according to scope of practice, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-14",
+      "label": "PH.0#14",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render lists in an ad hoc (dynamic, real-time) user-selected sort order (e.g., to reduce the confusion when the same list is sorted by severity one day and then by date-of-onset the next day by a different user) according to scope of practice, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-15",
+      "label": "PH.0#15",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF an organization and/or jurisdiction provides individuals with an option to transmit (or not transmit) an indication that information has been withheld, THEN the system SHOULD provide the ability for the PHR Account Holder to exercise that option."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-16",
+      "label": "PH.0#16",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system has imported or received information from an external source that the PHR Account Holder identifies as possibly being incorrect, inappropriate, out-of-date, incomplete, skewed, undesired, or not preferred, THEN the system SHOULD provide the ability to mask that information according to user preference and/or consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.0-17",
+      "label": "PH.0#17",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to present information that has been captured from an external system (but not yet stored) and determine to remove that information according to organizational policy and/or jurisdictional law. (Note: This \"information staging\" approach enables the PHR Account Holder to filter out unwanted (or incorrect) data, but also enables the PHR Vendor to log the arrival of the data and audit the corresponding action that the PHR Account Holder takes. The vendor is free to deposit the data into the PHR or keep it in a staging area outside the PHR Account Holder's account.)"
+    }
+  ]
+}

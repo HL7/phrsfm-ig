@@ -1,0 +1,121 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.5.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_5_1_Manage_Guidelines_and_Protocols",
+  "title": "PH.5.1 Manage Guidelines and Protocols (Function)",
+  "status": "active",
+  "description": "Guidelines for general direction in managing a specific problem or condition can be acquired from a variety of sources for improved decision making.",
+  "purpose": "Guidelines help provide general direction to manage specific health risks or problems. They may be used by the PHR Account Holder to research a specific condition to verify that appropriate care is being provided. They may also be used to help self-manage minor conditions.\r\n\r\nExample(s): Capture guidelines from the Internet for non-operative management of lower back pain.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.1-01",
+      "label": "PH.5.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain PHR Account Holder -specific health or treatment guidelines from healthcare providers or other trusted electronic healthcare sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.1-02",
+      "label": "PH.5.1#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to update PHR Account Holder -specific care plans and guidelines (e.g., isometric exercises in a business office versus swimming in a home pool)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.1-03",
+      "label": "PH.5.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD capture the source of the guideline."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.1-04",
+      "label": "PH.5.1#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to annotate the guideline."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.1-05",
+      "label": "PH.5.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage functionality that supports the PHR Account Holder's self-care plans that are based on guidelines (e.g., a task list, calendar entry, regularly scheduled alert, and/or reminders to perform a certain task)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.1-06",
+      "label": "PH.5.1#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render an alert or reminder when the PHR Account Holder is out of compliance with a guideline."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.1-07",
+      "label": "PH.5.1#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for external stakeholders (e.g., including a PHR Account Holder Proxy, a physical exercise coach, or a registered dietitian/nutritionist) to present the PHR Account Holder's self-generated care plan(s) and transmit recommendations to the PHR Account Holder (e.g., a nutritionist offers recommendations regarding the PHR Account Holder's weight control plan that is based on a weight-control guideline). Note: The PHR Account Holder is able to accept or reject recommendations from external stakeholders regarding possible adjustment to the PHR Account Holder's self-generated care plan. The PHR Account Holder's self-generated care plan is different than the professional caregiver's care plan."
+    }
+  ]
+}

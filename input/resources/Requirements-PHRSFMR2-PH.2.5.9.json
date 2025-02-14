@@ -1,0 +1,64 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.9",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_9_Manage_Personal_Genetic_Information",
+  "title": "PH.2.5.9 Manage Personal Genetic Information (Function)",
+  "status": "active",
+  "description": "Manage the Account Holder’s genetic information.",
+  "purpose": "Limited personal genetic information is becoming available and it is anticipated that a much richer actionable data set will derive from current research. This function serves as a placeholder to take advantage of the scientific breakthroughs as they become available.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.9-01",
+      "label": "PH.2.5.9#01",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY manage results of specific genetic tests, genetic markers, or findings according to user preference and/or consent, user role, organizational policy, and/or jurisdictional law.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/molecularsequence.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.9-02",
+      "label": "PH.2.5.9#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY capture and present known genetically-based illnesses according to user preference and/or consent, user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.9-03",
+      "label": "PH.2.5.9#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY capture and present a known single allele carrier status of a recessive genetic trait or diseases according to user preference and/or consent, user role, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_5_Manage_PHR_Account_Holder_Reminder_Information_Updates",
+  "title": "S.4.5 Manage PHR Account Holder Reminder Information Updates (Function)",
+  "status": "active",
+  "description": "Receive and validate formatted inbound communications to facilitate updating of PHR Account Holder reminder information from external sources such as Cancer or Immunization Registries.",
+  "purpose": "Information from outside groups, such as immunization groups or public health organizations, may periodically have and send updates of value to PHR Account Holders. The system should be capable of generating reminders based on the recommendations of these organizations. Reminders could be provided to PHR Account Holders by a number of means, including alerts or system generated email. A record of such reminders may become part of a PHR Account Holder’s record.\r\n\r\nExample(s): Reminders could include a recommended immunization, prophylactic guidelines for treating Mitral Valve Prolapse disorder, or PHR Account Holder self-testing for disease.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.5-01",
+      "label": "S.4.5#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to automatically receive inbound communications from external sources (e.g., from Cancer Registries or Immunization Registries) to facilitate updating of the PHR Account Holder's reminder-related information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.5-02",
+      "label": "S.4.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system has received an inbound communication from an external source (e.g., from Cancer Registry or Immunization Registry) regarding reminder-related information, THEN the system SHOULD provide the ability for the PHR Account Holder to transmit an acknowledgement of that inbound communication."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.5-03",
+      "label": "S.4.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system has received inbound communications from external sources (e.g., from Cancer Registries or Immunization Registries) regarding reminder-related information, THEN the system SHOULD provide the ability for the PHR Account Holder to maintain that reminder-related information (e.g., by reviewing, editing, storing, harmonizing, updating, or deleting the information)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.5-04",
+      "label": "S.4.5#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage reminders automatically for PHR Account Holders meeting specific criteria (e.g., age, gender, or diagnosis). For example, the PHR Account Holder is a male and does not need to view reminders about annual mammograms; or the PHR Account Holder is diabetic and desires to receive and store reminders about foot examinations that will help assess circulatory health."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.5-05",
+      "label": "S.4.5#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render reminders automatically to the PHR Account Holder (e.g., via email or voice message)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.5-06",
+      "label": "S.4.5#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD log reminder activity (e.g., by logging the fact the PHR-S transmitted a reminder message to the PHR Account Holder's email or mobile phone regarding an upcoming appointment)."
+    }
+  ]
+}

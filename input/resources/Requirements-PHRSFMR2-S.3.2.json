@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_2_Manage_PHR_Conditions_of_Use",
+  "title": "S.3.2 Manage PHR Conditions of Use (Function)",
+  "status": "active",
+  "description": "Outline the sponsor requirements for use of the system.",
+  "purpose": "The terms and conditions outline the sponsor requirements in using the application. The terms and conditions may include items such as copyright information, trademarks and intellectual property, third party links, indemnification, privacy, limitation of liability, term and termination and other miscellaneous provisions. The PHR Account Holder should be notified of the expectations of the sponsor and have the opportunity to agree to the requirements and any changes to the requirements.\r\n\r\nThe Conditions of Use document also helps indemnify the PHR sponsor against certain misuse of the data. For example, a published article on diabetes may contain a copyright notice that forbids the storage of that article on a computer without first paying for the article. The Conditions of Use document would inform the PHR Account Holder that the sponsor does not support copyright infringement.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.2-01",
+      "label": "S.3.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to enter an indication of an agreement to the Conditions-of-Use when the PHR-S is initially used by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.2-02",
+      "label": "S.3.2#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL render a notification to the PHR Account Holder that changes occurred to the Conditions-of-Use documents according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.2-03",
+      "label": "S.3.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present changes that occurred to the Conditions-of-Use documents (e.g., the actual document, or an audit, or a summary, or an overview of the changes) according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.2-04",
+      "label": "S.3.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render the Conditions-of-Use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.2-05",
+      "label": "S.3.2#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability for the PHR Account Holder to render a notification to the PHR-S vendor and/or sponsor(s) as part of the process to seek redress regarding the vendor and/or sponsor‘s failure to meet performance expectations as specified in the Conditions-of-Use agreements (including reporting PHR-S errors, failures, abuse, fraud, or other issues)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.2-06",
+      "label": "S.3.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain a list of PHR-S administrators and personnel to receive, manage, and respond to emails and telephone calls regarding PHR-S errors, failures, abuse, fraud, or any other PHR Account Holder issues with the PHR-S Terms and Conditions-of-Use agreements."
+    }
+  ]
+}

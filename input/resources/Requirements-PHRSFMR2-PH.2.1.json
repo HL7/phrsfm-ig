@@ -1,0 +1,121 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_1_Manage_PHR_Account_Holder_Originated_Data",
+  "title": "PH.2.1 Manage PHR Account Holder Originated Data (Function)",
+  "status": "active",
+  "description": "Manage information sourced or input directly by the PHR Account Holder.",
+  "purpose": "PHR data, including personal observations and most specific data elements (such as allergies and intolerances or problems), may be entered directly by the PHR Account Holder. The source of all data is captured and, in this case, self-entered data, should be so labeled. These data elements may possess more or less credibility when entered by the PHR Account Holder. When appropriate, patient-entered data should be structured and codified.\r\n\r\nPaper-based information (such as a health card or a laboratory report) may be captured in the form of a scanned image and kept in the record, organized, and/or indexed for retrieval.\r\n\r\nExample(s): When a problem in the problem list is entered by the PHR Account Holder, it is labeled as such in order to distinguish this problem from others that resulted from a provider’s clinical diagnosis.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.1-01",
+      "label": "PH.2.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to RI.1.1.1 (Originate and Retain Record Entry) in order to capture unstructured PHR Account Holder -originated data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.1-02",
+      "label": "PH.2.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to RI.1.1.1 (Originate and Retain Record Entry) in order to capture structured PHR Account Holder -originated data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.1-03",
+      "label": "PH.2.1#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to RI.1.1.1.1 (Evidence of Record Entry Originate / Retain Event) in order to manage metadata that identifies the author of the data (e.g., the PHR Account Holder as author or a provider as author), or the source of the data (e.g., the name and location of an external system that authored and transmitted the data), or the generator of the data (e.g., the Unique Device Identifier and metadata of a medical device that authored the data)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.1-04",
+      "label": "PH.2.1#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD render PHR Account Holder -originated data for use by care providers."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.1-05",
+      "label": "PH.2.1#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture an indication that a provider has verified the accuracy of consumer-originated data and has included it as a record in the EHR-S."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.1-06",
+      "label": "PH.2.1#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to annotate PHR Account Holder -sourced data with text comments."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.1-07",
+      "label": "PH.2.1#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to update PHR Account Holder-sourced data with text comments."
+    }
+  ]
+}

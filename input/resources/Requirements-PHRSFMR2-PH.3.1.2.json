@@ -1,0 +1,49 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.1.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_1_2_Communication_with_Home_Monitoring_Devices",
+  "title": "PH.3.1.2 Communication with Home Monitoring Devices (Function)",
+  "status": "active",
+  "description": "Provide the ability for the PHR Account Holder to capture and view home monitoring device data and to make it available electronically to authorized health care provider(s) or other authorized users or applications.",
+  "purpose": "A variety of commercial devices are being developed to help monitor health conditions and compliance with care plans. Some of these commercial devices may offer standard electronic interfaces including wireless connectivity that may be captured by the system and integrated into the PHR. Simple examples include a pedometer recording walking activity, a continuous glucose monitor, a sleep apnea monitor and CPAP (Continuous Positive Airway Pressure) machine, and a pill dispensing device that prompts and records medication compliance.\r\n\r\nMedical Devices collect health information about an individual which may be exported to the PHR system, the EHR system, or another system. Depending on the purpose and capabilities of a given medical device, the device may be able to share its data with these systems in various formats, ranging from raw (unformatted) data, to coded / mapped values, to fully summarized and formatted reports. Furthermore, the systems may need to collect the data from the medical device in multiple formats. For example, a diabetic PHR Account Holder may use a PHR system to see a summary report from a blood pressure device that states, “Your blood pressure is very high today. Contact your physician immediately”, while an EHR system may require raw blood pressure data values from the past two weeks for the cardiologist. The same medical device may generate glucose values that are of interest to the PHR Account Holder’s registered dietitian/nutritionist. These values may be combined with values from other medical devices to create synthesized reports that are richer in content and value than those reports resulting from devices whose information cannot be synthesized. This level of power requires that the PHR system interact with medical devices in sophisticated ways, including: the ability to configure the medical device data input according to granularity, type, format, frequency, etc. of data collected; the ability to code or map data; the ability to summarize, filter, or merge data; the ability to route data to pre-designated role-types; the ability to tailor the data according to role-types; and the ability to transform the data into alerts or notifications. As the ability of the PHR system to manage medical device data increases, so does the value of the medical device data – and of the PHR system itself. Medical device -related gains made by the PHR system can, and should, be shared with EHR (and other) systems.\r\n\r\nThe PHR system ought to be able to respond to a rules-engine request from an EHR (or other) system so that the PHR system can tailor its interactions with medical devices. For example, if the patient’s weight has increased more than 2% in the last week, the EHR system could recommend that the PHR system request blood pressure reports once an hour from a medical device, rather than once a day.\r\n\r\nConfiguration of Medical-Device-Reports (exchanged between EHR and PHR systems) may be necessary (e.g., to cover, raw data, formatted data, summarized data, or filtered data). Reports may also be processed according to frequency or tailored by role (e.g., a daily report regarding weight sent to a registered dietitian/nutritionist, versus a weekly summary sent to a cardiologist). These reports may be merged with other reports and shared with multiple recipients.\r\n\r\nExample(s): The Account Holder may download blood sugar monitor data and transmit it to a healthcare provider.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.2-01",
+      "label": "PH.3.1.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage metadata regarding electronic home monitoring devices (e.g., serial number, unique device identifier, or name of the device).",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/observation.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.1.2-02",
+      "label": "PH.3.1.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage information collected from home monitoring devices as part of the personal health record."
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_2_Manage_Account_Holder_Implemented_Care_Plans",
+  "title": "PH.3.2 Manage Account Holder Implemented Care Plans (Function)",
+  "status": "active",
+  "description": "Assist the PHR Account Holder to develop, manage, and adhere to (or comply with) his or her own care plans.",
+  "purpose": "The PHR Account Holder may develop care plans related to health and wellness (such as training programs for sports) as well as to ameliorate a health condition. Self-developed care plans can be integrated into a comprehensive health and wellness plan.\r\n\r\nExample(s): Develop and implement an exercise program for optimizing cardiac fitness based on age, gender, and other health risks.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-01",
+      "label": "PH.3.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage the PHR Account Holder's self-generated care plans. Note: self-generated care plans can be constructed based on external recommendations from sources such as an established relationship with a care provider, an educational tool, or another informational resource.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/careplan.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-02",
+      "label": "PH.3.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain structured templates for the PHR Account Holder or the PHR Account Holder Proxy to design specific wellness care plans."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-03",
+      "label": "PH.3.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage self-developed care plans with tasks, alerts, reminders, and calendar entries."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-04",
+      "label": "PH.3.2#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture compliance with self-generated care plans and render notifications or alerts when the PHR Account Holder is out of compliance."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-05",
+      "label": "PH.3.2#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture, maintain, and render information regarding the effectiveness of self-generated care plans."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-06",
+      "label": "PH.3.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to integrate all care plans into one set of tasks, reminders, and calendar entries."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-07",
+      "label": "PH.3.2#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function PH.6.7 (Manage Patient-Specific Care and Treatment Plans) in order to enable the PHR Account Holder to manage care plans that support treatments (e.g., treatments that need to be adjusted based on geographic location such as warm versus cold climate), physical body conditions (e.g., weight increases or decreases), long-term illnesses (e.g., diabetes), or health and wellness goals. Furthermore, provider-generated care plans might need to be adjusted when the PHR Account Holder alters a self-generated care plan. Finally, the providers who generated care plans might need to be notified when a certain care plan has been added, changed, or deleted."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-08",
+      "label": "PH.3.2#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function PH.6.8 (Patient-Specific Care, Instructions, Treatment Plans, Guidelines and Protocols) in order to enable the PHR Account Holder to manage care plans that support treatments (e.g., treatments that need to be adjusted based on geographic location such as warm versus cold climate), physical body conditions (e.g., weight increases or decreases), long-term illnesses (e.g., diabetes), or health and wellness goals. Furthermore, provider-generated care plans might need to be adjusted when the PHR Account Holder alters a self-generated care plan. Finally, the providers who generated care plans might need to be notified when a certain care plan has been added, changed, or deleted."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-09",
+      "label": "PH.3.2#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to PH.3.3 (Manage Provider Implemented Care Plans) to accommodate the inclusion of the consumer-generated care plan with provider-generated care plans."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.2-10",
+      "label": "PH.3.2#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to PH.6.3 (Communications Between Provider and PHR Account Holder and/or PHR Account Holder Proxy) in order to promote the effective coordination of care plan elements and to communicate care plan changes to selected providers."
+    }
+  ]
+}

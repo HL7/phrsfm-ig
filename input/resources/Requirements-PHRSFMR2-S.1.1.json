@@ -1,0 +1,226 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.1.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_1_1_Manage_Selection_of_Providers",
+  "title": "S.1.1 Manage Selection of Providers (Function)",
+  "status": "active",
+  "description": "Support a PHR Account Holder in seeking providers who may meet their healthcare requirements.",
+  "purpose": "In seeking healthcare, the system should support the PHR Account Holder being able to obtain a list(s) of providers by geographic area and/or within a dental or medical plan panel. Further, the PHR Account Holder should be able to sort providers by attributes including, but not limited to: \r\n- specialty;\r\n- office hours; \r\n- telehealth-oriented encounters;\r\n- sex;\r\n- language;\r\n- methods of information selection;\r\n- methods of information sharing;\r\n- and (possible) payment information.\r\n\r\nThe PHR Account Holder should be able to maintain, or provide access to, current provider information. A PHR Account Holder may desire to research (because of a planned household relocation to another geographic area) a diagnosis requiring highly specialized care by healthcare providers and or healthcare facilities that are in limited availability. The system should be flexible on alternative sources of information allowing the PHR Account Holder to review providers who might best meet the individual’s needs.\r\n\r\nConsider also, that if various types of providers, care-team members, or social-affinity groups might be involved with the PHR Account Holder's health, then various methods of information selection, information sharing, and (possible) payment information might also need to be accommodated within the PHR system.\r\n\r\nAs a result, the PHR system ought to support a rich, extended set of caregivers such as:\r\n- Social Networking Groups that are oriented towards health maintenance and recovery, wellness, and health goals;\r\n- Personal Health Support Groups (e.g., weight, drugs, behavioral health, mental health, or diabetes support)\r\n- Exercise and Physical Training specialists\r\n- School Nurses\r\n- Nutritionists/Dietitians\r\n- Care managers (e.g., in-home therapists, or discharge planners)\r\n- Community health worker (either professional or volunteer) (e.g., neighbors, public health workers, health representatives, health screeners, or non-traditional healthcare workers)\r\n- A mobile health clinic provider\r\nNote: Some of these extended caregivers might offer PHR data entry services on behalf of the PHR Account Holder.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-01",
+      "label": "S.1.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to link to multiple sources of healthcare provider and healthcare system information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-02",
+      "label": "S.1.1#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render information based on one or more provider attributes."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-03",
+      "label": "S.1.1#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render information regarding available health benefit plan provider panel(s) based on one or more attributes."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-04",
+      "label": "S.1.1#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to present insurance information regarding a selected provider versus a health plan provider panel (in order to help the PHR Account Holder choose between an in-network versus an out-of-network provider). For example, the PHR Account Holder may desire to compare prices of certain specialists, compare the credentials of the specialists, identify the level of experience, research comments regarding the provider's quality of service, or evaluate the provider's caseload panel."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-05",
+      "label": "S.1.1#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL manage the provider’s contact/business information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-06",
+      "label": "S.1.1#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture provider participation in payer networks."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-07",
+      "label": "S.1.1#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture provider participation in payer benefit plan products."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-08",
+      "label": "S.1.1#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture a healthcare provider privilege status at a healthcare facility."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-09",
+      "label": "S.1.1#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze a healthcare provider's credential information (e.g., to verify the accuracy of the stated credential)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-10",
+      "label": "S.1.1#10",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to transmit a request to subscribe to a (health-oriented) Social Networking Group, a Health Support Group, or a health research organization according to user-preference, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-11",
+      "label": "S.1.1#11",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage personal health information in the health-coaching (including fitness training and/or exercise management) environment according to user-preference, organizational policy, and/or jurisdictional law (e.g., a health-coach might need to know the PHR Account Holder's health goals, physical limitations, natural human language, pregnancy status, age, and weight)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-12",
+      "label": "S.1.1#12",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to exchange selected personal health information with a school health information system according to user-preference, organizational policy, and/or jurisdictional law (e.g., a parent might use the PHR system to share their child's diabetes information, diet order (e.g., feeding instructions, timing, or schedule) meal plan, or allergy restriction with the school nurse and with the child's pediatrician in keeping with Family Educational Rights and Privacy legislative requirements)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-13",
+      "label": "S.1.1#13",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to exchange selected personal health information with a community health worker according to user-preference, organizational policy, and/or jurisdictional law (e.g., a parent might use the PHR system to share their children's demographic information with a disaster relief worker after a flood; a PHR Account Holder Proxy might use the PHR system to share information about their elderly parent's health status with a community health worker who is analyzing community risk for potentially unhealthful airborne exposures)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.1-14",
+      "label": "S.1.1#14",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to exchange selected health information with virtual encounter groups. Examples of virtual encounter groups include:\r\n- telehealth-oriented encounters with providers;\r\n- Social Networking Groups that are oriented towards health maintenance and recovery, wellness, and health goals;\r\n- Support Groups (e.g., weight, drugs, behavioral health, mental health, or diabetes support); or\r\n- Care Managers (e.g., a care-manager who offers virtual assessments or reviews, or who provides discharge planning services, or who serves as a PHR information management or data-curation concierge)."
+    }
+  ]
+}

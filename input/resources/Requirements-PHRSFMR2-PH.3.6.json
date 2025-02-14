@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PH_3_6_Population_Health_and_Wellness",
+  "title": "PH.3.6 Population Health and Wellness (Header)",
+  "status": "active",
+  "description": "The system may serve as a communication tool to help control public health risks and promote population wellness, as well as to target conditions for a specific population demographic and the PHR Account Holder specifically.",
+  "purpose": "A formal and well-defined communication channel between public health agencies and the PHR Account Holder's PHR-S is useful. It provides for monitoring public health threats through data and observations captured within the PHR-S. Additionally, it alerts the PHR Account Holder to take corrective actions in response to public health threats.\r\n\r\nExample(s): The system SHOULD provide the PHR Account Holder the ability to subscribe to population health web site information."
+}

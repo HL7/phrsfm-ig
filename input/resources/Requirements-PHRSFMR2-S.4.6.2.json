@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.6.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_6_2_Manage_Access_to_Public_Health_Information_Resources",
+  "title": "S.4.6.2 Manage Access to Public Health Information Resources (Function)",
+  "status": "active",
+  "description": "Enable access to public health information resources.",
+  "purpose": "PHR Account Holder shall have access to public health information resources.\r\n\r\nExample(s): A PHR Account Holder may want to receive general news releases from specific local, state and federal agencies. A PHR Account Holder may want to access information regarding public health resources for specific areas of interest such as birth control or hepatitis prevention.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.2-01",
+      "label": "S.4.6.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for a PHR Account Holder to manage a subscription to Public Health information resources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.2-02",
+      "label": "S.4.6.2#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture administrative information necessary to subscribe to Public Health Information resources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.2-03",
+      "label": "S.4.6.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render public health information resources sorted by enrollment date and category."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.2-04",
+      "label": "S.4.6.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture alerts and/or notifications from public health information resources according to organizational policy and/or jurisdictional law."
+    }
+  ]
+}

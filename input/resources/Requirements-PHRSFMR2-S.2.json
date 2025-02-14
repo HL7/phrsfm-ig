@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "S_2_Financial_Management",
+  "title": "S.2 Financial Management (Header)",
+  "status": "active",
+  "description": "The purpose of this section is to provide the system support in managing financial information related to benefit plan coverage and service utilization.",
+  "purpose": ""
+}

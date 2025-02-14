@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.6.8",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_6_8_Manage_Patient_Specific_Care_and_Treatment_Plans",
+  "title": "PH.6.8 Manage Patient-Specific Care and Treatment Plans (Function)",
+  "status": "active",
+  "description": "The system should facilitate the capture and implementation of the care plan in the PHR-S.",
+  "purpose": "Once a care plan is developed it should be incorporated into the PHR-S. The care plan may be limited in scope or comprehensive involving multiple providers, encounters, institutions, and years of time.\r\n\r\nExample(s): A comprehensive breast cancer treatment plan may include multiple diagnostic imaging staging studies, surgical procedures, a chemotherapy protocol, details of the radiation therapy plan, plastic surgery reconstruction and long-term post therapy surveillance plan to be posted in the PHR-S and referenced by the cancer care team.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.8-01",
+      "label": "PH.6.8#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture PHR Account Holder-specific plans of care and treatment (e.g., information about orders or therapies)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.8-02",
+      "label": "PH.6.8#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture updates to the PHR Account Holder's plan of care and treatment including authors, creation date, version history, references and sources as available."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.8-03",
+      "label": "PH.6.8#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture adequate order details to promote the PHR Account Holder's understanding and compliance with the order."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.8-04",
+      "label": "PH.6.8#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present care and treatment plan recommendations in terms of the PHR Account Holder's health-related data (e.g., peak flow, weight, blood pressure, or dietary preferences) at the option or control of the PHR Account Holder or PHR Account Holder Proxy."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.8-05",
+      "label": "PH.6.8#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit care plans, care instructions, treatment plans, guidelines, and protocols (or portions of those items) to selected stakeholders (e.g., sharing a new fitness plan with members of the care team, or sharing a care plan with a new member of the care team) according to user preference, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

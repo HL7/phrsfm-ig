@@ -1,0 +1,121 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-TI.1.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "TI_1_6_Secure_Data_Exchange",
+  "title": "TI.1.6 Secure Data Exchange (Function)",
+  "status": "active",
+  "description": "Secure all modes of PHR data exchange.",
+  "purpose": "Whenever an exchange of PHR information occurs, it requires appropriate security and privacy considerations, including data obfuscation as well as both destination and source authentication when necessary. For example, it may be necessary to encrypt data sent to remote or external destinations.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.1.6-01",
+      "label": "TI.1.6#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL secure all modes of PHR data exchange."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.1.6-02",
+      "label": "TI.1.6#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to function [TI.1.7](Requirements-PHRSFMR2-TI.1.7.html) (Secure Data Routing)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.1.6-03",
+      "label": "TI.1.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to de-identify data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.1.6-04",
+      "label": "TI.1.6#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL encrypt and decrypt PHR data that is exchanged over a non-secure link."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-TI.1.6-05",
+      "label": "TI.1.6#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF encryption is used, THEN the system SHALL exchange data using recognized standards-based encryption mechanisms according to organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.1.6-06",
+      "label": "TI.1.6#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the PHR-S is the recipient of a secure data exchange, THEN the system SHOULD provide the ability to transmit an acknowledgment of the receipt of the data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.1.6-07",
+      "label": "TI.1.6#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to determine static or dynamic addresses for known and authorized sources and destinations."
+    }
+  ]
+}

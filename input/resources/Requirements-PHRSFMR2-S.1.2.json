@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.1.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_1_2_Manage_PHR_Account_Holder_Provider_s_Information",
+  "title": "S.1.2 Manage PHR Account Holder Provider’s Information (Function)",
+  "status": "active",
+  "description": "Manage contact information for the PHR Account Holder’s current and past health care providers.",
+  "purpose": "A system should maintain both current and past contact information about a provider. The system may also collect and maintain background information about a provider such as academic credentials, certifications and specialties. Healthcare providers may be individuals, teams, or organizations such as clinics.\r\n\r\nThe system should allow the PHR Account Holder to manage information regarding teams of providers. A team of providers may be a group of healthcare physicians practicing in the same healthcare facility. For example, a primary care provider, an orthopedic specialist, physiatrist and physical therapy may comprise a team at a facility during an acute hospitalization. A team of providers could also be designated by the PHR Account Holder based on a disease process. For example, in the case of extended care after a motor vehicle accident with extreme facial injury, the team may be comprised of a dentist, an orthodontist, a maxilla-facial specialist, and orthopedist, a reconstructive specialist and a chiropractor. These healthcare providers may not be part of a healthcare facility, but all may be instrumental in the complete care of the individual, requiring coordination by the PHR Account Holder.\r\n\r\nNote: It is likely true that information about a given provider (or provider organization) might be difficult for the PHR Account Holder to obtain, curate, and validate. However, such information might prove to be useful, for example, for historical or research purposes.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-01",
+      "label": "S.1.2#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage the PHR Account Holder's provider's contact information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-02",
+      "label": "S.1.2#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage background information regarding the PHR Account Holder’s providers."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-03",
+      "label": "S.1.2#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to maintain provider-related information as part of an existing provider-defined care team(s)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-04",
+      "label": "S.1.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture information necessary to identify primary and secondary practice locations or offices of providers to support communication and access."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-05",
+      "label": "S.1.2#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage provider's scheduled work hours at each location."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-06",
+      "label": "S.1.2#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to maintain providers as part of the PHR Account Holder's team(s)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-07",
+      "label": "S.1.2#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage healthcare provider credentials."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.2-08",
+      "label": "S.1.2#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to maintain the provider as active or previous/past member of the PHR Account Holder care team."
+    }
+  ]
+}

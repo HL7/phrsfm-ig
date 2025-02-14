@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_4_Manage_Data_Masking_for_Sensitive_or_Selective_Information",
+  "title": "S.3.4 Manage Data Masking for Sensitive or Selective Information (Function)",
+  "status": "active",
+  "description": "Allow the PHR Account Holder or authorized designee to mask data on a selective, record, field-by-field, or class basis as one aspect of controlling access to personal health data. The PHR Account Holder has the ability to determine what PHR information is available to an authorized designee.",
+  "purpose": "The PHR Account Holder or designee needs the ability to protect sensitive information by masking specific content without deleting the information. \r\n\r\nExample(s): The PHR Account Holder wants to make the fact of Sexually Transmitted Disease or pregnancy known if and only if she arrives at an emergency room unconscious.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.4-01",
+      "label": "S.3.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to tag records, data fields, or data classes that will not display intelligibly unless viewed by condition-based Authorized PHR Users under conditions specified by the PHR Account Holder. Examples of a condition-based Authorized PHR User include: An individual that the PHR Account Holder specifies, an Emergency Care provider, or a PHR Account Holder's smartphone that is accessed within an Emergency Department."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.4-02",
+      "label": "S.3.4#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to manage data visibility at differ degrees of data discoverability by masking, hiding, and/or de-identifying data according to user preference, organizational policy, and/or jurisdictional law. For example: medication information may be masked with asterisks; mental health records may be undiscoverable by those who do not have a need-to-know. Examples of data-masking visibility conditions include: type of healthcare provider (e.g., administrator versus clinician), location of care being received (e.g., a local clinic versus an Emergency Department), time (e.g., weekday versus weekend for a provider), past healthcare service received (e.g., earlier substance abuse therapy; therapy regarding significant weight loss)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.4-03",
+      "label": "S.3.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to authenticate systems that are requesting personal health information to ensure the requesting system has the ability to protect masked data according to the PHR Account Holder's preferences and consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.4-04",
+      "label": "S.3.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit data to other systems that support the ability to protect masked data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.4-05",
+      "label": "S.3.4#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a notification to the PHR Account Holder that masking selected information may result in unintended consequences or medical harm (e.g., by providing information that is incomplete for a physician who is engaged in the medication-ordering process)."
+    }
+  ]
+}

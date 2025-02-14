@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-TI.5.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "TI_5_5_System_Integration",
+  "title": "TI.5.5 System Integration (Function)",
+  "status": "active",
+  "description": "Support the integration of the PHR system with related systems.",
+  "purpose": "Within a given organization (for example, an institution, facility , or integrated care-delivery network), a PHR system may be directly integrated with other systems (for example, a laboratory Information System, Radiology System, Pharmacy System, or Hospital Information System). Conversely, a PHR system may access these other systems indirectly by integrating with a system that serves as the central routing mechanism for the organization. For example, the PHR system may be integrated with the Hospital Information System which then routes the PHR system's orders to a laboratory , pharmacy, or radiology service.\r\n\r\nDepending on the type of information that is exchanged within an integrated-system environment, certain heuristics may be needed that will help govern the information exchange process.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-TI.5.5-01",
+      "label": "TI.5.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to integrate the PHR system with other systems (e.g., a laboratory Information System, Radiology System, Pharmacy System, or Hospital Information System) according to scope of practice, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.5.5-02",
+      "label": "TI.5.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to exchange discrete information (e.g., problem list, medication, and/or allergy information) with an integrated system data repository."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.5.5-03",
+      "label": "TI.5.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to exchange clinical documents with an integrated system Clinical Document Repository."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-TI.5.5-04",
+      "label": "TI.5.5#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY exchange information with systems that are integrated with the PHR system using heuristics that are defined by, and according to scope of practice, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

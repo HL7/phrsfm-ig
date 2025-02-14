@@ -1,0 +1,46 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.5.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_5_5_PHR_Account_Holder_Configured_Alerts__Reminders__and_or_Notifications",
+  "title": "PH.5.5 PHR Account Holder Configured Alerts, Reminders, and/or Notifications (Function)",
+  "status": "active",
+  "description": "Alerts, reminders, and/or notifications are configured by the PHR Account Holder based on a variety of triggers or conditions.",
+  "purpose": "The PHR Account Holder may desire to configure specific alerts, reminders, notifications, and/or notices (e.g., to promote compliance with physician orders, manage chronic conditions, perform routine health care measurements, or meet personal wellness goals). Note that the quantity, timing, or priority of such notices might also need to be configured.\r\n\r\nExample(s): The system SHOULD provide the ability to present medication recommendations based on findings related to a physician's diagnosis.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.5-01",
+      "label": "PH.5.5#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage (e.g., by creating, capturing, correcting, updating) alerts, reminders, and/or notifications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.5-02",
+      "label": "PH.5.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render configuration parameters regarding alerts, reminders, and/or notifications."
+    }
+  ]
+}

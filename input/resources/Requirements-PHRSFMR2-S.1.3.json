@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.1.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_1_3_Manage_Health_Care_Provider_Information",
+  "title": "S.1.3 Manage Health Care Provider Information (Function)",
+  "status": "active",
+  "description": "Support the import or retrieval of data necessary to identify a healthcare provider.",
+  "purpose": "This information will assist the PHR Account Holder in contacting a provider to schedule appointments and ask health-related questions. The provider roles include, but are not limited to, physician, nurse and physical therapist.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.3-01",
+      "label": "S.1.3#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture information regarding a provider’s location or contact information regarding a facility."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.3-02",
+      "label": "S.1.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage information regarding a provider's location, contact information, hours of operation, role as a member of the PHR Account Holder’s care team, and authorizations attributed to the provider."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.1.3-03",
+      "label": "S.1.3#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to hide or mask selected elements of the provider’s identifying information according to the PHR Account Holder's authorization, organizational policy, and/or jurisdictional law. For example, the PHR Account Holder might desire to mask the physician's specialty as a drug counselor."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.3-04",
+      "label": "S.1.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF a directory service is available, THEN the system SHOULD update a provider’s current information via that directory service."
+    }
+  ]
+}

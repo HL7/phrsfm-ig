@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_3_Manage_Donor_Information",
+  "title": "S.4.3 Manage Donor Information (Function)",
+  "status": "active",
+  "description": "Provide capability to capture and share needed information as a volunteer donor.",
+  "purpose": "The PHR Account Holder is able to capture and share donor information (for products such as blood, organs, eggs, sperm, or stem cells). The PHR Account Holder can make this information available to donor matching agencies. This information may be in multiple formats, hardcopy output, standard messaging, display for authorized PHR Account Holders.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.3-01",
+      "label": "S.4.3#01",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture and maintain demographic and clinical information needed for organ and/or tissue donation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.3-02",
+      "label": "S.4.3#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY exchange documented demographic and clinical information about potential donations with appropriate outside parties."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.3-03",
+      "label": "S.4.3#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render unstructured health record information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.3-04",
+      "label": "S.4.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render structured health record information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.3-05",
+      "label": "S.4.3#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to S.3.3.1 (Manage Consents and Authorizations)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.3-06",
+      "label": "S.4.3#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY conform to function TI.5.1 (Application, Structured-Message, and Structured-Document Interchange Standards) to enable data extraction in standard-based formats."
+    }
+  ]
+}

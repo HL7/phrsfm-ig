@@ -1,0 +1,31 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.1.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_1_5_Manage_Healthcare_Facility_Information",
+  "title": "S.1.5 Manage Healthcare Facility Information (Function)",
+  "status": "active",
+  "description": "Support the import or retrieval of data necessary to identify a healthcare facility.",
+  "purpose": "This information will assist the PHR Account Holder in identifying where a facility is located and in contacting a facility to schedule appointments. These facilities may be local or remote from the PHR Account Holder. The facility types include, but are not limited to, hospitals, clinics, same day surgery centers.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.5-01",
+      "label": "S.1.5#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage information on facility location or contact information on a facility's premises."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_5_Manage_PHR_Output",
+  "title": "S.3.5 Manage PHR Output (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder or authorized designee to manage and generate PHR output.",
+  "purpose": "The PHR Account Holder may request PHR output which may include standard and ad hoc reports in hardcopy or electronic formats. This output may be for the PHR Account Holder’s analysis of his/her health related financial and administrative data, and for sharing of the PHR information for any purposes the PHR Account Holder deems appropriate.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.5-01",
+      "label": "S.3.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render reports consisting of all or part of an individual’s PHR.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/bundle.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.5-02",
+      "label": "S.3.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine the records or reports that are considered the formal health record for disclosure purposes."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.5-03",
+      "label": "S.3.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function RI.1 (Manage Record Lifecycle and Lifespan) to ensure that updates to unstructured Health Record Information are tracked."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.5-04",
+      "label": "S.3.5#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function RI.1 (Manage Record Lifecycle and Lifespan) to ensure that updates to Structured Health Record Information are tracked."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.5-05",
+      "label": "S.3.5#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render hardcopy and electronic report summary information (e.g., procedures, medications, laboratory results, immunizations, allergies, or vital signs)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.5-06",
+      "label": "S.3.5#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render reports in both chronological and specified records elements order."
+    }
+  ]
+}

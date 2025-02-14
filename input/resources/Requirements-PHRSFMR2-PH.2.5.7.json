@@ -1,0 +1,109 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.7",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_7_Manage_Surgical_History",
+  "title": "PH.2.5.7 Manage Surgical History (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder's history of surgical procedures.",
+  "purpose": "The list of past procedures is a useful summary of what has been done in the past and anatomic changes have occurred that might influence current assessments and treatments. It is important to capture any surgical implants and associated lot/serial numbers for tracking/reporting purposes. For example, the consumer might desire to inform the provider that surgery was performed on the left arm (which was broken), not the right arm.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.7-01",
+      "label": "PH.2.5.7#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage the surgical history including the presence or absence of elements and associated annotations that may exist in the provider(s) EHR or other systems, according to organizational policy and/or jurisdictional law.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/procedure.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.7-02",
+      "label": "PH.2.5.7#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture, maintain, and transmit a request-for-correction to surgical history that was captured from an external source. Note: There could be multiple types of errors, both unintentional and intentional; the errors could also reside in multiple storage locations (primary, secondary, and intermediary); the errors could also reside in current records or in archived records; there could also be multiple sources (author, custodian-of-record, transcriptionist)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.7-03",
+      "label": "PH.2.5.7#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the PHR Account Holder with the ability to annotate the surgical history with text comments."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.7-04",
+      "label": "PH.2.5.7#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to enter missing information regarding the surgical history list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.7-05",
+      "label": "PH.2.5.7#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage implant information (e.g., by collecting device-identification numbers for a hip, lens, or breast implant; or by capturing the date of the implant)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.7-06",
+      "label": "PH.2.5.7#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to tag surgical history information (e.g., by category type (such as “implant”) or by procedure type (such as \"excision\" or \"biopsy\"))."
+    }
+  ]
+}

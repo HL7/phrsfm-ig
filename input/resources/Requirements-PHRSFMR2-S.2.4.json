@@ -1,0 +1,154 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.2.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_2_4_Manage_Ad_Hoc_Reporting",
+  "title": "S.2.4 Manage Ad Hoc Reporting (Function)",
+  "status": "active",
+  "description": "Allow PHR Account Holders or authorized designees to request and read ad hoc reports of PHR information.",
+  "purpose": "PHR Account Holders may request ad hoc, non-standard reports. The purpose is not for PHR interchange but rather for PHR Account Holder’s analysis of his/her health related financial and administrative data, and for sharing (if desired).",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-01",
+      "label": "S.2.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the authorized PHR Account Holder to render ad hoc reports of the PHR.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/measure.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-02",
+      "label": "S.2.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the authorized PHR Account Holder to render customized reports of summarized information based on sort and filter controls for date or data range, problem, or other clinical data element or categories (e.g., medications or providers)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-03",
+      "label": "S.2.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain ad hoc reports for future retrieval and use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-04",
+      "label": "S.2.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain summarized information through customized reports based on prioritization of chronology, problem or other pertinent information of importance to the authorized PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-05",
+      "label": "S.2.4#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL manage data visibility for PHR Account Holder Proxies using confidentiality-related preferences that were previously established by the PHR Account Holder for all ad hoc reporting capabilities."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-06",
+      "label": "S.2.4#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render consolidated reports across family members (e.g., children)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-07",
+      "label": "S.2.4#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to TI.1.1 (Entity Authorization)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-08",
+      "label": "S.2.4#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to TI.2 (Auditable Records)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.4-09",
+      "label": "S.2.4#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system (or an external application using data from the PHR-S) MAY provide the ability to capture and maintain parameters for ad hoc reports."
+    }
+  ]
+}

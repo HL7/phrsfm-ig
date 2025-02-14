@@ -1,0 +1,121 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.6.7",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_6_7_Patient_Specific_Care__Instructions__Care_Plans__Treatment_Plans__Guidelines_and_Protocols",
+  "title": "PH.6.7 Patient-Specific Care, Instructions, Care Plans, Treatment Plans, Guidelines and Protocols (Function)",
+  "status": "active",
+  "description": "The system should facilitate the development of provider-generated care plans and the capture of provider-generated discharge instructions, and facilitate their capture and integration by the PHR-S.",
+  "purpose": "The provider may develop and recommend a specific care plan and/or treatment plan that is tailored to the PHR Account Holder's particular circumstances including information in his or her PHR-S. The care plan and/or treatment plan may require input from several providers developed over multiple encounters. This includes enabling authorized Health Care Provider(s) to generate, communicate and record specific instructions, including discharge instructions, instructions about diet, clothing, transportation assistance, convalescence, follow-up with physician, and other related instructions. Types of providers that may offer instructions include: medical provider, social worker, physical therapist, respiratory therapist, occupational therapist, pharmacist, or a nurse.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.7-01",
+      "label": "PH.6.7#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture externally-sourced instructions or references to documents containing those instructions. Examples of instructions include: Patient-specific Care Instructions, Discharge Instructions, Treatment Plan instructions, Guidelines and/or Protocols, ad hoc instructions that were created by the provider, or institutional educational/instructional materials. Examples of externally-sourced instructions might include: documents, websites, pictures, videos, and/or sounds."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.7-02",
+      "label": "PH.6.7#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system has captured externally-sourced instructions or references to documents containing those instructions, THEN the system MAY provide the ability to integrate those instructions as business rules and/or workflow rules. Examples of instructions include: Patient-specific Care Instructions, Discharge Instructions, Treatment Plan instructions, Guidelines and/or Protocols, ad hoc instructions that were created by the provider, or institutional educational/instructional materials. Examples of externally-sourced instructions might include: documents, websites, pictures, videos, and/or sounds."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.7-03",
+      "label": "PH.6.7#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture details on further care (such as follow up, return visits, and appropriate timing of further care)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.7-04",
+      "label": "PH.6.7#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to analyze and present abnormal trends with respect to the PHR Account Holder's expected or desired health or wellness outcomes (e.g., the PHR Account Holder could be alerted that the care plan anticipates a weight reduction of 1/2 pound (0.2 kg) per week, but the PHR Account Holder is actually gaining weight; or that blood glucose levels have exceeded 150 milligrams per deciliter for more than one week)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.7-05",
+      "label": "PH.6.7#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to update site-specific and PHR Account Holder care plans and guidelines (e.g., isometric exercises in office versus swimming in home pool)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.7-06",
+      "label": "PH.6.7#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to capture and maintain site-specific and PHR Account Holder care plans and guidelines (e.g., isometric exercises in office versus swimming in home pool)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.7-07",
+      "label": "PH.6.7#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY determine, track and render alerts, notifications and reports about variances from care plans, guidelines, and discharge instructions. For example, a PHR Account Holder Representative could receive a text message notification, indicating that the PHR Account Holder failed to acknowledge compliance with a certain care plan, guideline, or discharge instruction."
+    }
+  ]
+}

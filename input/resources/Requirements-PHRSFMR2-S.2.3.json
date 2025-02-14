@@ -1,0 +1,94 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.2.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_2_3_Manage_Standard_Reporting",
+  "title": "S.2.3 Manage Standard Reporting (Function)",
+  "status": "active",
+  "description": "Enable PHR Account Holders or authorized designees to request and read pre-configured, packaged reports of PHR information.",
+  "purpose": "PHR Account Holders may request standard, pre-configured, packaged reports. The purpose is not for PHR interchange but rather for PHR Account Holder’s analysis of his/her health related financial and administrative data, and for sharing (if desired).",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.3-01",
+      "label": "S.2.3#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render standard reports of structured clinical and administrative and financial data using either internal or external reporting tools.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/measure.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.3-02",
+      "label": "S.2.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain report parameters based on data sorted or filtered by the PHR Account Holder or by the PHR-S settings."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.3-03",
+      "label": "S.2.3#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render information from unstructured clinical and administrative data in the report generation process using internal or external tools."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.3-04",
+      "label": "S.2.3#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system (or an external application using data from the PHR-S) MAY provide the ability to maintain report parameters for generating subsequent reports."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.2.3-05",
+      "label": "S.2.3#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system (or an external application using data from the PHR-S) MAY provide the ability to update one or more parameters of a saved report specification when generating a report using that specification."
+    }
+  ]
+}

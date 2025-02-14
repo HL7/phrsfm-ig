@@ -1,0 +1,79 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_1_Manage_Interoperability_of_PHR_Account_Holder_Demographics",
+  "title": "S.3.1 Manage Interoperability of PHR Account Holder Demographics (Function)",
+  "status": "active",
+  "description": "Support the ability to capture or have interactions with other systems, applications and modules to enable the creation and maintenance of demographic information.",
+  "purpose": "The PHR Account Holder demographic data set is needed to support identification and to enhance the prospect for interoperability. The PHR Account Holder should be able to request or make changes to their demographic data and allow for export of all or parts of the demographic data to other systems.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.1-01",
+      "label": "S.3.1#01",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage demographic information through interaction with other systems, applications, and modules.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/person.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.1-02",
+      "label": "S.3.1#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render notification to the PHR Account Holder of added and updated demographic changes, as a result of interaction with other systems, applications, and modules."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.1-03",
+      "label": "S.3.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for a PHR Account Holder to transmit requests for maintenance of the PHR Account Holder's demographic information to the PHR Sponsoring Organization. Note: A PHR Sponsoring Organization is an organization that acquires and offers a PHR Account to those constituents who are, for example, members, subscribers, or employees of that organization."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.1-04",
+      "label": "S.3.1#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for a PHR Account Holder to transmit requests for maintenance of the PHR Account Holder's demographic information in other external systems (e.g., a Health Information Exchange, a healthcare payer, or a care-coordinating entity). Note: A care-coordinating entity consists of a group of healthcare professionals who have formally agreed to manage the healthcare of a patient."
+    }
+  ]
+}

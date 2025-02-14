@@ -1,8 +1,8 @@
 {
     "resourceType": "StructureDefinition",
     "id": "FMSection",
-    "url": "http://hl7.org/ehrs/uv/ehrs-base/StructureDefinition/FMSection",
-    "status": "draft",
+    "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMSection",
+    "status": "active",
     "name": "FMSection",
     "title": "FMSection",
     "description": "This StructureDefinition represents the base EHR-S FM Section type",

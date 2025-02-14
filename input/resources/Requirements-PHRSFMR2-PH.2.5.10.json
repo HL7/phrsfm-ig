@@ -1,0 +1,109 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.10",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_10_Manage_Social_History",
+  "title": "PH.2.5.10 Manage Social History (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder's social history including, health related habits and risk factors.",
+  "purpose": "The social history provides a profile with a number of characteristics that help define the PHR Account Holder's background and health risks. This information can be collected in, or related to, a health risk assessment. The PHR Account Holder is the primary author and authority of these topics commonly included in the social history:\r\n- Education\r\n- Work information such as:\r\n- - current employment status (e.g., employed for wages); \r\n- - current job data: job employment type (e.g. self-employed), occupation and industry with the start and end dates, employer name and location, job duties, work schedule;\r\n- - usual, or longest-held, occupation and industry, with duration and start date.\r\n- Family relationship (e.g., parent or sibling)\r\n- Marital status, care giver resources at home\r\n- Disability status or functional status\r\n- Living arrangement such as private home, adult family home, nursing home, or homelessness\r\n- Habits including smoking, alcohol, recreational drugs, use of seatbelts, helmets, hazardous sports, sexual practices\r\n- Travel history\r\n- Hazardous exposure such as asbestos, radiation exposure, sun exposure.\r\n\r\nExample(s): The system SHALL provide the ability to for the PHR Account Holder to maintain an accurate and current view of his or her health habits and risks.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.10-01",
+      "label": "PH.2.5.10#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage the PHR Account Holder's social history according to organizational policy and/or jurisdictional law. For example: the PHR Account Holder's smoking history or work history can be informative to the PHR Account Holder's provider.",
+      "satisfiedBy": [
+        "https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.10-02",
+      "label": "PH.2.5.10#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system captures the PHR Account Holder’s social history from an external source, THEN the system MAY hide any flags or other indication(s) that the PHR Account Holder withheld information received from an external source (e.g., the PHR Account Holder might receive information from the therapist of a support group for people who have a family member who abuses alcohol, but could desire not to share that information with the PHR Account Holder's dentist)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.10-03",
+      "label": "PH.2.5.10#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture, maintain, and transmit a request for correction to the PHR Account Holder's social history that was captured from an external source."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.10-04",
+      "label": "PH.2.5.10#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to annotate the PHR Account Holder's social history."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.10-05",
+      "label": "PH.2.5.10#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to enter missing information regarding the PHR Account Holder's social history."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.10-06",
+      "label": "PH.2.5.10#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to control-access to an external tool(s) that can support the translation of the PHR Account Holder's self-described job or profession into a standard code and/or data element (e.g., via an established vocabulary or code set)."
+    }
+  ]
+}

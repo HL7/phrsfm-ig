@@ -1,0 +1,124 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_5_Manage_Immunization_List",
+  "title": "PH.2.5.5 Manage Immunization List (Function)",
+  "status": "active",
+  "description": "Manage the Account Holder's immunization data and associated capabilities including reminders, alerts, compliance, and administration.",
+  "purpose": "Immunization records can be maintained in the PHR-S. The list of immunizations can be associated with the health maintenance care plans in PH.1.3.3 maintaining a prospective immunization schedule for routine recommendations. In addition, vaccinations in preparation for foreign travel and episodic public health outbreaks such as bird flu vaccinations can be maintained here. Also, some jurisdictions accept titers or specific dates of infection as proof of adequate protection.\r\n\r\nImmunization information can be shared with national registries in order to support public health / population health stakeholder requirements.\r\n\r\nExample(s): The system SHOULD provide the ability to associate standard codes with discrete data elements associated with an immunization.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.5-01",
+      "label": "PH.2.5.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage immunization histories associated with a PHR Account Holder.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/immunization.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.5-02",
+      "label": "PH.2.5.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD capture as discrete data elements data associated with any immunization (this might include certification that the immunization was administered) according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.5-03",
+      "label": "PH.2.5.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture standard codes with discrete data elements associated with an immunization."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.5-04",
+      "label": "PH.2.5.5#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain standard codes with discrete data elements associated with an immunization."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.5-05",
+      "label": "PH.2.5.5#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture immunization administration details, such as date, route of administration, type, lot number, manufacturer, and the identity of the immunization administrator."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.5-06",
+      "label": "PH.2.5.5#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture the currently recommended date for an immunization booster dose with each immunization if needed."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.5-07",
+      "label": "PH.2.5.5#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render a PHR Account Holder‘s immunization history (e.g., when reporting to appropriate authorities such as public health immunization registries, schools, or day-care centers) according to organizational policy and/or jurisdictional law."
+    }
+  ]
+}

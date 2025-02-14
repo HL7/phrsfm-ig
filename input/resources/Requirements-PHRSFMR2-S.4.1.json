@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "S_4_1_Manage_Clinical_Research_Information",
+  "title": "S.4.1 Manage Clinical Research Information (Header)",
+  "status": "active",
+  "description": "Support a PHR Account Holder in clinical trials and provide research information.",
+  "purpose": "In seeking healthcare, the system should support the PHR Account Holder being able to obtain a list(s) of available clinical trials/research. The PHR Account Holder should be able to refine trials by geographic area, by disease, by treatment, by sponsor and maintain, or provide access to, current clinical trial/research information. The system should also support the PHR Account Holder’s participation in, and support of, appropriate new, additional, or other uses of their PHR information for clinical research which could include quality and performance analysis."
+}

@@ -1,0 +1,121 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.9",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_9_Manage_Information_Views",
+  "title": "S.3.9 Manage Information Views (Function)",
+  "status": "active",
+  "description": "Support PHR Account Holder -defined information views.",
+  "purpose": "Views of information can be tailored for or by the PHR Account Holder (PHR Account Holder, caregiver or other authorized PHR account user) for their presentation preferences and to support personal or role-based workflows and purpose-of-use / intention-of-use requirements.\r\n\r\nExample(s): A PHR Account Holder may prefer to see summary information about medications, while a provider’s view may include detailed information about current dosage and the PHR Account Holder’s response to the medication over time.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.9-01",
+      "label": "S.3.9#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for a PHR Account Holder to manage personal views of PHR information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.9-02",
+      "label": "S.3.9#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render role-based views of PHR information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.9-03",
+      "label": "S.3.9#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for a PHR Account Holder to determine content of role-based views."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.9-04",
+      "label": "S.3.9#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render purpose-of-use/intention-of-use-based views of PHR information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.9-05",
+      "label": "S.3.9#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for a PHR Account Holder to determine content of purpose-of-use/intention-of-use-based views."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.9-06",
+      "label": "S.3.9#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to manage multiple customized views for more rapid display of information by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.9-07",
+      "label": "S.3.9#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to for a PHR Account Holder or Authorized PHR User to maintain individual custom views for future access."
+    }
+  ]
+}

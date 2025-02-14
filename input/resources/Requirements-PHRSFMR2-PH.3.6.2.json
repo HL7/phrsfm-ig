@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.6.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_6_2_Public_Health_Risk_Alerts",
+  "title": "PH.3.6.2 Public Health Risk Alerts (Function)",
+  "status": "active",
+  "description": "Support health risk alerts from authorized sources.",
+  "purpose": "Alerts of a public health threat can be delivered by a Health Authority through a variety of channels, one of which can be to PHR Account Holders who provided prior consent for this service. The advantage of this modality is that the alerts can be prioritized to any special vulnerabilities of the PHR Account Holder based upon the Health Authority’s pre-existing claims data. More comprehensive background information and an action plan can then be included (such as alerts from government agencies regarding medications or devices).\r\n\r\nExample(s): Poor air quality alerts from governmental authorities are electronically sent to the registered PHR-S of a PHR Account Holder with a sensitive lung condition to take countermeasures.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.2-01",
+      "label": "PH.3.6.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage health risk notifications from public health authorities or other external authoritative sources (e.g., an unstructured text-based message could be received regarding an influenza outbreak; a structured / codified message could be received that could be used in a clinical analysis engine that could route the notification to the PHR Account Holder's primary caregiver; or an alert could be received regarding a failing medical device that the PHR Account Holder uses that is identified via a Unique Device Identifier)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.2-02",
+      "label": "PH.3.6.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render notifications of health risk to the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.2-03",
+      "label": "PH.3.6.2#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to present specific actions to be taken by the PHR Account Holder based on a public health risk alert."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.2-04",
+      "label": "PH.3.6.2#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage notifications from social / community health organizations regarding services that might be expected / anticipated by the PHR Account Holder (e.g., the interruption of the daily distribution of food to the PHR Account Holder from a community service organization)."
+    }
+  ]
+}

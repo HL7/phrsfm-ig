@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.1.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_1_2_Manage_De_Identified_Data_Request_Process",
+  "title": "S.4.1.2 Manage De-Identified Data Request Process (Function)",
+  "status": "active",
+  "description": "Provide PHR Account Holder data in a manner that meets local requirements for de-identification.",
+  "purpose": "When the PHR Account Holder desires to share his/her information in a de-identified state, the PHR Account Holder can export the data in a fashion that meets requirements for de-identification in that locale or realm.\r\n\r\nExample(s): If a person wants to participate in a study that will utilize de-identified data, then the system should provide the ability to de-identify this data according to the requirements of the study.\r\n\r\nIn Germany, when a PHR Account Holder’s subscription is cancelled, the PHR data may be maintained. But if the data is maintained, it must be maintained in a de-identified state or be pseudonymized (similar to the limited data set in the U.S. Privacy Rule).",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.2-01",
+      "label": "S.4.1.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to de-identify his or her information as needed to meet the requirements of a study or other request."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.2-02",
+      "label": "S.4.1.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD capture the source and date of a request for de-identified data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.2-03",
+      "label": "S.4.1.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the date of transmission, data transmitted, and the target of the de-identified data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.2-04",
+      "label": "S.4.1.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture confirmation of the target’s receipt of the data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.2-05",
+      "label": "S.4.1.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render the history of data transmissions."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.2-06",
+      "label": "S.4.1.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to de-identify data according to organizational policy and/or jurisdictional law."
+    }
+  ]
+}

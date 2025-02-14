@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "S_4_6_Manage_Public_Health_Information",
+  "title": "S.4.6 Manage Public Health Information (Header)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder’s use of PHR-related Public Health Information and/or services.",
+  "purpose": ""
+}

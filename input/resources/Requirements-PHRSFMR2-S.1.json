@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "S_1_Provider_Information",
+  "title": "S.1 Provider Information (Header)",
+  "status": "active",
+  "description": "The purpose of this section is to provide the system support to obtain a list of providers in an area and/or within a health plan panel and then maintain, or provide access to, current provider information.",
+  "purpose": ""
+}

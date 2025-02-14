@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.6.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_6_6_Referrals_and_Referral_Process",
+  "title": "PH.6.6 Referrals and Referral Process (Function)",
+  "status": "active",
+  "description": "Manage information related to referrals for the PHR Account Holder's benefit and convenience.",
+  "purpose": "For many referrals to other provider organizations, the PHR Account Holder must manage data, approvals, and appointments related to the referral. The PHR Account Holder may need to ensure that relevant data are received by the provider for the referral encounter. The PHR Account Holder may need to interact with his or her insurance company to secure authorization for payment for a referral to a provider. Examples of methods of transmittal include: secure email or enhanced data sharing. Examples of target referrals includes: referral service organization processing referrals on behalf of multiple healthcare providers that could be regional or jurisdictional.\r\n\r\nExample(s): The system SHOULD provide the ability to include test and procedure results with a referral.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.6-01",
+      "label": "PH.6.6#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit clinical and administrative data (e.g., insurance information) as part of the referral process to the provider who is receiving the referral."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.6-02",
+      "label": "PH.6.6#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render test and procedure results with a referral."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.6-03",
+      "label": "PH.6.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to control access to the PHR Account Holder's information by allowing temporary privileges to the referring provider or provider's representative (e.g., viewing, printing, downloading, or exporting)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.6-04",
+      "label": "PH.6.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit clinical data, administrative data, test results, and/or procedure results to the provider who is the target of a referral or to a referral service."
+    }
+  ]
+}

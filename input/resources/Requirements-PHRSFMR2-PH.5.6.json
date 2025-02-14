@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.5.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_5_6_Manage_Updated_Orders__Recommendations__or_Alternative_Care_Plans",
+  "title": "PH.5.6 Manage Updated Orders, Recommendations, or Alternative Care Plans (Function)",
+  "status": "active",
+  "description": "Manage Updated Orders, Recommendations, or Alternative Care Plans.",
+  "purpose": "The PHR Account Holder might need to receive updated orders or recommendations from care team members; or receive alternative care plan recommendations as the PHR Account Holder's conditions (or goals) change or when different modalities-of-care are recommended or chosen; or as elements of the PHR Account Holder's care plan change. For example, a physician might recommend an alternate drug if the physician notices that the price of the currently-prescribed drug increases dramatically or that the current drug is proving to be less effective than previously experienced. By accepting this new drug, the PHR Account Holder might then need to reconfigure the PHR system to present reminders for the PHR Account Holder to take the medication every third day instead of once-a-week.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.6-01",
+      "label": "PH.5.6#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage updated orders, updated recommendations, and/or alternative care plans."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.6-02",
+      "label": "PH.5.6#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage updated orders (e.g., by presenting updated recommendations for medication regimens based on new findings related to a physician's diagnosis, or by presenting updated recommended laboratory monitoring protocols with respect to the use of a particular medication (e.g., by presenting a recommendation to send a blood sample to the laboratory every two days when using insulin))."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.6-03",
+      "label": "PH.5.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage updated recommendations (e.g., by presenting recommendations for medication regimens based on findings related to a physician's diagnosis)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.6-04",
+      "label": "PH.5.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage alternative treatments (or proposed alternative treatments) (e.g., by presenting alternative treatments in medications on the basis of updated practice standards, updated costs, updated formularies, and/or updated protocols)."
+    }
+  ]
+}

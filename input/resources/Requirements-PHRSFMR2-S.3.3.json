@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "S_3_3_Manage_Legal_and_other_Related_Documents",
+  "title": "S.3.3 Manage Legal and other Related Documents (Header)",
+  "status": "active",
+  "description": "Manage legal and other related documents that allow or restrict the use or disclosure of the PHR Account Holder’s information.",
+  "purpose": "The PHR system should allow for the entry of documents related to the use or disclosure of the PHR Account Holder’s information. These documents may include scanned images or electronic images sent via attachment. The system does not judge the authenticity of the document. The PHR Account Holder should ensure they have the original document or approved copy of a document or other images. The system allows for multiple instances of the same document (e.g., multiple authorizations). The system allows document to be retired (for example, by moving the documents to an archival service and deleting those documents locally). Retired documents may continue to be tracked. The system allows for the removal of documents at the PHR Account Holder’s discretion."
+}

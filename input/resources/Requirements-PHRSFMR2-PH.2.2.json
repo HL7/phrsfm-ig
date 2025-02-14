@@ -1,0 +1,61 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_2_Manage_Data_from_External_Administrative_Sources",
+  "title": "PH.2.2 Manage Data from External Administrative Sources (Function)",
+  "status": "active",
+  "description": "Manage information from administrative data sources such as insurance plans and pharmacy benefit managers.",
+  "purpose": "PHR Account Holder data can be collected from many sources (including administrative sources). For example, the PHR Account Holder’s health insurance plan may directly offer health-related information or may enable the PHR system to derive selected clinical information from financial transactions to the extent that health insurance claims include relevant data. Similarly, selected medication records may be available from Pharmacy Benefits Management services.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.2-01",
+      "label": "PH.2.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture data from claims and other administrative data sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.2-02",
+      "label": "PH.2.2#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system provides the ability to capture data from claims and other administrative data sources, THEN the system SHALL provide the ability for the PHR Account Holder to manage that data according to scope of practice, organizational policy, and/or jurisdictional law. Note: The PHR Account Holder ought to be able to perform some data manipulation -- but no other data manipulation -- on the data received. For example, the PHR Account Holder ought to be able to annotate certain data, but not edit it."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.2-03",
+      "label": "PH.2.2#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to determine that duplicate data exists that references the same clinical events from different sources and present a notification to the PHR Account Holder that the duplicate data exists (e.g., so that the PHR Account Holder can hide or delete the duplicate data). For example, one copy of a picture of a laceration may be hidden if two identical copies are received: one from the Emergency Response personnel and another from the Emergency Department."
+    }
+  ]
+}

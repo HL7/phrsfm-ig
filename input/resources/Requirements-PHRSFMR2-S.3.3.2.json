@@ -1,0 +1,79 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.3.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_3_2_Manage_End_of_Life_Documents_and_Other_Advance_Directives",
+  "title": "S.3.3.2 Manage End-of-Life Documents and Other Advance Directives (Function)",
+  "status": "active",
+  "description": "Manage documents that provide direction for end-of-life care and manage other types of Advance Directives.",
+  "purpose": "The PHR Account Holder may want to capture and maintain documents that pertain to end-of-life care and to capture and maintain other types of Advance Directives. End-of-life documents include but are not limited to: Advance Directive for Healthcare; Power of Attorney for Healthcare and Physician Order for Life Sustaining Treatment. The system should allow for multiple occurrences of a document and the ability to archive documents. The documents maintained will depend on the jurisdictional law. The documents may or may not reside in the PHR-S. The document may be scanned images, structured documents or simply a notation on the location of the original (hardcopy or original).",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.2-01",
+      "label": "S.3.3.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture documents related to end-of-life care and other types of Advance Directives.",
+      "satisfiedBy": [
+        "https://build.fhir.org/ig/HL7/fhir-pacio-adi/"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.2-02",
+      "label": "S.3.3.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render a list of end-of life documents sorted by one or more defined data elements."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.2-03",
+      "label": "S.3.3.2#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to tag a document as Active or Non-Active by category of document."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.2-04",
+      "label": "S.3.3.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD maintain the end-of-life document and/or a note that specifies that document's location."
+    }
+  ]
+}

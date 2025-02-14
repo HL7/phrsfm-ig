@@ -1,16 +1,7 @@
 
 ### Introduction
 
-This implementation guide is the result of converting the EHR-S FM R2.1 to FHIR Requirements resources.
-
-### Relationships in this FM
-
-* solid lines are Consequence Links
-* dotted lines are See Also relationships
-
-<div>
-{% include relationships.svg %}
-</div>
+This implementation guide is the result of converting the PHR-S FM R2 to FHIR Requirements resources.
 
 ### Dependencies
 

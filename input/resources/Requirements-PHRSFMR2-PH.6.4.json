@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.6.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_6_4_Data_and_Documentation_from_External_Clinical_Sources",
+  "title": "PH.6.4 Data and Documentation from External Clinical Sources (Function)",
+  "status": "active",
+  "description": "The system should capture, index, and store documentation related to the encounter.",
+  "purpose": "Most encounters generate documentation that can be captured in the PHR-S. Additional supporting data such as diagnostic reports or consultations may be included. A prolonged hospitalization encounter may encompass numerous structured or unstructured documents.\r\n\r\nExample(s): The system should capture, index, and store encounter information, including the encounter document or summary, laboratory results, radiographic images, PACS, EKG, and scanned documents.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.4-01",
+      "label": "PH.6.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF information is received through any electronic interface or is electronically referenced, THEN the system SHALL present it upon request, according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.4-02",
+      "label": "PH.6.4#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture externally-sourced electronic clinical documentation including original, updates and addenda, according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.4-03",
+      "label": "PH.6.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain externally-sourced electronic clinical documentation and annotations with structured content including problems, diagnoses, office visit, phone communication, e-mail consultations and laboratory results."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.4-04",
+      "label": "PH.6.4#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF externally-sourced electronic clinical documentation is captured from encounters with providers, THEN the system SHALL provide the ability to present that documentation to the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.4-05",
+      "label": "PH.6.4#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render notes based on filters, search, or sort criteria."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.4-06",
+      "label": "PH.6.4#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to exchange data using documentation templates."
+    }
+  ]
+}

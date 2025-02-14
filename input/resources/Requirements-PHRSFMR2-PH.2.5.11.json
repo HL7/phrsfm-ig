@@ -1,0 +1,226 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.11",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_11_Nutrition_and_Diet_Information",
+  "title": "PH.2.5.11 Nutrition and Diet Information (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder’s nutrition and diet-related information.",
+  "purpose": "Nutrition is related to health and wellness as well as chronic diseases. People want to record and monitor their food and nutrient intake including any nutritional supplements because they are trying to manage their weight, maintain their fitness level, or demonstrate progress towards the goals in their nutrition care plan. Diet and nutrient histories, (e.g., diet, nutritional supplements, enteral and parenteral feedings, vitamin and mineral supplements, history of breastfeeding, and other intake) may be relevant for review. Diet and nutrient lists are not limited to diet, enteral feeding, and vitamin and mineral supplement orders recorded by providers, but may include, for example, food and nutrient intake records, diet recommendations provided by a registered dietitian/nutritionist, and additional information such as weight, height, and Body Mass Index (BMI).\r\n \r\nExample(s): The system maintains a food and nutrition history list that may be followed by the PHR Account Holder and referenced by his or her providers and Registered Dietitians. Copies of the PHR food and nutrition history list may be kept by their providers in their EHR systems.\r\nExample(s): The system maintains a list of nutrition and diet-related information including food intake records, nutrient analysis summary records, energy balance data and nutrition care recommendations that may be followed by the PHR Account Holder and referenced by his or her providers including a Registered Dietitian.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-01",
+      "label": "PH.2.5.11#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability for the PHR Account Holder to manage information regarding the PHR Account Holder's nutrition and/or diet."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-02",
+      "label": "PH.2.5.11#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability for the PHR Account Holder to manage concerns (either self-generated concerns or concerns that were expressed by others) that relate to the PHR Account Holder's nutrition and/or diet."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-03",
+      "label": "PH.2.5.11#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to capture his or her nutrition and diet information (specifically, current intake of foods and/or nutrients)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-04",
+      "label": "PH.2.5.11#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to capture his or her nutrition and diet information (specifically, past history of intake of foods and/or nutrients (e.g., anorexic during teenage years; vegetarian from age 5 to 10)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-05",
+      "label": "PH.2.5.11#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to import diet- and nutrition -related data from a provider's EHR system or from other sources (e.g., diet-related instructions from a provider; diet-related orders; or diet-related information that appears on an assessment)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-06",
+      "label": "PH.2.5.11#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render nutritional supplements, multi-vitamins, and herbal products as discrete data and/or as lists."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-07",
+      "label": "PH.2.5.11#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to analyze drug-herb interactions and render a notification or alert regarding potentially harmful interactions."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-08",
+      "label": "PH.2.5.11#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze and render nutritional information (e.g., by calculating nutrient values for items or total daily intake summaries for macronutrients and micronutrients such as Energy (Kcal), Protein (grams), Carbohydrates (grams), Fat (grams), Saturated Fat (grams), Calories from Fat, Sodium (milligrams) and various vitamins (A, C, D, E, etc.))."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-09",
+      "label": "PH.2.5.11#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to exchange food intake information and/or nutritional analysis data with third-party applications that have been authorized by the PHR Account Holder for such data exchange. For example, nutritional analysis information in the PHR that may be exchanged with external applications may include:\r\n- Total Calories (kcal or Cal)\r\n- Protein (g)\r\n- Carbohydrate (g)\r\n- Fat (g)\r\n- Plus Vitamins and Minerals.\r\n\r\nFor example, food intake information in the PHR-S that may be exchanged with external applications may include foods and beverages (and portion sizes) that were actually consumed by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-10",
+      "label": "PH.2.5.11#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to capture, maintain, and render physical activity information (which may include information regarding energy expended)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-11",
+      "label": "PH.2.5.11#11",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render (e.g., track, graph, chart, show an interpretive picture) the PHR Account Holder’s ENERGY EXPEDITURE/BALANCE to show daily and/or weekly average kilo-calories or kilo-joules consumed and expended (if intake and energy expenditure data has been captured)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-12",
+      "label": "PH.2.5.11#12",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture information from physical exercise and/or training devices or applications that track physical activity and exercise information along with energy expenditure totals. For example, total workout summary information may include:\r\n- Date\r\n- Activity (e.g., running or swimming)\r\n- Duration (e.g., thirty minutes)\r\n- Distance (e.g., two kilometers)\r\n- Location (e.g., local street or swimming pool)\r\n- Intensity (based on five-point heart rate zones) (e.g., moderate or intense)\r\n- Speed (e.g., minutes-per-kilometer for running or miles-per-hour for bicycling)\r\n- Exercise-related physical measurements (e.g., minutes of significant exercise per week, or in the U.S., Exercise-Vital-Sign as defined by the American College of Sports Medicine)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-13",
+      "label": "PH.2.5.11#13",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render educational information that can promote the PHR Account Holder's understanding of the prescribed diet or nutrition care recommendations. For example, if the PHR Account Holder has a congenital disease, an acquired intolerance related to metabolism (e.g., Acquired Lactose Intolerance, Celiac Disease or Non-Celiac Gluten-Sensitivity), or an inborne error of metabolism (e.g., Glucose-6-Phoshate Dehydrogenase Deficiency (G6PD), Phenylketonuria (PKU), or Maple Syrup Urine Disease), then the PHR system might offer corresponding education."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.11-14",
+      "label": "PH.2.5.11#14",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze, determine, and render information regarding possible interactions between nutrients and allergies, intolerances, adverse reactions, sensitivities, problems, conditions, allergy cross-reactivity, genetic-status, time of ingestion, and genetic-predispositions. Therefore, the timing of medication administration need to carefully consider relative to other factors, such as food or supplement intake (or food or supplement withholding). For example, a PHR Account Holder who is pregnant could be informed that she should avoid consuming certain types of fish such as swordfish, shark or mackerel, and eat only limited amounts of tuna while pregnant due to the possibility of increased mercury exposure to the fetus. Another example, is that a person who is allergic to bananas, avocado, chestnut, and kiwi is also very likely to be allergic to latex. Another example is that a person who is on an anti-retroviral medication might need to wait one hour after taking the medication before ingesting calcium or magnesium supplements."
+    }
+  ]
+}

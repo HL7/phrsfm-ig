@@ -1,0 +1,64 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.5.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_5_3_Manage_a_Registry_and_Directory_of_Actors",
+  "title": "PH.3.5.3 Manage a Registry and Directory of Actors (Function)",
+  "status": "active",
+  "description": "Each individual or entity that accesses the PHR-S should be identified in a directory that contains contact information and specific access rights.",
+  "purpose": "The PHR Account Holder should have control of who has access to his or her PHR-S. All entities that send information to or request information from the PHR-S should be identified for proper authentication and authorization. The PHR Account Holder may establish specific access rights for each actor or groups such as all emergency room physicians. The list of actors may be used to capture contact information for those without digital capability as well. Potential actors may include but are not limited to: \r\n\r\n- PHR Account Holder Proxy\r\n- Trusted relatives, friends, and caregivers.\r\n- Healthcare providers that are part of the Account Holder’s team.\r\n- Former providers and new providers not yet seen.\r\n- Insurance plans.\r\n- Pharmacy Benefits Manager, Pharmacies.\r\n- Public health registries.\r\n- Other registries including cancer, transplant and research.\r\n- Hospitals, laboratories and diagnostic imaging centers.\r\n\r\nAll PHR data is associated with a source and all sources should be identified and maintained as long as the data is maintained.\r\nAll entities making a request for information or receiving information should be identified.\r\n\r\nExample(s): Each provider should be registered before being granted access rights to the PHR-S.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.3-01",
+      "label": "PH.3.5.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL maintain a directory of all Authorized PHR Users (e.g., actors or organizations) that have requested or have been granted access to the PHR Account Holder's account including data providers and PHR Account Holder Proxies that supply information for possible import into the PHR-S.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/practitioner.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.3-02",
+      "label": "PH.3.5.3#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to section S.1.3 (Manage Health Care Provider Information), S.4.2 (Registry Notification and Management), S.4.3 (Manage Donor Information), S.4.5 (Manage PHR Account Holder Reminder Information Updates), PH.6.6 (Referrals and Referral Process (CC05 mentions a registry that lists people who abuse the healthcare system)) in order for the PHR Account Holder to control access rights to specific sections of the PHR-S for each actor in the directory according to user-preference, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.3-03",
+      "label": "PH.3.5.3#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to functions in the Supportive Services Section that manage directory-related and/or registry-related information (e.g., information regarding a provider or a pharmacy)."
+    }
+  ]
+}

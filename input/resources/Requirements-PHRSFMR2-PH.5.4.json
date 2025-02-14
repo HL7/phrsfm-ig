@@ -1,0 +1,151 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.5.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_5_4_Integration_with_Third_Party_Clinical_Decision_Support_Services",
+  "title": "PH.5.4 Integration with Third Party Clinical Decision Support Services (Function)",
+  "status": "active",
+  "description": "Provide the ability to query external clinical decision support services designed for the lay consumer.",
+  "purpose": "A variety of clinical decision support services are currently available for professional use; a growing number of these services are becoming available for lay use. The primarily focus of these services is to assist with making an assessment and then recommending a treatment protocol.\r\n\r\nExample(s): Provide access to clinical decision support services that provide differential diagnoses and advice for further management for common complaints such as sore throat or cough.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-01",
+      "label": "PH.5.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to manage their registration(s) to a third-party clinical decision support service(s) (e.g., the name of the service, the Internet address of the service, the date of the registration, the status of the registration) according to user preference, organizational policy, and/or jurisdictional law. NOTE: The identification of third-party clinical decision support services could be handled either by the PHR Account Holder, the vendor, or both."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-02",
+      "label": "PH.5.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to tag the PHR-S information that is shared with a third-party clinical decision support service."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-03",
+      "label": "PH.5.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to render responses to specific structured questions from a third-party clinical decision support service."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-04",
+      "label": "PH.5.4#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze problems/conditions (in terms of the onset and/or duration, frequency/pattern, and impact on Activities of Daily Living of the condition/problem) and render findings/issues/alerts to the PHR Account Holder (for possible transmission to a member of the care team) according to user preference, organizational policy, and/or jurisdictional law. The ingredients of this analysis might only appear (collectively) in the PHR Account Holder's PHR. The results of such an analysis could be shared with certain members of the PHR Account Holder's care team for consideration. For example, the PHR Account Holder becomes less physically active and wonders why, the PHR system can analyze the PHR Account Holder's conditions and suggest that the increased amount of joint pain as a possible factor."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-05",
+      "label": "PH.5.4#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze medications and therapies that are prescribed by clinicians and render findings/issues/alerts to the PHR Account Holder (for possible transmission to a member of the care team) according to user preference, organizational policy, and/or jurisdictional law. The ingredients of this analysis might only appear (collectively) in the PHR Account Holder's PHR. The results of such an analysis could be shared with certain members of the PHR Account Holder's care team for consideration. For example, the PHR Account Holder begins eating bananas and wonders why the medication being consumed does not seem to be as effective; the PHR system analyzes the nutrient-drug interaction as a possible factor."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-06",
+      "label": "PH.5.4#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze exacerbating factors (e.g., environmental or emotional factors) and render findings/issues/alerts to the PHR Account Holder (for possible transmission to a member of the care team) according to user preference, organizational policy, and/or jurisdictional law. The ingredients of this analysis might only appear (collectively) in the PHR Account Holder's PHR. The results of such an analysis could be shared with certain members of the PHR Account Holder's care team for consideration. For example, the PHR Account Holder begins feeling depressed and wonders why; the PHR system analyzes the PHR Account Holder's recent birth of a child as a possible factor."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-07",
+      "label": "PH.5.4#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze the nutrients that are consumed and render findings/issues/alerts to the PHR Account Holder (for possible transmission to a member of the care team) according to user preference, organizational policy, and/or jurisdictional law. The ingredients of this analysis might only appear (collectively) in the PHR Account Holder's PHR. The results of such an analysis could be shared with certain members of the PHR Account Holder's care team for consideration. For example, the PHR Account Holder begins eating bananas and wonders why the medication being consumed does not seem to be as effective; the PHR system analyzes the nutrient-drug interaction as a possible factor."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-08",
+      "label": "PH.5.4#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze the genetic profile of the PHR Account Holder and render findings/issues/alerts to the PHR Account Holder (for possible transmission to a member of the care team) according to user preference, organizational policy, and/or jurisdictional law. The ingredients of this analysis might only appear (collectively) in the PHR Account Holder's PHR. The results of such an analysis could be shared with certain members of the PHR Account Holder's care team for consideration. For example, the PHR Account Holder begins to feel sluggish and wonders why; the PHR system analyzes the PHR Account Holder's genetic profile and offers sickle cell anemia as a possible factor."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.4-09",
+      "label": "PH.5.4#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render an alert or notification to certain members of the PHR Account Holder's care team regarding the results of problem/condition analyses (including the components of those analyses) according to user preference, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

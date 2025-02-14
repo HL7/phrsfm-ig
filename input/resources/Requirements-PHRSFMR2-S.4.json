@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "S_4_Manage_Other_Resources",
+  "title": "S.4 Manage Other Resources (Header)",
+  "status": "active",
+  "description": "The purpose of this section is to provide the system support to both allow the PHR Account Holder to participate in a variety of programs that may be directly related to areas of interest to the PHR Account Holder and to enable appropriate access and support for new, additional, or other uses of PHR information.",
+  "purpose": ""
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.3.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_3_3_Manage_Documents_for_Personal_Representation",
+  "title": "S.3.3.3 Manage Documents for Personal Representation (Function)",
+  "status": "active",
+  "description": "Manage documents that designate those authorized to act on behalf of the PHR Account Holder.",
+  "purpose": "The PHR Account Holder may want to capture and maintain documents that pertain to designating those authorized to act on behalf of PHR Account Holder for healthcare. Examples include but are not limited to: Guardianship, Legal Custodial Parent, Executor or Trustee. The system should allow for multiple occurrences of a document and the ability to archive documents. The documents maintained will depend on the jurisdictional law. The documents may or may not reside in the PHR-S. The document may be scanned images, structured documents or simply a notation that specifies the location of the original (hardcopy or original).",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.3-01",
+      "label": "S.3.3.3#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render Consents, Authorizations, and other documentation authorizing individuals and/or PHR Account Holder Proxies to act on behalf of the PHR Account Holder with regard to healthcare or the PHR-S."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.3-02",
+      "label": "S.3.3.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render a list of documents designating those authorized to act on behalf of the PHR Account Holder sorted by one or more defined data elements."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.3-03",
+      "label": "S.3.3.3#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to tag a document designating those authorized to act on behalf of the PHR Account Holder as Active or Non-Active by category of document."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.3-04",
+      "label": "S.3.3.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD maintain the document designating those authorized to act on behalf of the PHR Account Holder and/or a note that specifies that document’s location."
+    }
+  ]
+}

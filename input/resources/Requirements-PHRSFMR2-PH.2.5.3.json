@@ -1,0 +1,184 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_3_Manage_Test_Results",
+  "title": "PH.2.5.3 Manage Test Results (Function)",
+  "status": "active",
+  "description": "Manage results of diagnostic tests including inpatient, ambulatory and home monitoring tests.",
+  "purpose": "Recent diagnostic studies further define the PHR Account Holder's current state. The system should capture, display, and maintain the results of tests and diagnostic studies, as limited by legal requirements or organizational policy. These will include laboratory tests with multiple line items such as test panels. Each individual item of a panel result should allow individual annotation. Other studies including diagnostic imaging studies should be included. Some tests such as colonoscopy or coronary artery catheterization will be derived from an encounter in PH.1.6 but the test results should be listed here.\r\n\r\nA useful display will show brief test titles with dates and a simple flag to denote an abnormal component of the test. This gives the reviewer a quick understanding on which tests have been done, which tests were abnormal and which tests are out of date and may need to be repeated.\r\n \r\nThe EHR system is considered to be a more proper repository for a provider's orders than the PHR system. However, the PHR system may be the proper repository for “Direct-To-Consumer” laboratory tests that are ordered by the PHR Account Holder. Also, standing, recurring, or lifetime orders may be kept in the PHR (perhaps as part of a Care Plan). PHRs should be able to capture the fact that orders were made (either by a clinician or by a consumer) and link given test results to their corresponding orders.\r\n\r\nExample(s): The results reporting list should inform the PHR Account Holder of the date of the most recent EKG or prostate cancer screening test and indicate the existence of abnormal findings.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-01",
+      "label": "PH.2.5.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain, and render test results according to organizational policy and/or jurisdictional law.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/observation.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-02",
+      "label": "PH.2.5.3#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render test results filtered by factors that support results management, such as type of test and date range."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-03",
+      "label": "PH.2.5.3#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD present normal and abnormal ranges as reported by the source of the test result."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-04",
+      "label": "PH.2.5.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render test results via various filtering techniques (e.g., normalcy ranges for laboratory results: critical, abnormal, or normal; high versus low; or smallest to largest)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-05",
+      "label": "PH.2.5.3#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present numerical test results in graphical form in order to promote the comparison of test results."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-06",
+      "label": "PH.2.5.3#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render test results grouped in a logical manner (e.g., over a particular time frame or in relation to a particular problem)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-07",
+      "label": "PH.2.5.3#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to analyze various information (e.g., test results, diagnoses, conditions, personal goals, therapy goals, and/or vital signs) using decision support algorithms and render possible courses of action."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-08",
+      "label": "PH.2.5.3#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system contains the electronic laboratory order, THEN the system SHOULD link test results to a specific order according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-09",
+      "label": "PH.2.5.3#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to annotate test results (e.g., \"I do not understand the reason for this test\", \"This test result might be invalid because I was supposed to fast, but I ate full meals during the testing period\", or \"A second opinion was obtained and the consultant believes that these test results are erroneous\")."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-10",
+      "label": "PH.2.5.3#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render normal and/or abnormal test result ranges (as reported by the source of the test results)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.3-11",
+      "label": "PH.2.5.3#11",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY present a reference to an image (e.g., an EKG tracing) that is associated with corresponding test results."
+    }
+  ]
+}

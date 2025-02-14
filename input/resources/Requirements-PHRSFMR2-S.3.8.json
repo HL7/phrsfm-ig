@@ -1,0 +1,166 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.8",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_8_Manage_Requests_for_Release_of_Information",
+  "title": "S.3.8 Manage Requests for Release of Information (Function)",
+  "status": "active",
+  "description": "Support requests for release of PHR Account Holder health record information.",
+  "purpose": "Either the PHR Account Holder or the authorized designee may receive formal requests to release some or all of the PHR information. These requests may be ad hoc, or may also be routine, recurring requests that may be episodic or longer term. These requests may be related to patient care, administrative process, law enforcement or legal action. An auditable record of these requests and associated fulfillment(s) should be maintained by the system. The system should provide an accounting of PHR disclosures of the Release of Information Requests in accordance with user role, organizational policy and/or jurisdictional law.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-01",
+      "label": "S.3.8#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture information regarding any individual or entity who requests PHR Account Holder data (including the identity of the requestor, stated reason for the request, the requestor's intended use of the data, date of the request, and the date of the PHR Account Holder's response to that request) according to user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-02",
+      "label": "S.3.8#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the Authorization or Consent associated with the request for release of information according to user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-03",
+      "label": "S.3.8#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage the fulfillment status of requests."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-04",
+      "label": "S.3.8#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD manage recurring, standing requests for PHR information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-05",
+      "label": "S.3.8#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to control access by adding password protection, purpose-of-use protection, and/or intention-of-use protection to PHR Account Holder-defined exported records."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-06",
+      "label": "S.3.8#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render PHR Account Holder identifying information on each page of the reports generated."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-07",
+      "label": "S.3.8#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to export PHR records to a variety of PHR Account Holders using various platforms without needing special viewing software."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-08",
+      "label": "S.3.8#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to function S.3.4 (Manage Data Masking for Sensitive or Selective Information) when masking any PHR data provided."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-09",
+      "label": "S.3.8#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit electronic responses with unstructured and structured health record information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.8-10",
+      "label": "S.3.8#10",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY conform to function TI.5.1 (Application, Structured-Message, and Structured-Document Interchange Standards) to enable data extraction in standard-based formats."
+    }
+  ]
+}

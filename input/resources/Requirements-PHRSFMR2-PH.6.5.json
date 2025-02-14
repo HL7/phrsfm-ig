@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.6.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_6_5_Provider_Assessments",
+  "title": "PH.6.5 Provider Assessments (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to capture provider assessments and their supporting documentation such that the PHR Account Holder or another provider may independently review the assessments.",
+  "purpose": "The provider may make assessments (observations, working hypotheses, differential diagnoses, or definitive diagnoses) derived from the new clinical information obtained during the encounter supplemented by additional PHR information including the current state data set. These assessments will direct further diagnostic, therapeutic, and health maintenance care.\r\n\r\nExample(s): The system MAY provide the ability to compare assessment data entered during the encounter and the accessed health evidence-based guidelines and best practices.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.5-01",
+      "label": "PH.6.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture and maintain health assessment data needed to support an assessment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.5-02",
+      "label": "PH.6.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture standardized assessments that correspond to the problem list (including new problems defined during the encounter)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.5-03",
+      "label": "PH.6.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to annotate an assessment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.5-04",
+      "label": "PH.6.5#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture evidence-based standardized assessments (e.g., data-collection instruments, engines, templates, or forms); practice standards; or other generally-accepted, verifiable, and regularly-updated clinical sources (e.g., updated clinical protocols for evaluation or treatment)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.5-05",
+      "label": "PH.6.5#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to determine and render appropriate assessment data to be entered during the encounter."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.5-06",
+      "label": "PH.6.5#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY determine and render appropriate health evidence-based guidelines and best practices."
+    }
+  ]
+}

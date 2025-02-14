@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.1.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_1_1_Identify_and_Maintain_a_PHR_Account_Holder_Record",
+  "title": "PH.1.1 Identify and Maintain a PHR Account Holder Record (Function)",
+  "status": "active",
+  "description": "Unambiguously identify the PHR Account Holder; correctly link the information with the PHR Account Holder and vice-versa.",
+  "purpose": "The PHR Account Holder must be confident that the system can reliably and uniquely identify them and provide access to their health record. Nothing precludes the PHR Account Holder from having more than one PHR such as a tethered PHR-S with their Primary Care Provider and a separate self-maintained PHR. The following functions apply to a single PHR system (PHR-S).",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-01",
+      "label": "PH.1.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD present a user guide or training material to assist the PHR Account Holder in installing, initializing, registering, or operating their PHR."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-02",
+      "label": "PH.1.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to store more than one unique identifier for each PHR Account Holder's record. For example, the PHR Account Holder may have received health information from multiple caregivers, each caregiver having a unique Patient Identifier for that PHR Account Holder (also known as an Account Number). When the PHR Account Holder shares information with an individual caregiver, the PHR Account Holder may desire to utilize the Patient Identifier that is known to that specific caregiver."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-03",
+      "label": "PH.1.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, store, and integrate and/or link the PHR Account Holder's unique identifiers from multiple external sources (e.g., medical record number, insurance account number, or voluntary unique identifiers)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-04",
+      "label": "PH.1.1#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to uniquely identify a PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-05",
+      "label": "PH.1.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability (through a controlled method) to capture, integrate, and/or link information that is determined to be the PHR Account Holder's information that is stored in external systems. Note: A controlled method enables the PHR Account Holder to choose a course of action from a limited set of actions. For example, the PHR-S could provide a controlled method by which the PHR Account Holder could choose to link to an external DICOM image, but import the Report regarding that DICOM image instead."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-06",
+      "label": "PH.1.1#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF health information has been incorrectly associated with a PHR Account Holder, THEN the system SHALL provide the ability to annotate the information as being erroneous (or as believed to be erroneous) in the PHR Account Holder's account in which it was incorrectly associated, and represent that information as being erroneous."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-07",
+      "label": "PH.1.1#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF health information has been incorrectly associated with a PHR Account Holder, THEN the system SHOULD provide the ability to transmit information regarding the error to the source of the information according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.1-08",
+      "label": "PH.1.1#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to archive, delete, and/or purge part or all of a PHR Account Holder's information (e.g., information that is obsolete, inactive, or nullified) according to user preference and/or consent, organizational policy (e.g., according to a statement of terms and conditions), and/or jurisdictional law."
+    }
+  ]
+}

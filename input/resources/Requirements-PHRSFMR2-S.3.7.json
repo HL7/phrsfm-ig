@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.7",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_7_Manage_New__Additional__or_Other_Use_Request",
+  "title": "S.3.7 Manage New, Additional, or Other Use Request (Function)",
+  "status": "active",
+  "description": "Support the formal and routine request for PHR Account Holder health record information for new, additional, or other uses.",
+  "purpose": "Provide hardcopy and electronic output that supports the needs of a variety of new, additional, or other uses such as: annual immunization requests from schools/camps, application processing for disability requests, validation of compliance with treatment regimens. This mechanism should be provided for both chronological and specified record element output. An auditable record of these requests and associated exports may be maintained by the system. The system has the capability of providing a report of accounting of disclosures of the secondary PHR Account Holders in accordance with user role, organizational policy and/or jurisdictional law.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.7-01",
+      "label": "S.3.7#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture information regarding the new, additional, or other use data-requestor (including the identity of the requestor, the requestor's intended use of the data, date of the request, and the date of the PHR Account Holder's response to that request) according to user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.7-02",
+      "label": "S.3.7#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to control access by adding password protection to PHR Account Holder-defined exported information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.7-03",
+      "label": "S.3.7#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to tag specific PHR information to be reviewed and acted upon by the authorized PHR Account Holder for the purpose of deactivation, destruction, or retention."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.7-04",
+      "label": "S.3.7#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render PHR Account Holder identifying information on each page of the reports generated."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.7-05",
+      "label": "S.3.7#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to export PHR records to a variety of PHR Account Holders using various platforms without needing special viewing software."
+    }
+  ]
+}

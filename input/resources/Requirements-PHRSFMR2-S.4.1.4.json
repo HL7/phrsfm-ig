@@ -1,0 +1,109 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.1.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_1_4_Manage_PHR_Account_Holder_Enrollment_in_Clinical_Trials_or_Research",
+  "title": "S.4.1.4 Manage PHR Account Holder Enrollment in Clinical Trials or Research (Function)",
+  "status": "active",
+  "description": "Support member enrollment in clinical trials or research.",
+  "purpose": "The system should support a PHR Account Holder having the ability to enroll in clinical trials or research, The system should be able to capture administrative and consent requirements, trial or research questionnaires, data submissions and all alerts associated with a program. The PHR Account Holder should also have the ability to choose which programs they desire to participate in when notified of trial availability and high quality PHR Account Holder match.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.4-01",
+      "label": "S.4.1.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage a PHR Account Holder’s enrollment in a clinical trial or research program.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/researchstudy.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.4-02",
+      "label": "S.4.1.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture all administrative information about a clinical trial or research program."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.4-03",
+      "label": "S.4.1.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render clinical trial or research participation sorted by categories."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.4-04",
+      "label": "S.4.1.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture alerts or notifications from the clinical trial program."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.4-05",
+      "label": "S.4.1.4#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render prompts to the PHR Account Holder regarding clinical trial requirements."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.1.4-06",
+      "label": "S.4.1.4#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render information regarding available health benefit plan clinical trial/research support."
+    }
+  ]
+}

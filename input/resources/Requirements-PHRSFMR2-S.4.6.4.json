@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.6.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_6_4_Manage_Enrollment_in_Public_Health_Programs",
+  "title": "S.4.6.4 Manage Enrollment in Public Health Programs (Function)",
+  "status": "active",
+  "description": "Provide the ability to enroll in public health programs.",
+  "purpose": "The systems should support the ability of a PHR Account Holder to enroll in all available local, state and federal public health programs.\r\n\r\nExample(s): A PHR Account Holder would like to enroll in a local or regional maternal health program to receive care for pregnancy.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.4-01",
+      "label": "S.4.6.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for a PHR Account Holder to manage an enrollment in public health programs."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.4-02",
+      "label": "S.4.6.4#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture administrative information necessary to enroll in public health programs."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.4-03",
+      "label": "S.4.6.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render public health programs sorted by enrollment date and category."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.4-04",
+      "label": "S.4.6.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture notices from public health program offices according to organizational policy and/or jurisdictional law."
+    }
+  ]
+}

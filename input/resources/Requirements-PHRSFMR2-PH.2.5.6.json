@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_6_Manage_Medical_History",
+  "title": "PH.2.5.6 Manage Medical History (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder's medical history.",
+  "purpose": "Significant or serious past medical illnesses and hospitalizations can be referenced in this list with a brief description and date.\r\n\r\nThe past medical history list can also display standard life event reporting such as birth history used in pediatrics, for example: NVD at 36 weeks APGAR 7 and 9 (Normal vaginal delivery after 36 weeks gestation with APGAR scores of 7 and 9 at one and three minutes) and reproductive history used primarily by gynecologists: G4, P3, Ab1, postmenopausal (4 pregnancies, 3 live deliveries, 1 lost pregnancy, now postmenopausal).\r\n\r\nMedical Histories are typically created by healthcare professionals to summarize aspects of a given healthcare event, diagnosis, or condition (for example, appendectomy or diabetes).\r\n\r\nExample(s): The system SHOULD provide the ability to annotate the medical history.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-01",
+      "label": "PH.2.5.6#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage (either detailed or summary) medical history information (including the presence or absence of various conditions or symptoms and any associated annotations) that may exist in the provider(s) EHR-S or other systems according to organizational policy and/or jurisdictional law. Note: Medical History information can either be imported from a provider’s system or entered by the PHR Account Holder, and includes the metadata regarding the creation, modification, viewing, extraction, or deletion of a record."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-02",
+      "label": "PH.2.5.6#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and transmit a request for correction / amendment to a medical history (where the medical history was captured from an external source). For example, a report could be created by the PHR Account Holder that asserts that the provider's information is incorrect and sent to the provider with a recommendation that the provider's information must be repaired."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-03",
+      "label": "PH.2.5.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and transmit to an external system a request for deletion/deprecation of erroneous PHR Account Holder's information (e.g., insertion of information into the PHR Account Holder's record that is of another person)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-04",
+      "label": "PH.2.5.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to annotate the medical history with text comments."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-05",
+      "label": "PH.2.5.6#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to enter missing information in subsequent changes to the medical history."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-06",
+      "label": "PH.2.5.6#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF medical history -related information is captured, THEN the system SHALL conform to PH.2.1 (Manage PHR Account Holder Originated Data) to identify the author/source/custodian of the information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-07",
+      "label": "PH.2.5.6#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF medical history-related information is captured, THEN the system SHALL conform to PH.6.1 (PHR Account Holder Health Data Derived from Administrative and Financial Sources) to identify the author/source/custodian of the information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.6-08",
+      "label": "PH.2.5.6#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF medical history-related information is captured, THEN the system SHALL conform to TI.2.2 (Auditable Records) to identify the author/source/custodian of the information."
+    }
+  ]
+}

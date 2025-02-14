@@ -1,0 +1,46 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_Manage_Historical_and_Current_State_Data",
+  "title": "PH.2.5 Manage Historical and Current State Data (Function)",
+  "status": "active",
+  "description": "Maintain the summary lists depicting the PHR Account Holder’s current medical state and history.",
+  "purpose": "The current state data set is a data model of the PHR Account Holder that is useful to the PHR Account Holder, but is particularly useful to any healthcare provider who is asked by the PHR Account Holder for help. These data characterize the PHR Account Holder in current time and is useful in the evaluation of new conditions and predictive of how they might respond to treatments and/or therapies. Receiving these data in the PHR in an electronic and automated fashion may obviate having to recreate the data manually with every new encounter. For many of these elements, the PHR Account Holder is the primary authority. The following data elements are examples of information that is managed over time, across encounters with providers, and for particular health conditions:\r\n\r\n- Problems (including Diagnoses)\r\n- Medications\r\n- Test Results \r\n- Allergies and intolerances\r\n- Medical history\r\n- Surgical history\r\n- Immunizations\r\n- Family history\r\n- Genetic information\r\n- Social history, including family relationship and work information.\r\n- Providers' notes\r\n\r\nWork information could be defined using the Occupational Data for Health (ODH) data elements:\r\n- Current employment status (e.g., employed for wages); \r\n- Current job data: job employment type (e.g., self-employed), occupation and industry with the start and end dates, employer name and location, job duties, work schedule; \r\n- Usual, or longest-held, occupation and industry, with duration and start date.\r\n\r\nSpecific complaints, history of present illness, review of systems, and the physical examination are more episodic and encounter specific.\r\n\r\nExample(s): Current Problems, Medications taken, allergies, immunizations, past medical illnesses, surgeries, family history, and social history including habits along with recent diagnostic studies provide data useful for directing care.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5-01",
+      "label": "PH.2.5#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder and other Authorized PHR Users to render information about the PHR Account Holder's health conditions according to user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5-02",
+      "label": "PH.2.5#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to manage user-configuration parameters regarding their preferences for rendering PHR Account Holder information according to organizational policy and/or jurisdictional law."
+    }
+  ]
+}

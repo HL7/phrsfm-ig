@@ -1,0 +1,139 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.1.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_1_4_Manage_PHR_Account_Holder_Advance_Directives",
+  "title": "PH.1.4 Manage PHR Account Holder Advance Directives (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to create or input Advance Directives for care under various circumstances.",
+  "purpose": "The PHR Account Holder along with their immediate family should periodically assess their health status and formally state in writing how they wish to be cared for in different circumstances. This is particularly useful when the end of life is predictably near to avoid inappropriate or undesired care.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-01",
+      "label": "PH.1.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to render an indication that Advance Directives or organ donation preferences exist for the PHR Account Holder. For example, a PHR Account Holder may desire to inform a new care provider of the existence of an organ donation preference. Also, in an emergency care situation, the emergency care provider might desire to know whether the PHR-S contains an Advance Directive for the PHR Account Holder.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/consent.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-02",
+      "label": "PH.1.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render an indication of the type of Advance Directives completed for the PHR Account Holder (such as living will, durable power of attorney, preferred interventions for known conditions, organ donation, or the existence of a \"Do Not Resuscitate order”, or organ donation preferences) according to organizational policy and/or jurisdictional law, or according to the recipient's scope of practice."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-03",
+      "label": "PH.1.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render the PHR Account Holder’s Advance Directives documents and “Do Not Resuscitate” orders or organ donation preferences according to organizational policy and/or jurisdictional law, or according to the recipient's scope of practice to support clinical decision making activities."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-04",
+      "label": "PH.1.4#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to maintain metadata (e.g., the type of the document, the time and date document was created, and the document currently in effect) for the PHR Account Holder's Advance Directives documents, “Do Not Resuscitate” orders, and/or organ donation preferences according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-05",
+      "label": "PH.1.4#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render an indication regarding the date that Advance Directives or organ donation preferences were last reviewed by the PHR Account Holder or by their legal guardian or power of attorney."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-06",
+      "label": "PH.1.4#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render the name and the relationship of the party completing the Advance Directive or organ donation preferences for the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-07",
+      "label": "PH.1.4#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL manage the date and time that Advance Directives or organ donation preferences were stored and/or changed in the PHR-S."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.4-08",
+      "label": "PH.1.4#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage information regarding the location and the source of legal documentation regarding Advance Directives or organ donation preferences."
+    }
+  ]
+}

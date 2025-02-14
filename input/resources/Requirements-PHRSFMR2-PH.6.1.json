@@ -1,0 +1,151 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.6.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_6_1_PHR_Account_Holder_Health_Data_Derived_from_Administrative_and_Financial_Sources",
+  "title": "PH.6.1 PHR Account Holder Health Data Derived from Administrative and Financial Sources (Function)",
+  "status": "active",
+  "description": "The system should capture and manage financial information related to the encounter.",
+  "purpose": "Tracking the personal costs of healthcare can be complex. Charges are typically discounted by the insurance plan to allowed charges. They will pay a portion of allowed charges with the PHR Account Holder being responsible for the rest. A given encounter such as a hospitalization will have multiple charges from several providers. Capturing the Explanation Of Benefits from the insurance plan can help monitor the expenses.\r\n\r\nExample(s): The system should capture charge information and payment data from the Explanation Of Benefits (EOB) and associate it with the encounter records stored in the PHR-S.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-01",
+      "label": "PH.6.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain information related to financial data and the current balances from the PHR Account Holder’s health-related financial accounts."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-02",
+      "label": "PH.6.1#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture a request for the correction (e.g., if the data is known to be incorrect) and/or annotation (e.g., if another opinion exists regarding the correctness of the data) of the administrative or financial data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-03",
+      "label": "PH.6.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture financial details and link those details to each clinical encounter or billable service (e.g., charges, allowed charges, or payments made by an insurance plan or by the PHR Account Holder)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-04",
+      "label": "PH.6.1#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to render financial and administrative data and the data about those health-related accounts."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-05",
+      "label": "PH.6.1#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a notification to the PHR Account Holder of any changes to the financial data or health-related accounts."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-06",
+      "label": "PH.6.1#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF health data is derived from administrative and financial data, THEN the system SHALL provide the ability to capture data about, and a reference to, the source of the health data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-07",
+      "label": "PH.6.1#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture metadata about certain PHR Account Holder's health data that was derived from administrative and financial data, and link that metadata with the corresponding health data. For example, the fact that the PHR Account Holder broke a leg could be derived from an invoice from an insurance company that describes a procedure performed at the provider's site of a pin being inserted into a leg; the derived health data (the fact about the broken leg) needs to be associated with the financial data (the invoice) and with administrative data (the provider's site)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-08",
+      "label": "PH.6.1#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF certain health data was derived from administrative and financial data, THEN the system SHALL provide the ability to render that health data to Authorized PHR Users, including metadata regarding the administrative and financial data from which that health data was derived."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.6.1-09",
+      "label": "PH.6.1#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render information from interactions with the PHR Account Holder's insurance coverage systems (e.g., employer’s benefit system or the insurance company’s benefit information system)."
+    }
+  ]
+}

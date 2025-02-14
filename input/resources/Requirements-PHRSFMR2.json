@@ -1,0 +1,13 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FunctionalModel"
+    ]
+  },
+  "name": "PHR_S_FM_R2",
+  "title": "PHR-S-FM R2",
+  "status": "active",
+  "description": "*intentionally left blank*"
+}

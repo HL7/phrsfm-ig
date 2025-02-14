@@ -1,0 +1,229 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_3_Manage_Provider_Initiated_Care_Plans",
+  "title": "PH.3.3 Manage Provider-Initiated Care Plans (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to capture, record, and display Account Holder specific care plans received from authorized health care providers. An authorized health care provider's care plan(s) are typically provider-initiated, provider-defined, provider-rendered, and provider-implemented.",
+  "purpose": "Care plans may encompass a wide variety of styles, goals, and complexities, grouped into three categories: health maintenance, health restoration, and chronic disease management. Examples of the three categories of care plans include:\r\n\r\n- Health Maintenance: The base care plan is a lifelong wellness plan that may specify age- and/or gender- specific health surveillance, an immunization schedule, and a diet and exercise program. It can be customized to accommodate specific health risks (such as hazardous exposures or genomic indicators).\r\n\r\n- Health Restoration: Natural conditions (such as pregnancy) or acute illnesses may occur that require the management of specific diagnostic and/or therapeutic measures.\r\n\r\n- Chronic Disease Management: Chronic disease care plans cover long term conditions (e.g., Type 1 diabetes).\r\n\r\nMultiple care plans, treatment plans, or health activities (including those that are self-generated) need to be managed/reconciled in order to enable the prioritization/reconciliation of care plans: based on relative health outcomes and risk, based on a timewise ordering of care plans, based on a condition-related ranking of care plans, based on changes to insurance coverage of health care plan services, or based on potential contraindications that arise from conflicting care plans goals or methods.\r\n\r\nThere might also be certain restrictions against sharing health information in the case of infants or teenagers who might require special health information exchange protections.\r\n\r\nExample(s): Capture and maintain a diabetic treatment plan that contains the pertinent staging details and multimodality plans in one place that can better coordinate the care by the diabetes-support team including the PHR Account Holder's Primary Care Provider.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-01",
+      "label": "PH.3.3#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture provider-generated PHR Account Holder -specific care plan regimens and/or treatments (e.g., information regarding orders, therapies, wound care, or habit changes).",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/careplan.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-02",
+      "label": "PH.3.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to track updates to the PHR Account Holder's care plans, regimens, and treatments (e.g., including information regarding authors, creation date, version history, references, and sources as available)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-03",
+      "label": "PH.3.3#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present care and treatment plans captured from providers in their original format."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-04",
+      "label": "PH.3.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present a list of care plans and instructions indexed by provider, problem, and date."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-05",
+      "label": "PH.3.3#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage care and treatment plans captured from provider(s) with tasks, alerts, reminders, and calendar entries."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-06",
+      "label": "PH.3.3#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY capture compliance with provider-generated care plans and render notifications or alerts to the PHR Account Holder when the PHR Account Holder is out of compliance."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-07",
+      "label": "PH.3.3#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY transmit out-of-compliance notifications or alerts to the originating provider and/or to a person who is acting in the role of a provider (e.g., a registered dietitian/nutritionist who creates and signs a diet-order)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-08",
+      "label": "PH.3.3#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain decision support recommendations for care plans and treatment protocols that are sensitive to the context of PHR Account Holder data (e.g., peak flow, weight, blood pressure, food preferences)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-09",
+      "label": "PH.3.3#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to analyze potentially conflicting decision support recommendations for care plans and treatment protocols (including self-generated care-plans) and present those potentially conflicting decision support recommendations for care plans and treatment protocols (e.g., if a provider-generated diabetic foot treatment plan recommends 20 days between formal examinations and an automated PHR system decision support module recommends 90 days between formal examinations, then the provider should be informed of the conflicting recommendations)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-10",
+      "label": "PH.3.3#10",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the systemhas determined that potentially conflicting decision support recommendations for care plans and treatment protocols, THEN the system MAY provide the ability to transmit a request to a provider to harmonize those potentially conflicting decision support recommendations for care plans and treatment protocols."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-11",
+      "label": "PH.3.3#11",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture order details for the PHR Account Holder in a manner that promotes understanding and compliance with an order."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-12",
+      "label": "PH.3.3#12",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture externally-sourced (care plan -related) instructions or references to documents containing those instructions."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-13",
+      "label": "PH.3.3#13",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture details on further care such as follow up, return visits, and appropriate timing of further care."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.3-14",
+      "label": "PH.3.3#14",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage multiple care plans, treatment plans, or health activities (including those care plans, treatment plans, or health activities that are self-generated) according to user preferences and/or consents, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

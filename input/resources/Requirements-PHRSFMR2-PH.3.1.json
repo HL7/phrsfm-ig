@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PH_3_1_Manage_Personal_Clinical_Measurements_and_Observations",
+  "title": "PH.3.1 Manage Personal Clinical Measurements and Observations (Header)",
+  "status": "active",
+  "description": "Provide the ability for the PHR Account Holder to enter personally-sourced data and to make it available electronically to authorized Health Care Provider(s) or other Authorized Users or applications.",
+  "purpose": "The system should provide various ways for the PHR Account Holder to record self-generated health observations.\r\n\r\nExample(s): The system SHALL capture Account Holder's self-reported physical symptoms and daily functioning as structured or unstructured data."
+}

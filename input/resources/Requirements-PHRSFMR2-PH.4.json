@@ -1,0 +1,304 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_4_Manage_Health_Education",
+  "title": "PH.4 Manage Health Education (Function)",
+  "status": "active",
+  "description": "Provide reliable education and information customized to the PHR Account Holder based on the information in the PHR to help the PHR Account Holder explore treatment or wellness options.",
+  "purpose": "A wide variety of educational materials are available and the problem is to identify authoritative sources that provide relevant information for the PHR Account Holder's age, sex, job, medical conditions, wellness goals, and health literacy. The system should be able to take a request for information and screen the available libraries of educational materials against clinical information in the PHR-S (including social history such as work information) without inadvertently or unknowingly divulging personal health information to those other systems.\r\n\r\nExample(s):\r\n- Provide breast feeding instructions in alternate languages for a new mother.\r\n- Provide educational material on asbestos or pesticide exposure, or healthy habits for workers on a rotating shift, based on data about a person's job.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-01",
+      "label": "PH.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain educational materials assumed appropriate for the level of health literacy and language of the PHR Account Holder or the PHR Account Holder Proxy.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/communication.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-02",
+      "label": "PH.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render evidence-based healthcare recommendations, with documentation of the sources of those recommendations, according to PHR Account Holder preference and/or consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-03",
+      "label": "PH.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render information about wellness, health goals, disease management, treatments, occupational risk factors, and related information that is relevant for a specific PHR Account Holder according to PHR Account Holder preference and/or consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-04",
+      "label": "PH.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render educational information (that has been captured into the PHR) via a keyword search (e.g., presenting educational materials that contain the phrase \"treatments for fractures\")."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-05",
+      "label": "PH.4#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render health educational information (that has been captured into the PHR) from external sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-06",
+      "label": "PH.4#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the health education information is externally-based, THEN the system SHOULD provide the ability to capture and maintain a reference to that information (e.g., capture a hyperlink to a website that contains educational information regarding asthma)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-07",
+      "label": "PH.4#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to maintain a reference (e.g., a hyperlink) to a library of educational material regarding a health concern, condition, occupational risk factors, or diagnosis."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-08",
+      "label": "PH.4#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage applicable educational materials."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-09",
+      "label": "PH.4#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render multilingual educational material."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-10",
+      "label": "PH.4#10",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render PHR Account Holder educational materials using alternative modes to accommodate PHR Account Holder sensory capabilities (e.g., to accommodate difficulties in seeing, hearing, or distinguishing colors)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-11",
+      "label": "PH.4#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to integrate guidelines and protocols captured in PH.5.1 (Manage Guidelines and Protocols) with the education files in specific searches."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-12",
+      "label": "PH.4#12",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and maintain educational material that was sent by an external entity. For example, a care giver might offer diet-related educational information to the PHR Account Holder; a pharmacy might send the PHR Account Holder educational material about a new medicinal product; the PHR Account Holder might locate an educational article on the Internet and place a copy in the PHR."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-13",
+      "label": "PH.4#13",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to transmit educational material to external entities."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-14",
+      "label": "PH.4#14",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine and present contextually-relevant educational materials based on possible courses of action suggested by an algorithm (e.g., a clinical decision-making algorithm) or other authoritative sources (e.g., a provider or a trusted educational service). For example, an algorithm that performs drug interaction checking might recognize a need to provide the PHR Account Holder with education regarding the signs and symptoms of an anaphylactic allergic reaction; expected changes related to nutritional intake (e.g., change in urine or stool color); possible changes related to medication side effects (e.g., itching and nausea for narcotic pain medication); potential organ failure (e.g., decreased urine output); or suggestions regarding the elimination of interferences (e.g., taking a medication one hour before taking a mineral supplement such as calcium, magnesium, or iron). This education is most essential when a new medication has been added to the patient's medication list which the patient has not taken before or when the PHR Account Holder first begins using the PHR system."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-15",
+      "label": "PH.4#15",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture an indicator that the PHR Account Holder intends to receive, is receiving, or has received health education information and/or health educational services regarding a certain health problem and/or condition."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-16",
+      "label": "PH.4#16",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to transmit an indicator to the PHR Account Holder's care plan team member(s) that the PHR Account Holder intends to receive, is receiving, or has received health education information and/or health educational services regarding a certain health problem and/or condition."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-17",
+      "label": "PH.4#17",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF certain regulations or legislation require the use of external health educational enhancements (on behalf of the PHR Account Holder), THEN the system MAY provide the ability to manage the use of technology that provides such health education (e.g., INFOBUTTON in the U.S.A.) according to PHR Account Holder preference and/or consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-18",
+      "label": "PH.4#18",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to present an indication that the health educational material that has been captured by the PHR-S has been vetted by a health information authority (e.g., presenting the stamp-of-approval offered by the Health-On-The-Net information-vetting organization) according to PHR Account Holder preference and/or consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.4-19",
+      "label": "PH.4#19",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture and render metadata regarding health educational material that has been captured by the PHR-S (e.g., the author or authoring organization, the author's credentials, the date-of-issue, and/or the date-of-last-review) according to PHR Account Holder preference and/or consent, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

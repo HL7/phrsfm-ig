@@ -1,0 +1,79 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.5.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_5_6_Manage_Recommendations",
+  "title": "PH.3.5.6 Manage Recommendations (Function)",
+  "status": "active",
+  "description": "Capture and track provider recommendations for future care.",
+  "purpose": "In many care activities, recommendations are made for specific future activities. They are easy to let slip by and lose track of them. A thoughtful and documented reason for not following a particular recommendation should be captured to help manage liability risk. Some recommendations may be controversial and there are reasons not to follow them. It is useful to keep a list of recommendations as a separate check on future care to be managed with the help of the PHR Account Holder's provider.\r\n\r\nExample(s): \r\n- The radiologist recommends a repeat mammogram in six months rather than the usual twelve months.\r\n- The Primary Care Provider recommends seeing a surgeon for occasional gallbladder attacks.\r\n- A screening colonoscopy is recommended after age fifty.\r\n- Annual screening or tests based on the PHR Account Holder's occupational risk factors.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.6-01",
+      "label": "PH.3.5.6#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture recommendations from encounter and diagnostic studies in structured documents according to organizational policy and/or jurisdictional law (e.g., HIV results may need to be delayed from being sent directly to the PHR System, so that the provider has time to communicate with the patient directly).",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/communication.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.6-02",
+      "label": "PH.3.5.6#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture a recommendation, the identity of the recommending provider, the date of the recommendation, and the date suggested to perform the recommended action."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.6-03",
+      "label": "PH.3.5.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to link a recommendation entry with the corresponding original document (e.g., a recommendation to lose ten pounds should be linked to a document that contains the PHR Account Holder's most recent BMI readings)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.6-04",
+      "label": "PH.3.5.6#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a pending (or future) recommendation (e.g., so that a provider might be able to create a future-order or reminder, or to document the reason that the recommendation was dismissed)."
+    }
+  ]
+}

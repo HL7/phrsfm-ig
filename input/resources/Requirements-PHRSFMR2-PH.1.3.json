@@ -1,0 +1,121 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.1.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_1_3_Manage_PHR_Account_Holder_and_Family_Preferences",
+  "title": "PH.1.3 Manage PHR Account Holder and Family Preferences (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to add certain preferences that he or she wants health care providers to know.",
+  "purpose": "PHR Account Holders may hold certain religious or philosophical views that impact how they wish to be treated or how they might respond to treatment choices. These preferences should be captured, prominently displayed, and made available during the care process. For example, a person may hold certain preferences regarding eating certain foods (e.g., avoidance of meats; preference for vegetables); taking certain therapeutic serums derived from animals; use of a pig-valve for valve replacement; use of human or animal tissues (e.g., skin tissue or bone).\r\n\r\nExample(s): A religiously-based proscription of blood transfusion is a commonly encountered example of a PHR Account Holder preference.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.3-01",
+      "label": "PH.1.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain, and render the PHR Account Holder's preferences (e.g., language, religion, ethnicity, spiritual practices, or cultural practices) according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.3-02",
+      "label": "PH.1.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render family preferences (such as preferred language, religion, spiritual practices and culture) for example, to support clinical decision making activities."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.3-03",
+      "label": "PH.1.3#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture, maintain, and/or render PHR Account Holder and family preferences as they pertain to current treatment plans according to user preference and/or consents, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.3-04",
+      "label": "PH.1.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to update care guidelines and options based on documented PHR Account Holder and family preferences, including clinical guidelines and treatment options (e.g., treatment for individuals who refuse blood transfusions)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.3-05",
+      "label": "PH.1.3#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to present care guidelines and options relating to documented PHR Account Holder and family preferences, including clinical guidelines and treatment options."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.3-06",
+      "label": "PH.1.3#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to integrate PHR Account Holder preferences with appropriate health education materials (e.g., dietary advice based on dietary preference)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.3-07",
+      "label": "PH.1.3#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to integrate documentation of PHR Account Holder preferences, such as living wills, specific consents or releases, and other Advance Directives."
+    }
+  ]
+}

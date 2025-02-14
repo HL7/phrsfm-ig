@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.5.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_5_3_Care_Related_Decision_Support",
+  "title": "PH.5.3 Care-Related Decision Support (Function)",
+  "status": "active",
+  "description": "Provide decision support tools (including clinical decision support, best practice guidelines and/or recommendations from payers, employers, researchers, professional associations, or public health organizations).",
+  "purpose": "The system should aid the PHR Account Holder with making his or her self-assessments and treatment plans for self-care. Some decision support algorithms are straightforward and can be provided as part of the PHR-S service. Others may be more complex and are detailed in function PH.5.4 (Integration with Third Party Clinical Decision Support Services). For example, a child's weight and height can be plotted on a growth curve chart which graphically displays growth progress. Another example, is the ability for a pregnant woman to plot weight changes over time against a norm.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-01",
+      "label": "PH.5.3#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render information regarding health guidelines and best practices."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-02",
+      "label": "PH.5.3#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the PHR Account Holder the ability to analyze health data and context-driven assessments in comparison to practice standards in order to prompt additional testing, possible diagnoses, or adjunctive treatment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-03",
+      "label": "PH.5.3#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture from an authoritative source (e.g., provider EHR-S or a care management PHR-S) rules related to abnormal trends."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-04",
+      "label": "PH.5.3#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the PHR Account Holder the ability to analyze health data and context-driven assessments in comparison to practice standards in order to prompt additional testing, possible diagnoses, or adjunctive treatment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-05",
+      "label": "PH.5.3#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the PHR Account Holder the ability to analyze assessment data in correlation with the data in the PHR Account Holder's problem list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-06",
+      "label": "PH.5.3#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render a notification to the PHR Account Holder to request additional assessments, testing, or adjunctive treatment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-07",
+      "label": "PH.5.3#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY render a notification to the PHR Account Holder to follow a provider-designated care plan related to assessment results (e.g., peak flow results, blood glucose readings, weight, or blood pressure)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.5.3-08",
+      "label": "PH.5.3#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to integrate health information contained in the PHR with appropriate health education materials (e.g., consumer self-identified as a smoker vis-à-vis smoking cessation materials sent to the PHR-S)."
+    }
+  ]
+}

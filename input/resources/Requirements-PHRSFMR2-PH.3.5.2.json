@@ -1,0 +1,139 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.5.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_5_2_Manage_Tasks",
+  "title": "PH.3.5.2 Manage Tasks (Function)",
+  "status": "active",
+  "description": "Healthcare events or activities that require the PHR Account Holder's participation can be organized as tasks.",
+  "purpose": "Care plans and other health care activities can be broken down into specific steps or tasks and organized on a task list that may be sorted by priority, date and time, problem, provider, and so forth. The task list entries should serve as an index to their supporting documents.\r\n\r\nExample(s): Directions for a dressing change at a specific time of day can be displayed as an entry on the task list.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-01",
+      "label": "PH.3.5.2#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to manage self-care, health maintenance, preventive, and wellness tasks, including the management of task status (e.g., performed, rescheduled, or canceled).",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/task.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-02",
+      "label": "PH.3.5.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine a set of tasks for the PHR Account Holder based on a previously-defined set of business rules."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-03",
+      "label": "PH.3.5.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render an indication of the status of tasks (e.g., completed or performed). For example, the dressing for a laceration needs to be changed every three days, but the PHR Account Holder failed to note yesterday that the dressing was successfully changed as required. Another example is the requirement to post an indication to the PHR system regarding daily compliance with dietary guidelines."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-04",
+      "label": "PH.3.5.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render tasks in a sorted manner (e.g., by status or priority) according to user-preference, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-05",
+      "label": "PH.3.5.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD present each task with a brief description and date on a task list included on the PHR Account Holder's summary view or dashboard."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-06",
+      "label": "PH.3.5.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to capture, maintain, and render descriptions of health-related tasks (and associated dates/times for those tasks)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-07",
+      "label": "PH.3.5.2#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render communications that were received from others who are performing tasks (e.g., an indication from a member of a care team who completed or performed a certain task)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.5.2-08",
+      "label": "PH.3.5.2#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to TI.7 (Workflow Management) to manage workflows and tasks that involve communications with others."
+    }
+  ]
+}

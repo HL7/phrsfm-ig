@@ -1,0 +1,319 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_1_Manage_Problem_Lists",
+  "title": "PH.2.5.1 Manage Problem Lists (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder’s health problem list and provide the ability to manage the problem list over time in accordance with organizational policy and/or jurisdictional law.",
+  "purpose": "Problems are a core feature of the patient record that provides structure and direct management. Problems may include diagnoses. The PHR Account Holder, along with his or her (medical) advisors, may wish to establish their own guidelines regarding who can add or change self-entered problems on the primary list. The PHR Account Holder may wish to maintain his or her own list of problems authored themselves or from non-traditional providers that have no correlation in allopathic medicine. As in other criteria, all data must have source attribution so as to distinguish patient-entered data from provider-entered data.\r\n\r\nThe PHR Account Holder could have problems (or conditions) could be short-term or long-term. An example of a short-term condition is a febrile seizure or a single head injury; an example of a long-term condition is a genetic condition such as seizure-disorder (epilepsy) or repeated head trauma (e.g., professional boxing).\r\n\r\nProblem List information needs to be communicated to the care team because problem history information could influence the way that medications and therapies are prescribed.\r\n\r\nRegardless of the duration of the condition, the way that medications and therapies are prescribed by clinicians, as well as nutrient intake considerations, ought to be part of the PHR system. For example, a person who has a history of seizure(s) needs to share that information with relevant members of the care team throughout that person's lifetime.\r\n\r\nInformation about problems (or conditions) could be verified by diagnostic studies or collected via self-assessments.\r\n\r\nThe PHR Account Holder's problems (or conditions), either genetic or acquired, might cause contraindications with respect to medications, nutrients, or therapies. As a result, members of the care team may need to be informed during decision making activities. Members of the care team may also need to receive education regarding certain problems or conditions.\r\n\r\nExample(s): Problem list items may include: chronic conditions, diagnoses, allergies or intolerances, or symptoms, both past and present, as well as disability status or functional status and all pertinent dates, including date of onset, diagnosis, changes and resolution.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-01",
+      "label": "PH.2.5.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage all problems associated with a PHR Account Holder.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/condition.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-02",
+      "label": "PH.2.5.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage a history of all problems associated with the PHR Account Holder according to user preference, organizational policy, and/ or jurisdictional law (e.g., a PHR-Account-Holder desires to delete the history of a problem after three years but a federal law indicates that the record cannot be deleted before seven years)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-03",
+      "label": "PH.2.5.1#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture the date that the problem was documented."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-04",
+      "label": "PH.2.5.1#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture the chronicity (e.g., chronic or acute/self-limiting) of a problem."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-05",
+      "label": "PH.2.5.1#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture the source, date and time of all updates to the problem list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-06",
+      "label": "PH.2.5.1#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage the deactivation of a problem according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-07",
+      "label": "PH.2.5.1#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage the reactivation of a previously deactivated problem."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-08",
+      "label": "PH.2.5.1#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render inactive or resolved problems (e.g., so that a list of childhood earaches (that are no longer problematic for the adult) can be quickly viewed)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-09",
+      "label": "PH.2.5.1#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render the problem list based on a manually-specified order."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-10",
+      "label": "PH.2.5.1#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to link episode, encounters, orders, interventions, including medications and/or other treatments, and/or notes with one or more problems."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-11",
+      "label": "PH.2.5.1#11",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage the consolidation or grouping of multiple problems or related problems under a single problem."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-12",
+      "label": "PH.2.5.1#12",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF problems are combined or consolidated, THEN the system SHOULD maintain any links with episode encounters, orders, interventions, including medications and/or other treatments, or notes previously set."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-13",
+      "label": "PH.2.5.1#13",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to annotate problems."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-14",
+      "label": "PH.2.5.1#14",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture a priority, importance, rank, and/or severity score for problems as defined in a classification scheme."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-15",
+      "label": "PH.2.5.1#15",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system provides the ability to score problems in a classification scheme, THEN the system SHALL conform to function RI.1.1 (Record Lifecycle) to define classification schemes."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-16",
+      "label": "PH.2.5.1#16",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render a problem list ordered by importance or severity of the problems."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-17",
+      "label": "PH.2.5.1#17",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present a problem list truncated by the number of entries."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-18",
+      "label": "PH.2.5.1#18",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to link regimen therapy taken (either provider-initiated or PHR Account Holder initiated) and outcomes with a problem. For example, the PHR Account Holder may link the use of St. John's Wort and jogging with the problem of severe migraine headaches."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-19",
+      "label": "PH.2.5.1#19",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY tag and render an indication that automated logic will not be applied against problems that were entered in free-text format. For example, the system discloses that it will not examine a free-text description of the PHR Account Holder's migraine headaches (or allergies) with respect to the PHR Account Holder's medication list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.1-20",
+      "label": "PH.2.5.1#20",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY conform to PH.5.4 (Integration with Third Party Clinical Decision Support Services) to analyze possible changes to health conditions across multiple factors (e.g., if a woman becomes pregnant she might need to temporarily limit the amount of tuna consumed that have high levels of mercury; or a person who gains an great deal of weight might need to resume taking insulin or adjust the dose of Levothyroxine taken)."
+    }
+  ]
+}

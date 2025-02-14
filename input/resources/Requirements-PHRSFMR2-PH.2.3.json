@@ -1,0 +1,181 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_3_Manage_Data_and_Documentation_from_External_Clinical_Sources",
+  "title": "PH.2.3 Manage Data and Documentation from External Clinical Sources (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to capture and manage historical clinical information.",
+  "purpose": "The system shall capture structured and unstructured documents and data from outside clinical sources, index, and store them. Data and Documentation from External Clinical Sources may be indexed by contained structured attributes (such as the name of the source laboratory, or the date that the document was created), or manually by the PHR Account Holder (or proxy) by annotating those documents or data with a standard or custom indexing tag.\r\n\r\nExample(s): Clinical information may include: laboratory results, radiographic images, EKG, or scanned documents that are captured, annotated and stored, as coded and structured documents or unstructured documents.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-01",
+      "label": "PH.2.3#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture externally-sourced clinical documentation as structured content including the original, updates, and addenda."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-02",
+      "label": "PH.2.3#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF information is received through any electronic interface or is electronically referenced, THEN the system SHOULD provide the ability to render that information upon request."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-03",
+      "label": "PH.2.3#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture provider-sourced electronic documents including original, updates, and addenda. Examples of provider-sourced electronic documents include: Discharge instructions, x-rays of teeth, or pictures of lacerations."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-04",
+      "label": "PH.2.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to link documentation and annotations with structured content (e.g., an office visit, phone communication, e-mail consultation, laboratory result, problem, or diagnosis)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-05",
+      "label": "PH.2.3#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL present data and documentation that was captured from External Clinical Sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-06",
+      "label": "PH.2.3#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render structured or unstructured documents based on filter, search, and/or sort criteria."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-07",
+      "label": "PH.2.3#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD conform to RI.1.1.1 (Originate and Retain Record Entry) in order to capture unstructured data and documentation from external clinical sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-08",
+      "label": "PH.2.3#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL conform to RI.1.1.1 (Originate and Retain Record Entry) in order to capture structured data and documentation from external clinical sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-09",
+      "label": "PH.2.3#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL authenticate transmission contents of clinical data received from any external source."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-10",
+      "label": "PH.2.3#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD transmit acknowledgment of the receipt of clinical data from external sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.3-11",
+      "label": "PH.2.3#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD transmit a notification to the PHR Account Holder of the successful receipt and integration of clinical data from external sources according to the PHR Account Holder's preference and/or consent, organizational policy, and/or jurisdictional law."
+    }
+  ]
+}

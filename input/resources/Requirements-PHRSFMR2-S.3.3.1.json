@@ -1,0 +1,139 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.3.3.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_3_3_1_Manage_Consents_and_Authorizations",
+  "title": "S.3.3.1 Manage Consents and Authorizations (Function)",
+  "status": "active",
+  "description": "Maintain Consents and Authorization directives/statements for any entity that may or may not have access to the PHR Account Holder’s PHR-S.",
+  "purpose": "The PHR Account Holder may have Consents and/or Authorization directives that allow or prohibit certain entities from access to part or all of the PHR. Directives may take different forms including documents or system flags on Consent Authorization. The Consent or Authorization requirements would be maintained in accordance with user role, organizational policy and/or jurisdictional law. Based on that, the Consent or Authorization might contain the details of the entity that may be authorized to use, or may be prohibited from using the PHR-S. The Consent or Authorization may detail to the record, field or class, the data available to be used or disclosed. The entities that the Consent or Authorization applies to may or may not be current PHR Account Holders of the PHR-S.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-01",
+      "label": "S.3.3.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture Consents and Authorizations according to organizational policy and/or jurisdictional law.",
+      "satisfiedBy": [
+        "https://build.fhir.org/ig/HL7/fhir-pacio-adi/"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-02",
+      "label": "S.3.3.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to determine the entity to which the Consent or Authorization applies."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-03",
+      "label": "S.3.3.1#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to determine a section or sections of the PHR Account Holder's information to which the Consent or Authorizations applies (e.g., the demographic data section, the medication list, or history of illness section)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-04",
+      "label": "S.3.3.1#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine individual elements of records to which the Consent or Authorization applies."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-05",
+      "label": "S.3.3.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine the time period within which the Consent or Authorization is enforced."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-06",
+      "label": "S.3.3.1#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render Consents and Authorizations to another PHR-S, an EHR-S, or elsewhere (e.g., to a printer)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-07",
+      "label": "S.3.3.1#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to import Consents and Authorizations through electronic interfaces (e.g., scanning or faxing)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.3.3.1-08",
+      "label": "S.3.3.1#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to link to external Consents and Authorizations (e.g., in an external EHR-S)."
+    }
+  ]
+}

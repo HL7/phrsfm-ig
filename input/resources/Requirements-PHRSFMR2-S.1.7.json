@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.1.7",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_1_7_Manage_Surveys_on_the_Healthcare_Experience",
+  "title": "S.1.7 Manage Surveys on the Healthcare Experience (Function)",
+  "status": "active",
+  "description": "Enable the PHR Account Holder to respond to surveys on his or her healthcare experience.",
+  "purpose": "This feature would enable providers, payers and PHR Account Holders to assess and provide feedback on areas such as the perceived patient-centeredness of care, satisfaction and performance, and the transparency efforts to improve quality of care. The receipt of a health survey does not imply that the member must participate in the survey. The system may simply direct the PHR Account Holder to a separate, external survey tool, or may provide the capacity to manage the entire survey process in which a member chooses to participate.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.7-01",
+      "label": "S.1.7#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render notification to the PHR Account Holder that a survey is available."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.7-02",
+      "label": "S.1.7#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to manage participation in a survey (e.g., to subscribe or unsubscribe to a survey)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.7-03",
+      "label": "S.1.7#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture the results of PHR Account Holder survey responses from external survey tools."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.7-04",
+      "label": "S.1.7#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage one or more survey(s) that capture PHR Account Holder responses."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.1.7-05",
+      "label": "S.1.7#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to manage the survey results."
+    }
+  ]
+}

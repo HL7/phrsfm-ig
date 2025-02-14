@@ -1,0 +1,334 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.5.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_5_2_Manage_Medication_List",
+  "title": "PH.2.5.2 Manage Medication List (Function)",
+  "status": "active",
+  "description": "Manage the PHR Account Holder’s medication list.",
+  "purpose": "Medication lists are managed over time, whether over the course of a visit or stay, or the lifetime of a patient. All pertinent dates, including medication start, modification, and end dates can be stored. Medication histories, (for example, alternative supplements, over-the-counter medications, and herbal medications) may be relevant for review. Medication lists are not limited to medication orders recorded by providers, but may include, for example, pharmacy dispense/supply records, patient-reported medications, and additional information such as age-specific dosage.\r\n\r\nExample(s): The system maintains a medication list that may be followed by the PHR Account Holder and referenced by his or her providers and pharmacists. Copies of the PHR medication list may be kept by their providers in their EHRs.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-01",
+      "label": "PH.2.5.2#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture PHR Account Holder -specific medication data from a provider's EHR system, a pharmacy system, or from other sources.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/medication.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-02",
+      "label": "PH.2.5.2#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and update a fill status for each prescription."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-03",
+      "label": "PH.2.5.2#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture dates associated with medications such as start date, fill date, and end date (e.g., so that a PHR Account Holder can keep track of multiple refills for a long-running prescription)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-04",
+      "label": "PH.2.5.2#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture medications that are not on the PHR Account Holder's existing medication list(s) or the existing medication history(s)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-05",
+      "label": "PH.2.5.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to render a notification to a prescriber or provider that the PHR Account Holder believes that a medication was erroneously captured or duplicated."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-06",
+      "label": "PH.2.5.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture and update a dispensing status for each medication order."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-07",
+      "label": "PH.2.5.2#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL present the list of medications to be self-administered."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-08",
+      "label": "PH.2.5.2#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render the timing, route of administration, and dose of all medications on the medication list."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-09",
+      "label": "PH.2.5.2#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture available instructions regarding the administration of selected items on the medication list (e.g., by receiving administration instruction from the family physician, or by downloading information from the pharmacy)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-10",
+      "label": "PH.2.5.2#10",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system captures available instructions regarding the administration of selected items on the medication list, THEN the system MAY provide the ability for the PHR Account Holder to render available instructions regarding the administration of selected items on the medication list (e.g., to help the PHR Account Holder determine whether to discuss with their provider adjusting the dosing of Warfarin after receiving the results of an updated International Normalized Ratio (INR) laboratory test)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-11",
+      "label": "PH.2.5.2#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD render a notification to the PHR Account Holder regarding a specific medication administration subject to the PHR Account Holder’s preconfigured modalities for transmitting various types of notifications. For example, on a specific date/time via text message, or for a specific event (such as strenuous exercise via email), or for a specific condition (such as failure to complete an activity of daily living via a phone call to a family member)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-12",
+      "label": "PH.2.5.2#12",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture medication self-administration details (e.g., timestamps, observations, complications, and/or the reason that a medication dose was not taken). For example, a mother could capture an indication that her baby was unwilling or unable to swallow a pill/liquid."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-13",
+      "label": "PH.2.5.2#13",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to transmit a request for a medication refill to a pharmacy, or to the prescribing provider (if refills are not available for the given prescription)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-14",
+      "label": "PH.2.5.2#14",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to annotate the medication list with text comments (e.g., a mother might note that the child is afraid of needles or cannot swallow the large red pill, or the PHR Account Holder might note that the medication works quite well, or that the medications are being shared with other people)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-15",
+      "label": "PH.2.5.2#15",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render a medication list containing only medications selected by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-16",
+      "label": "PH.2.5.2#16",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to update the medication list by indicating those medications that are actually being taken."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-17",
+      "label": "PH.2.5.2#17",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to maintain the medication list by updating the status of the medication self-administration (e.g., “no longer being taken” or “completed the regime”)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-18",
+      "label": "PH.2.5.2#18",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture, maintain, and render prescription and non-prescription items (including dietary supplements) as discrete data and/or as lists."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-19",
+      "label": "PH.2.5.2#19",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to receive current medications and a medication history from an external source (e.g., an EHR system, an insurance plan, a payer, or a pharmacy)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-20",
+      "label": "PH.2.5.2#20",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to receive, maintain, and render information from an external source (e.g., from an EHR system or from a pharmacy system) regarding the difference between medications that were ordered and medications that were actually dispensed."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.5.2-21",
+      "label": "PH.2.5.2#21",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture instructions regarding the cessation of selected items on the medication list. For example, the PHR Account holder could receive instructions from the family physician, the pharmacist, or from the medication manufacturer regarding behaviors that are permitted based on the cessation of a given medication. Another example is that the PHR Account Holder could be informed that the use of a blood thinner (e.g., Warfarin) must not be stopped abruptly. Finally, the PHR Account Holder could be informed that it is necessary to take the full course of a given prescribed medication."
+    }
+  ]
+}

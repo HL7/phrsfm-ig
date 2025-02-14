@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PH_5_PHR_Account_Holder_Decision_Support",
+  "title": "PH.5 PHR Account Holder Decision Support (Header)",
+  "status": "active",
+  "description": "Provide self-care -related decision support appropriate to the use of the PHR-S in self-care, home health, and remote settings.",
+  "purpose": "The PHR Account Holder may wish to seek assistance from diagnostic decision support tools, drug interaction checking, or published guidelines at the appropriate level of health literacy. The intent of this function is to provide the PHR Account Holder with education regarding sophisticated (or clinically complex) problems and also for more common (or more easily understood) problems, as well as support for assuming care of minor conditions. This function should also support the need for professional caregivers to govern, manage, respond to, or override self-care decisions made by the PHR Account Holder regarding acute or chronic conditions.\r\n\r\nThe PHR System could support the PHR Account Holder's need to understand particular medication- and nutrition- related handling and intake/administration requirements. These considerations could appear during drug-interaction checking, decision making educational investigations, care plan communications, and identification of duplicate therapies.\r\n\r\nExample(s): The system should provide assistance to select an appropriate Internet based decision support tool to provide guidance in managing a young child with vomiting and fever."
+}

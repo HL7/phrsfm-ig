@@ -1,0 +1,121 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-S.4.6.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "S_4_6_5_Manage_Enrollment_in_Public_Health_Notifications_and_Alerts",
+  "title": "S.4.6.5 Manage Enrollment in Public Health Notifications and Alerts (Function)",
+  "status": "active",
+  "description": "Support member subscriptions to public health notifications and alerts.",
+  "purpose": "A PHR Account Holder should have the ability to subscribe to local, state or federal public health notifications and alerts.\r\n\r\nExample(s): The PHR Account Holder enrolls to receive public health alerts from a local or regional health department that has recently issued an alert for meningitis.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.5-01",
+      "label": "S.4.6.5#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for a PHR Account Holder to subscribe to public health notifications and alerts."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.5-02",
+      "label": "S.4.6.5#02",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to capture administrative information necessary to subscribe to public health notifications and alerts."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.5-03",
+      "label": "S.4.6.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render public health notifications and alerts sorted by publishing date and category according to the PHR Account Holder's preferences and/or consents, user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.5-04",
+      "label": "S.4.6.5#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to capture notifications and alerts from public health agencies according to the PHR Account Holder's preferences and/or consents, user role, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.5-05",
+      "label": "S.4.6.5#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to maintain severity level(s) for alerts (e.g., high risk, medium risk, or low risk alerts)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.5-06",
+      "label": "S.4.6.5#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to manage configuration parameters regarding the severity level(s) for alerts (e.g., receiving and/or presenting high risk, medium risk, or low risk alerts)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-S.4.6.5-07",
+      "label": "S.4.6.5#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to manage configuration parameters regarding the reception of alerts by type (e.g., food-borne, travel-related, location-related, or elementary school age population)."
+    }
+  ]
+}

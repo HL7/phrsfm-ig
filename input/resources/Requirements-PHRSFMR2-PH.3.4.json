@@ -1,0 +1,289 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_4_Manage_Medications",
+  "title": "PH.3.4 Manage Medications (Function)",
+  "status": "active",
+  "description": "Assist the PHR Account Holder to manage his or her individual medications.",
+  "purpose": "Medications are a key modality of care plans. They provide significant benefit but also a risk of harm if not used appropriately. The original selection of medications as well as obtaining refills and renewals take up much of the PHR Account Holder’s time. They can use their PHR-S to help manage their medications prescriptions, refills, and renewals.\r\n\r\nExample(s): The system should provide the ability to communicate the refills/renewals requests to the pharmacy and the health care provider(s) or applications in a secure fashion.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-01",
+      "label": "PH.3.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine and render, for a specific prescription medication, information regarding the level of insurance coverage that is offered by the PHR Account Holder's pharmacy benefit plan.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/medication.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-02",
+      "label": "PH.3.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit refills/renewals requests to the pharmacy or the prescribing Health Care Provider(s) or applications (e.g., renewal of request for vitamins, contact lens solution, or insulin) according to organizational policy and/or jurisdictional law. NOTE: These transmissions may need to be performed in a secure manner, depending on the type of request."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-03",
+      "label": "PH.3.4#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit the PHR Account Holder's medication refill request to the pharmacy or pharmacy benefit manager according to organizational policy and/or jurisdictional law. Note: Some prescription refill requests for certain substances that are categorized as \"controlled substances\" (under certain jurisdictional law), are unable to be supported via electronic means (due to the possibility of fraud or abuse)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-04",
+      "label": "PH.3.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit the PHR Account Holder's request for prescription renewals to the Health Care Provider(s)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-05",
+      "label": "PH.3.4#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to receive any communication about the request of the prescription refill or renewal from the pharmacy and/or from the Health Care Provider(s)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-06",
+      "label": "PH.3.4#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render an indication (e.g., notification or alert) that a medication is due for renewal or refill using information from internal and/or external sources according to organizational policy and/or jurisdictional law. Note: Requests for the renewal or refill of controlled substances may require special information handling considerations."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-07",
+      "label": "PH.3.4#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to uniquely tag any medication on the medication list that is due for a refill using information from internal and/or external sources. Note: Information regarding controlled substances may require special consideration. Note: The information could be tagged either manually by the PHR Account Holder or transparently via the reception of information from an external source (such as a clinician)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-08",
+      "label": "PH.3.4#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to uniquely tag any medication on the medication list that is due for a renewal using information from internal and/or external sources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-09",
+      "label": "PH.3.4#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present the status of the refill or the renewal of the prescription to the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-10",
+      "label": "PH.3.4#10",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage medication instructions received from the ordering clinician, pharmacist, or other authorized source."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-11",
+      "label": "PH.3.4#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to manage weight-specific doses for over-the-counter and prescribed medications (e.g., pediatric doses, Aspirin for heart disease prevention)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-12",
+      "label": "PH.3.4#12",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine recommendations for required immunizations and booster doses, including self-administered immunizations and when they are due, based on current immunization guidelines."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-13",
+      "label": "PH.3.4#13",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to determine recommendations for required immunizations and booster doses based on the PHR Account Holder's risk factors."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-14",
+      "label": "PH.3.4#14",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL present the list of medications to be self-administered."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-15",
+      "label": "PH.3.4#15",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to capture medication administration details (including caregiver and/or self-administration details)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-16",
+      "label": "PH.3.4#16",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to manage all medications associated with a PHR Account Holder according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-17",
+      "label": "PH.3.4#17",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render an indication to selected health care professional(s) that there is a possible need to harmonize and/or reconcile medications."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.4-18",
+      "label": "PH.3.4#18",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to enter a self-prescribed medicinal or therapeutic means (e.g., a self-prescribed medication, nutritional supplement, and/or herbal supplement) onto the medication list."
+    }
+  ]
+}

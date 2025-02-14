@@ -7,19 +7,22 @@ const xml = new xml2js.Parser();
 //
 const MAX_FILE = "phrs-fm.max";
 const CANONICAL = "http://hl7.org/ehrs/uv/phrsfmr2";
-const BASE_CANONICAL = "http://hl7.org/ehrs/uv/ehrs-base";
 const PACKAGE_ID = "hl7.ehrs.uv.phrsfmr2";
 const FMID_PREFIX = "PHRSFMR2";
 
 var maxroot;
-xml.parseString(fs.readFileSync(MAX_FILE), function (err, data) {
+var raw = fs.readFileSync(MAX_FILE, "utf8");
+// raw = raw.replace(/[‘’]/g,"'").replace(/[“”]/g,'"'); // replace special quote
+// raw = raw.replace(/[–]/g,'-'); // replace special dash
+raw = raw.replaceAll('',''); // Jekyll illegal char (tab) in TI.1.8.1
+xml.parseString(raw, function (err, data) {
     maxroot = data;
 });
 // The order in the base model is wrong in some places e.g. RI.1.1.25 criteria come before the function.
 // Fix the order.
 sort(maxroot);
 
-var rawSatisfiedBy = fs.readFileSync("satisfiedBy.txt").toString();
+var rawSatisfiedBy = fs.readFileSync("satisfiedBy.txt","utf8");
 var satisfiedBy = {};
 rawSatisfiedBy.split('\n').forEach(row => {
     var idx = row.indexOf(',');
@@ -69,7 +72,7 @@ Object.values(reqs).forEach(req => {
     var filename = "../input/resources/Requirements-" + req.id + ".json";
     console.log(filename);
     // console.log(JSON.stringify(req, null, 2));
-    fs.writeFileSync(filename, JSON.stringify(req, null, 2))
+    fs.writeFileSync(filename, JSON.stringify(req, null, 2));
 });
 
 sortResources();
@@ -101,13 +104,14 @@ function handleFM(fm) {
         "id": FMID_PREFIX,
         "meta": {
             "profile": [
-                `${BASE_CANONICAL}/StructureDefinition/FunctionalModel`
+                `${CANONICAL}/StructureDefinition/FunctionalModel`
             ]
         },
         // "url": `${BASE}/Requirements/` + fmid,
         "name": name,
-        "title": name,
-        "status": "active"
+        "title": title,
+        "status": "active",
+        "description": "*intentionally left blank*"
     };
 
     var resource = {
@@ -139,12 +143,12 @@ function handleSection(section, parentObject) {
         "id": `${FMID_PREFIX}-${alias}`,
         "meta": {
             "profile": [
-                `${BASE_CANONICAL}/StructureDefinition/FMSection`
+                `${CANONICAL}/StructureDefinition/FMSection`
             ]
         },
         "extension": [
             {
-                "url": `${BASE_CANONICAL}/StructureDefinition/requirements-actors`,
+                "url": `${CANONICAL}/StructureDefinition/requirements-actors`,
                 "valueString": actors
             }
         ],
@@ -196,14 +200,16 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
     var description = notes.substring(deidx+4, exidx).trim();
     var example = notes.substring(exidx+4).trim();
     var type = headerOrFunction.stereotype[0];
-    var _description = description + (example!=""?`\nExample:\n${example}`:"");
+    description = description + (example!=""?`\nExample:\n${example}`:"");
+    // replace special link notation '[[{id}]]' with markdown link
+    description = description.replace(/\[\[([^\]]+)\]\]/g, `[\$1](Requirements-${FMID_PREFIX}-\$1.html)`);
 
     var fhir_headerorfunction = {
         "resourceType": "Requirements",
         "id": `${FMID_PREFIX}-${alias}`,
         "meta": {
             "profile": [
-                `${BASE_CANONICAL}/StructureDefinition/FM${type}`
+                `${CANONICAL}/StructureDefinition/FM${type}`
             ]
         },
         // "url": `http://hl7.org/fhir/Requirements/${fmid}-${alias}`,
@@ -211,7 +217,7 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
         "title": `${title} (${type})`,
         "status": "active",
         "description": statement,
-        "purpose": _description
+        "purpose": description
     }
     var resource = {
         "reference": { "reference": `Requirements/${FMID_PREFIX}-${alias}` },
@@ -235,7 +241,7 @@ function handleCriteria(criteria, fhir_parent_req) {
     var refCriteriaID = criteria.tag.find(tag => tag['$'].name === 'Reference.CriteriaID');
 
     // replace special link notation '[[{id}]]' with markdown link
-    notes = notes.replace(/\[\[([^\]]+)\]\]/g, '[\$1](Requirements-EHRSFMR2-\$1.html)');
+    notes = notes.replace(/\[\[([^\]]+)\]\]/g, `[\$1](Requirements-${FMID_PREFIX}-\$1.html)`);
 
     if (!fhir_parent_req) {
         console.log("parent not yet created? " + name);
@@ -244,7 +250,7 @@ function handleCriteria(criteria, fhir_parent_req) {
     var fhir_statement = {
         "extension": [
             {
-                "url": `${BASE_CANONICAL}/StructureDefinition/requirements-dependent`,
+                "url": `${CANONICAL}/StructureDefinition/requirements-dependent`,
                 "valueBoolean": (dependent['$'].value=="Y")
             }
         ],

@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-TI.8",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "TI_8_Database_Backup_and_Recovery",
+  "title": "TI.8 Database Backup and Recovery (Function)",
+  "status": "active",
+  "description": "Provide for the ability to backup and recover the PHR system.",
+  "purpose": "To enable the preservation of the PHR database and its data, functionality needs to be present to record a copy of the database and its contents to offline media as well as the recovery of the system from a backup copy and resumption of normal system operation. The backup must preserve both data as well as database structure and definition information sufficient to recover a complete functional PHR system. Database components may include, but not be limited to application data, security credentials, log/audit files, and programs; ultimately all PHR components necessary to provide a full and complete operating environment. Finally, the backup must be capable of being used during recovery processing to restore an exact copy of the PHR system as of a particular instant in time. This is a requirement to be able to preserve logical consistency of information within the recovered PHR system.\r\n\r\nIn providing for this capability the system may include multiple backup, and/or redundancy solutions such as fail-over architecture, database journaling, transaction processing, etc.\r\n\r\nThe backup and recovery function must address both physical system failure (i.e., failure of PHR system hardware) as well as logical system failure (e.g., database corruption). To support the requirement that the PHR system be available whenever it is needed within the design parameters of the system and provide reliability and redundancy of the PHR database and its data, the backup function shall not impact user functionality or appreciably impact user performance.\r\n\r\nThe backup function may include features which permit multiple processes and technologies to perform its task. This may include multiple backup technologies such as tape, disk, cloud, etc. Also, multiple architectures such as redundancy, online, near-line and off-line media.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-01",
+      "label": "TI.8#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to backup and recover PHR information according to scope of practice, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-02",
+      "label": "TI.8#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to backup and recover all database contents including programs and all software components necessary to permit a complete PHR to be recovered. (i.e., 'full' backup and recovery)"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-03",
+      "label": "TI.8#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to backup and recover PHR information using alternative backup methods in addition to a full backup/recovery (e.g., incremental, differential, reverse delta, or continuous)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-04",
+      "label": "TI.8#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to backup PHR information according to a defined schedule of storage media rotation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-05",
+      "label": "TI.8#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the PHR user requirements specify that the PHR system be available continuously, THEN the system SHALL provide the ability to backup PHR information concurrently with the normal operation of the PHR application."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-06",
+      "label": "TI.8#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to backup PHR information to a remote location."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-07",
+      "label": "TI.8#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to backup PHR information to more than one storage media (e.g., disk, tape, or cloud)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-TI.8-08",
+      "label": "TI.8#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to encrypt backup data."
+    }
+  ]
+}

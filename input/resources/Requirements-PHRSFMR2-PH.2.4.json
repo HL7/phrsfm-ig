@@ -1,0 +1,151 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.2.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_2_4_Produce_and_Present_Ad_Hoc_Views_of_the_Personal_Health_Record",
+  "title": "PH.2.4 Produce and Present Ad Hoc Views of the Personal Health Record (Function)",
+  "status": "active",
+  "description": "Provide for standard and customizable views of the Personal Health Record.",
+  "purpose": "The PHR system may offer a standard set of views of the PHR Account Holder's data. One such view may be a summary screen or \"dashboard\" that allows the PHR Account Holder to monitor his or her healthcare progress. The system should also provide the ability for the PHR Account Holder to assemble custom views to meet their needs such as adding a glucose monitoring module to their dashboard view.\r\n\r\nExample(s): \"The system MAY provide the ability to create customized views of summarized information based on sort and filter controls for custom or other parameters.”\r\n“Display all clinical documents containing the word \"thyroid\".”",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-01",
+      "label": "PH.2.4#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to render customized views of information based on sort and filter controls for chronology, reverse chronology, date or date range, condition, provider, and care setting."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-02",
+      "label": "PH.2.4#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for Authorized PHR Users to render customized views of summarized information based on sort and filter controls for custom or other parameters."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-03",
+      "label": "PH.2.4#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render reports or views of all data based on searching on standardized or customized index tags."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-04",
+      "label": "PH.2.4#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY maintain a text-based index of the entire record for searching on any word or phrase in the Personal Health Record."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-05",
+      "label": "PH.2.4#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to save multiple customized views for more rapid display of information by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-06",
+      "label": "PH.2.4#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for Authorized PHR Users to maintain individual custom views for their future PHR access."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-07",
+      "label": "PH.2.4#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD present summarized views and reports customized by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-08",
+      "label": "PH.2.4#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to present reminders and alerts in a view that is selected by the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.2.4-09",
+      "label": "PH.2.4#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for Authorized PHR Users to maintain individual summary views for their future PHR access."
+    }
+  ]
+}

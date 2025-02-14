@@ -1,0 +1,124 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3.6.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_3_6_1_Public_Health_Reporting",
+  "title": "PH.3.6.1 Public Health Reporting (Function)",
+  "status": "active",
+  "description": "Provide reporting to authorized public health agencies as required by applicable jurisdictional law.",
+  "purpose": "Government authorities with the mandate of preserving the health of the population have a need for early detection of public health threats such as identifying the early stages of an avian flu pandemic. This may require periodic reporting of certain de-identified personal health information (PHI). Other epidemiological studies for public health issues as well as public or private medical research studies may also request de-identified PHI. Certain public health reporting requires identified PHI and contact information for urgent epidemiologic investigations and countermeasures (such as for a resistant Tuberculosis outbreak).\r\n\r\nNote: When transmitting de-identified bio-surveillance data to a Public Health system, the receiver should understand the possibility that a single case may be inadvertently counted twice: once as an identified case from an EHR system, and once as a de-identified case from a PHR system.\r\n\r\nExample(s): The system SHALL conform to function S.3.3.1 (Manage Consents and Authorizations) regarding epidemiological investigations of clinical health within a population.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.1-01",
+      "label": "PH.3.6.1#01",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to export de-identified and/or anonymized data for bio-surveillance and public health reporting to legally authorized public health agencies with appropriate consent according to organizational policy and/or jurisdictional law.",
+      "satisfiedBy": [
+        "https://www.hl7.org/fhir/measure.html"
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.1-02",
+      "label": "PH.3.6.1#02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the PHR Account Holder the ability to manage a subscription to population health web site information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.1-03",
+      "label": "PH.3.6.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD capture alerts or warnings regarding population health threats."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.1-04",
+      "label": "PH.3.6.1#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF providing de-identified data to legally authorized public health agencies, THEN the system SHALL conform to function S.3.3.1 (Manage Consents and Authorizations) regarding “Epidemiological Investigations of Clinical Health Within a Population\" when providing de-identified data to legally authorized public health agencies."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.1-05",
+      "label": "PH.3.6.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability for the PHR Account Holder to render information from population health web sites."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.1-06",
+      "label": "PH.3.6.1#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to de-identify data requested by public health agencies including appropriate consent."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.3.6.1-07",
+      "label": "PH.3.6.1#07",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to render notification to the PHR Account Holder regarding data requests from Public Health Agencies."
+    }
+  ]
+}

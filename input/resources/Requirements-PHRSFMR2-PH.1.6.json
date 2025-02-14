@@ -1,0 +1,181 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.1.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PH_1_6_Manage_PHR_Account_Status",
+  "title": "PH.1.6 Manage PHR Account Status (Function)",
+  "status": "active",
+  "description": "Enable a PHR Account Holder to open or close a PHR Account, or to transfer PHR information from one PHR Account to another PHR Account.",
+  "purpose": "A PHR Account Holder may possess one or more PHR accounts over a lifetime, and may have multiple PHR accounts open simultaneously. The PHR system, therefore, needs to provide the ability to open or close a PHR account on a PHR Account Holder’s behalf, and to transmit a copy of PHR account data to other PHR systems.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-01",
+      "label": "PH.1.6#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to authorize and authenticate a PHR Account Holder to create or activate a new PHR Account according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-02",
+      "label": "PH.1.6#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHALL provide the ability to control access to a PHR Account Holder's Account by capturing information regarding the closure or deactivation of a PHR Account according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-03",
+      "label": "PH.1.6#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD transmit confirmation of the PHR Account Holder’s account closure to the PHR Account Holder according to PHR Account Holder preference, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-04",
+      "label": "PH.1.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit the PHR Account Holder’s account information (specifically, the PHR Account Holder's account data such as the person's name and address, birth date, gender, and credit card number) to another PHR-S according to organizational policy and/or jurisdictional law. For example, the PHR Account Holder might want to create a new, but empty, PHR Account by transmitting certain account metadata."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-05",
+      "label": "PH.1.6#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the ability to transmit the PHR Account Holder’s account information (specifically, the PHR Account Holder's demographic data, historical health records, pictures, reports, lists, educational research, etc.) to another PHR-S according to organizational policy and/or jurisdictional law. For example, the PHR Account Holder might desire to populate an empty PHR Account by transmitting certain health data content to the empty account."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-06",
+      "label": "PH.1.6#06",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system transmits a copy of the PHR Account Holder’s account information to another PHR system, THEN the system MAY also transmit audit-related and/or log-related information for the PHR Account Holder's account to the other PHR system according to organizational policy and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-07",
+      "label": "PH.1.6#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system transmitted PHR Account metadata, and/or PHR data, and/or audit/log data to another system, THEN the system SHALL transmit a confirmation of the PHR Account Holder’s account transfer to the PHR Account Holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-08",
+      "label": "PH.1.6#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system transmitted PHR Account metadata, and/or PHR data, and/or audit/log data to another system, THEN the system SHALL provide the ability to receive and render a notification/acknowledgement (from the receiving system) to the PHR Account Holder regarding the status of the intended account transfer (e.g., success, failure, or partial failure of the transfer)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-09",
+      "label": "PH.1.6#09",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to transmit a notification to the PHR Account Holder that the PHR Account Holder’s account has experienced a period of inactivity and is scheduled to be purged according to the PHR Account Holder's preference and/or consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-10",
+      "label": "PH.1.6#10",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability to purge the PHR Account Holder’s account after a period of inactivity according to the PHR Account Holder's preference and/or consent, organizational policy, and/or jurisdictional law."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": true
+        }
+      ],
+      "key": "PHRSFMR2-PH.1.6-11",
+      "label": "PH.1.6#11",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The system MAY provide the ability for the PHR Account Holder to purge the PHR Account Holder’s account according to the PHR Account Holder's preference and/or consent, organizational policy, and/or jurisdictional law (e.g., after confirmation of the PHR Account Holder's request to purge the account according the PHR vendor's Terms-Of-Service agreement)."
+    }
+  ]
+}

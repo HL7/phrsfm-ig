@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "PHRSFMR2-PH.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PH_3_Wellness__Preventive_Medicine__and_Self_Care",
+  "title": "PH.3 Wellness, Preventive Medicine, and Self Care (Header)",
+  "status": "active",
+  "description": "Assist the PHR Account Holder with maintaining his or her wellness and management of their health conditions.",
+  "purpose": "A competency of the personal health record is to encourage thoughtful, prospective management of our own health maintenance and conditions.\r\n\r\nExample(s): The system should maintain a life-long schedule for surveillance evaluations, clinical trials, and other healthcare information-related research studies."
+}
