@@ -1,9 +1,9 @@
-const fs = require('fs'),
-    xml2js = require('xml2js');
-var xml = new xml2js.Parser();
+const fs = require('fs');
+const xml2js = require('xml2js');
+const xml = new xml2js.Parser();
 
 var maxroot;
-xml.parseString(fs.readFileSync('phrs-fm.max'), function (err, data) {
+xml.parseString(fs.readFileSync('../source/phrs-fm.max'), function (err, data) {
     maxroot = data;
 });
 

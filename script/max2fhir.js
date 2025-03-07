@@ -1,11 +1,11 @@
-const fs = require('fs'),
-    xml2js = require('xml2js');
+const fs = require('fs');
+const xml2js = require('xml2js');
 const xml = new xml2js.Parser();
 //
 // If you change the CANONICAL remember to manually change the CANONICAL in the input/profiles files!
 // Also update ig.ini when PACKAGE_ID changes
 //
-const MAX_FILE = "phrs-fm.max";
+const MAX_FILE = "../source/phrs-fm.max";
 const CANONICAL = "http://hl7.org/ehrs/uv/phrsfmr2";
 const PACKAGE_ID = "hl7.ehrs.uv.phrsfmr2";
 const FMID_PREFIX = "PHRSFMR2";
@@ -22,7 +22,7 @@ xml.parseString(raw, function (err, data) {
 // Fix the order.
 sort(maxroot);
 
-var rawSatisfiedBy = fs.readFileSync("satisfiedBy.txt","utf8");
+var rawSatisfiedBy = fs.readFileSync("../source/satisfiedBy.txt","utf8");
 var satisfiedBy = {};
 rawSatisfiedBy.split('\n').forEach(row => {
     var idx = row.indexOf(',');
