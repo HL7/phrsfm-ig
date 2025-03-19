@@ -1,10 +1,10 @@
 {
     "package-id": "hl7.ehrs.uv.phrsfmr2",
     "version": "2.0.1",
-    "path": "http://hl7.org/ehrs/uv/phrsfmr2/2.0.1",
+    "path": "http://hl7.org/ehrs/uv/phrsfmr2/2025May",
     "mode": "milestone",
-    "status": "normative",
-    "sequence": "Normative Release",
+    "status": "ballot",
+    "sequence": "Normative Ballot",
     "title": "Personal Health Record System Functional Model, Release 2",
     "ci-build": "https://build.fhir.org/ig/HL7/phrsfm-ig/",
     "category": "EHR-S Family",

@@ -2,7 +2,7 @@ PHR-S Functional Model R2 to FHIR Requirements-based representation and publicat
 
 ## Running the scipt and IG publisher
 
-# Convert script
+### Convert script
 ```
 > docker run --name=phrsfm-ig -it -v "$(pwd)":/app node:latest /bin/bash
 @> (once) dpkg -i jdk-23_linux-x64_bin.deb
@@ -16,7 +16,7 @@ PHR-S Functional Model R2 to FHIR Requirements-based representation and publicat
 
 Update groupings and resources from output.txt in phrs-ig.json
 
-# To build IG
+### To build IG
 ```
 (optional)> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
 @> java -jar input-cache/publisher.jar -ig ig.ini
