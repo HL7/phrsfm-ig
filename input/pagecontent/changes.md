@@ -33,3 +33,4 @@ Here are the mappings from the original EHR-S FM R2.1 chapter numbers to the FHI
 | E | 4.5 |
 | F | 4.6 |
 | G | 4.7 |
+{: .grid .table-striped}
