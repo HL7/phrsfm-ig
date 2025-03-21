@@ -586,6 +586,12 @@ Accountability Act of 1996.</u>
 
 The difference between a ‘shall’ criterion and a ‘dependent shall’ criterion is shown in the table below.
 
+| | ‘SHALL’ Criterion | ‘Dependent SHALL’ Criterion |
+|---|---|---|
+| Must be present in the Functional Profile|Yes, either verbatim or modified (e.g., constrained or refined)|Yes, verbatim.<br/>If dependency exists, add additional criteria reflecting the dependency.|
+| Implemented by EHR systems|Yes.|Situational - only implement if the dependency exists.<br/>Specifically, the PHR system does not implement the ‘dependent shall’ criterion (as copied from the PHR-S FM), but does implement additional ‘shall’ criteria created to reflect the dependency.|
+{: .grid .table-striped}
+
 **Table 1: Differences between 'shall' and 'dependent shall'**
 
 #### Rationale for ‘Dependent SHALL’
@@ -638,7 +644,17 @@ in accordance with 42 CFR Part 2*.*
 Accountability Act of 1996 (HIPAA) as well as other jurisdictional legal requirements or other more
 stringent requirements would be applied to ‘dependent shall’ criteria in the functional profile.*
 
-**Table 2: Summary of actions when dependency exists**
+<table class="grid">
+<tr><th>PHR-S FM</th>
+<th>Dependency Applicable?</th>
+<th>Applicability</th>
+<th>Functional Profile</th></tr>
+<tr><td rowspan="4">Dependent SHALL</td><td rowspan="4">Yes</td><td>Mandatory</td><td>Copy SHALL from the PHR-S FM</td></tr>
+<tr><td>Mandatory</td><td>Add additional criteria to reflect the dependencies. Use ‘shall’.</td></tr>
+<tr><td>Mandatory</td><td>Add explanation or citing</td></tr>
+<tr><td>Optional</td><td>Add additional criteria derived from ‘dependent shall’. Use ‘shall’, ‘should’ or ‘may’.</td></tr>
+<caption>Table 4 Summary of actions when dependency exists</caption>
+</table>
 
 * If no dependency exists:<br/>
 If no dependency is applicable to the functional profile (i.e., there are no user roles, organizational
@@ -646,7 +662,16 @@ policies, or jurisdictional legal requirements that apply), then document the ra
 no dependencies apply. This explanation **MAY** be in an appendix. It is likely that this explanation will
 apply to multiple ‘dependent shall’ criteria.
 
-**Table 3: Summary of actions for when no dependencies apply**
+<table class="grid">
+<tr><th>PHR-S FM</th>
+<th>Dependency Applicable?</th>
+<th>Applicability</th>
+<th>Functional Profile</th></tr>
+<tr><td rowspan="4">Dependent SHALL</td><td rowspan="4">No</td><td>Mandatory</td><td>Copy SHALL from the PHR-S FM</td></tr>
+<tr><td>Mandatory</td><td>Add explanation</td></tr>
+<tr><td>Optional</td><td>Add additional criteria derived from ‘dependent shall’. Use ‘shall’, ‘should’ or ‘may’.</td></tr>
+<caption>Table 5 Summary of actions for when no dependencies</caption>
+</table>
 
 * Add additional criteria – regardless of whether a dependency exists or not.<br/>
 It is always permissible for a functional profile to add new criteria. Add new criteria that are derived
