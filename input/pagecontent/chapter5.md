@@ -445,7 +445,7 @@ There are no exceptions to section 5.7.4 for Derived Companion Functional Profil
 
 It is determined that a new source-based functional profile is needed to reflect the specific
 requirements and expectation of a system from this particular stakeholder source (e.g., a hospital,
-medical group, payer, or health record bank) – see Figure 9. To help ensure widespread use and
+medical group, payer, or health record bank) – see Figure 8. To help ensure widespread use and
 uniformity, the functional profile authors elect to undergo the registration review followed by the HL7
 consensus process (i.e., submitting the registered functional profile for an “Informative” committee
 level ballot). If successful, the result will be designated an HL7 Informative Functional Profile.
