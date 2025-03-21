@@ -1461,7 +1461,7 @@
 	</tr>
 	<tr>
 		<td align="left">Safety</td>
-		<td align="left">1) (normative) quality of a product to meet applicable standards and practices for design, construction or manufacture<br>2) (patient) prevention of accidental or preventable injuries and mitigation of harm caused by errors of omission or commission that are associated with healthcare, and involving the establishment of operational systems and processes that minimize the likelihood of errors and maximize the likelihood of intercepting them when they occur<br>3) (perceived) users' level of comfort and perception of risk</td>
+		<td align="left">1) <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a> quality of a product to meet applicable standards and practices for design, construction or manufacture<br>2) (patient) prevention of accidental or preventable injuries and mitigation of harm caused by errors of omission or commission that are associated with healthcare, and involving the establishment of operational systems and processes that minimize the likelihood of errors and maximize the likelihood of intercepting them when they occur<br>3) (perceived) users' level of comfort and perception of risk</td>
 		<td align="left">ISO 21089:2018 (1,2,3)<br>US National Quality Forum (2)</td>
 	</tr>
 	<tr>

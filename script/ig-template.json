@@ -92,12 +92,17 @@
             {
               "name": "chapter6.html",
               "generation": "markdown",
-              "title": "PHR System Conformance Claim via Self-Attestation"
+              "title": "Glossary"
             },
             {
               "name": "chapter7.html",
               "generation": "markdown",
-              "title": "Glossary Supplement: Record Lifecycle Events and Descriptions (Normative)"
+              "title": "PHR System Conformance Claim via Self-Attestation"
+            },
+            {
+              "name": "chapter8.html",
+              "generation": "markdown",
+              "title": "Glossary Supplement: Record Lifecycle Events and Descriptions <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>"
             }
           ]
         },
@@ -109,7 +114,7 @@
             {
               "name": "annexa.html",
               "generation": "markdown",
-              "title": "Function List (Normative)"
+              "title": "Function List <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>"
             },
             {
               "name": "annexb.html",
@@ -119,27 +124,27 @@
             {
               "name": "annexc.html",
               "generation": "markdown",
-              "title": "Background (Informative)"
+              "title": "Background <a href="https://hl7.org/fhir/versions.html#std-process" title="Informative Content" class="informative-flag">I</a>"
             },
             {
               "name": "annexd.html",
               "generation": "markdown",
-              "title": "Bibliography (Informative)"
+              "title": "Bibliography <a href="https://hl7.org/fhir/versions.html#std-process" title="Informative Content" class="informative-flag">I</a>"
             },
             {
               "name": "annexf.html",
               "generation": "markdown",
-              "title": "PHR Sources (Informative)"
+              "title": "PHR Sources <a href="https://hl7.org/fhir/versions.html#std-process" title="Informative Content" class="informative-flag">I</a>"
             },
             {
               "name": "annexg.html",
               "generation": "markdown",
-              "title": "Anticipated Uses (Informative)"
+              "title": "Anticipated Uses <a href="https://hl7.org/fhir/versions.html#std-process" title="Informative Content" class="informative-flag">I</a>"
             },
             {
               "name": "annexh.html",
               "generation": "markdown",
-              "title": "Mobile Device Impact on - and Issues related to - PHRs (Informative)"
+              "title": "Mobile Device Impact on - and Issues related to - PHRs <a href="https://hl7.org/fhir/versions.html#std-process" title="Informative Content" class="informative-flag">I</a>"
             }
           ]
         },

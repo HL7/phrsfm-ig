@@ -15,7 +15,7 @@ The technical and management staff of the U.S. National Institute of Standards a
 Information Technology Laboratory provided input and support for the development of this conformance
 clause.
 
-### Scope and Field of Application (Normative)
+### Scope and Field of Application <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 This conformance clause defines the minimum requirements for functional profiles claiming conformance to
 the PHR-S FM. It also identifies how PHR systems achieve conformance to the Functional Model (FM), which
@@ -37,7 +37,7 @@ This conformance clause does not specify testing or validation procedures to ass
 conformance to the PHR-S FM. It also does not specify testing or validation procedures to determine whether
 a PHR system conforms to a functional profile or matches its Conformance Statement.
 
-### Concepts (Normative)
+### Concepts <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 #### Functional Profiles
 
@@ -85,7 +85,7 @@ process as an Informative EHR Work Group ballot at the Work Group level will be 
 Informative functional profiles. HL7 Informative functional profiles are eligible to undergo full HL7 membership
 ballot via the HL7 consensus process.
 
-#### Conformance Model (Normative)
+#### Conformance Model <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 A PHR-S does not conform directly to the PHR-S FM; rather, a PHR-S conforms to a functional profile (i.e., a
 subset – more specifically, a tailored subset) of the PHR-S FM. Conformance to the PHR-S FM is defined for
@@ -97,7 +97,7 @@ cannot claim conformance solely to a companion functional profile. Figure 3 illu
 
 **Figure 3: Conformance Relationships**
 
-#### Profile Traceability (Normative)
+#### Profile Traceability <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 Functional profiles allow for added specificity and extensibility to the FM with changes allowed to the base FM
 functions and criteria. Section 6 of this chapter defines rules for these changes. It is also required that any
@@ -110,7 +110,7 @@ arise as to where did it come from, why did you choose or modify it, etc. It can
 traceability back to the FM functions and criteria if and when revisions to a profile or a derived profile are
 needed to reflect care setting, regulatory, technology changes – or when a newer version of the FM is offered.
 
-### Normative Language (Normative)
+### Normative Language <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 The following keywords (i.e., normative verbs) **SHALL** be used to convey conformance requirements.
 * **SHALL** – to indicate a mandatory requirement to be followed (implemented) in order to conform.
@@ -120,7 +120,7 @@ Synonymous with ‘is required to’.
 mentioning or excluding others. Synonymous with ‘is permitted and recommended’.
 * **MAY** - to indicate an optional, permissible action. Synonymous with ‘is permitted’.
 
-### Conformance Criteria (Normative)
+### Conformance Criteria <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 #### Introduction
 
@@ -174,7 +174,7 @@ A criterion in the functional profile that references a specific criterion in an
 function by rewriting the referenced criterion as one of its own and indicating the function and criterion number
 from where it came (e.g., F#, CC3).
 
-### PHR-S FM Structure and Extensibility (Normative)
+### PHR-S FM Structure and Extensibility <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 #### Hierarchical Structure
 
@@ -242,7 +242,7 @@ Incorporation of additional criterion, changing the sequence of criterion and pr
 detail, beyond what is defined in the FM, is accommodated through a set of rules for adding new criterion or
 changing existing criterion as defined in Section 5.5.2.
 
-### Functional Profile Conformance (Normative)
+### Functional Profile Conformance <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 #### Introduction
 
