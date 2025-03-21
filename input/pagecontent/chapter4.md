@@ -10,7 +10,7 @@ intended use (see Section 5.1). This document defines the PHR-S Functional Model
 general use of profiles and priorities (see Reference Material for examples of stakeholders that might create
 profiles).
 
-**Figure 1: PHR-S Function List Sections**
+{% include img.html img="figure1.png" caption="Figure 1: PHR-S Function List Sections" width="70%" %}
 
 As previously mentioned, the PHR-S FM is divided into four main sections: Personal Health, Supportive,
 Record Infrastructure, and Trust Infrastructure. Within the main sections are a number of subsections (parent-
@@ -27,7 +27,7 @@ Functional Model is intended as the superset of functions from which a subset ca
 Stakeholder Community to illustrate what they need in a PHR-S for their setting. Only a subset of this inclusive
 set of functions (one or more PHR-S Functional Profiles) will apply to any particular PHR-S implementation.
 
-**Figure 2: PHR-S Functional Outline**
+{% include img.html img="figure2.png" caption="Figure 2. PHR-S Functional Outline" width="70%" %}
 
 There is one type of mandatory inheritance in the PHR-S FM. All criterion listed in a parent function will be
 applicable to all the children of that parent function.

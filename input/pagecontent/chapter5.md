@@ -95,7 +95,7 @@ conformance to one or more conforming functional profiles. A PHR system can also
 domain functional profile, in combination with one of more companion functional profiles. A PHR system
 cannot claim conformance solely to a companion functional profile. Figure 3 illustrates this relationship.
 
-**Figure 3: Conformance Relationships**
+{% include img.html img="figure3.png" caption="Figure 3: Conformance Relationships" width="70%" %}
 
 #### Profile Traceability <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
@@ -192,7 +192,7 @@ Conformance criteria listed in a header function **SHALL** be inherited by all i
 conformance criteria listed in a parent function **SHALL** be inherited by all its children functions. Conformance
 Criteria have a “C” in the “Type” column.
 
-**Figure 4: Portion of the PHR-S FM hierarchical structure**
+{% include img.html img="figure4.png" caption="Figure 4: Portion of the Functional Model hierarchical structure" width="70%" %}
 
 (Note: The numbering schema above reflects functions in the Personal Health section. For instance, PH.1.1 is
 the function ‘Identify and Maintain a PHR Account Holder Record.)
@@ -333,7 +333,7 @@ If a function is not adequately specified for a functional profile or does not e
 only create new children; the new children can be parents or leaves. Figure 5 illustrates the addition of a new
 child function.
 
-**Figure 5: Creating a new function**
+{% include img.html img="figure5.png" caption="Figure 5: Creating a new function" width="70%" %}
 
 The following rules specify the method for creating new functions:
 
@@ -353,7 +353,7 @@ function **MAY** be created (e.g., adding a new kind of summary list under the s
 Parent functions **SHALL NOT** be split. This preserves the structure of the underlying PHR-S FM in the
 functional profiles
 
-**Figure 6: Splitting a function**
+{% include img.html img="figure6.png" caption="Figure 6: Splitting a function" width="70%" %}
 
 If new children functions are created by a functional profile that is balloted or registered, these new functions
 will be captured by the HL7 EHR Work Group and tracked for review. The EHR Work Group **WILL** use these
@@ -361,7 +361,7 @@ new functions and related criterion as input and candidates for changes to the F
 of conformance criteria). The EHR Work Group **MAY** maintain a file of functions and criterion reviewed and
 rejected for inclusion in a future version of the FM.
 
-**Figure 7: Adding a New Child Function**
+{% include img.html img="figure7.png" caption="Figure 7: Adding a new child function" width="70%" %}
 
 #### Rules for Derived Functional Profiles
 
