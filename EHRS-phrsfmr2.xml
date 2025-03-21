@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="2.0.1" defaultWorkgroup="ehr" url="http://hl7.org/ehrs/uv/phrsfmr2">
-<version code="2.0.1" url="http://hl7.org/ehrs/uv/phrsfmr2/2.0.1"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/ehrs/uv/phrsfmr2/2025May" ciUrl="" defaultVersion="2.0.1" defaultWorkgroup="ehr" url="http://hl7.org/ehrs/uv/phrsfmr2">
+<version code="2.0.1" url="http://hl7.org/ehrs/uv/phrsfmr2/2025May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -264,10 +264,28 @@
 <artifact id="StructureDefinition/requirements-example" key="StructureDefinition-requirements-example" name="requirements-example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="annex" name="Annex"/>
+<page key="annexg" name="Anticipated Uses (Informative)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="annexc" name="Background (Informative)"/>
+<page key="annexd" name="Bibliography (Informative)"/>
+<page key="chapter5" name="Conformance Clause"/>
+<page key="annexa" name="Function List (Normative)"/>
+<page key="chapter6" name="Glossary"/>
+<page key="annexb" name="Glossary (Reference)"/>
+<page key="chapter8" name="Glossary Supplement: Record Lifecycle Events and Descriptions (Normative)"/>
 <page key="index" name="Home Page"/>
 <page key="changes" name="IG Change History"/>
+<page key="chapter0" name="Introduction"/>
+<page key="annexh" name="Mobile Device Impact on - and Issues related to - PHRs (Informative)"/>
+<page key="chapter2" name="Normative References"/>
+<page key="overview" name="Overview"/>
+<page key="annexf" name="PHR Sources (Informative)"/>
+<page key="chapter7" name="PHR System Conformance Claim via Self-Attestation"/>
 <page key="relationships" name="Relationships Diagram"/>
+<page key="chapter1" name="Scope"/>
 <page key="toc" name="Table of Contents"/>
+<page key="chapter3" name="Terms and Definitions"/>
+<page key="chapter4" name="The Functional Model"/>
 <page key="downloads" name="Useful Downloads"/>
 </specification>

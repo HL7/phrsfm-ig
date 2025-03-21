@@ -492,7 +492,7 @@ functionality and, if desired, indicate future plans. In essence, this is simila
 Statement (a concept with which most vendors are already familiar). A vendor **MAY** create multiple
 functional profiles.
 
-{% include img.html img="figure8.png" caption="Figure 8: Examples of Functional Profile Options by "Model" and/or Level of Functionality" width="70%" %}
+{% include img.html img="figure8.png" caption="Figure 8: Examples of Functional Profile Options by Model and/or Level of Functionality" width="70%" %}
 
 #### Sample Domain Functional Profile Conformance Clauses
 
