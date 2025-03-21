@@ -7,3 +7,4 @@ input-cache/
 .~lock*
 .index.json
 .index.db
+source

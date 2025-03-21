@@ -13,10 +13,14 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
       "valueCode": "ehr"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "5.0.0"
     }
   ],
   "url": "http://hl7.org/ehrs/uv/phrsfmr2/ImplementationGuide/hl7.ehrs.uv.phrsfmr2",
-  "version": "2.0.1",
+  "version": "2.0.1-ballot",
   "name": "PHRSFMR2",
   "title": "HL7 Personal Health Record System Functional Model, Release 2",
   "status": "active",
@@ -1878,27 +1882,27 @@
             {
               "name": "annexc.html",
               "generation": "markdown",
-              "title": "PHR Sources (Informative)"
+              "title": "Background (Informative)"
             },
             {
               "name": "annexd.html",
               "generation": "markdown",
-              "title": "Anticipated Uses (Informative)"
-            },
-            {
-              "name": "annexe.html",
-              "generation": "markdown",
-              "title": "Mobile Device Impact on - and Issues related to - PHRs (Informative)"
+              "title": "Bibliography (Informative)"
             },
             {
               "name": "annexf.html",
               "generation": "markdown",
-              "title": "Background (Informative)"
+              "title": "PHR Sources (Informative)"
             },
             {
               "name": "annexg.html",
               "generation": "markdown",
-              "title": "Acknowledgements (Informative)"
+              "title": "Anticipated Uses (Informative)"
+            },
+            {
+              "name": "annexh.html",
+              "generation": "markdown",
+              "title": "Mobile Device Impact on - and Issues related to - PHRs (Informative)"
             }
           ]
         },
@@ -1920,7 +1924,7 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code": "releaselabel"
         },
-        "value": "CI Build"
+        "value": "Normative Ballot"
       },
       {
         "code": {

@@ -119,27 +119,27 @@
             {
               "name": "annexc.html",
               "generation": "markdown",
-              "title": "PHR Sources (Informative)"
+              "title": "Background (Informative)"
             },
             {
               "name": "annexd.html",
               "generation": "markdown",
-              "title": "Anticipated Uses (Informative)"
-            },
-            {
-              "name": "annexe.html",
-              "generation": "markdown",
-              "title": "Mobile Device Impact on - and Issues related to - PHRs (Informative)"
+              "title": "Bibliography (Informative)"
             },
             {
               "name": "annexf.html",
               "generation": "markdown",
-              "title": "Background (Informative)"
+              "title": "PHR Sources (Informative)"
             },
             {
               "name": "annexg.html",
               "generation": "markdown",
-              "title": "Acknowledgements (Informative)"
+              "title": "Anticipated Uses (Informative)"
+            },
+            {
+              "name": "annexh.html",
+              "generation": "markdown",
+              "title": "Mobile Device Impact on - and Issues related to - PHRs (Informative)"
             }
           ]
         },
