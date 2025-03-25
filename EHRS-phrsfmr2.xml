@@ -279,6 +279,7 @@
 <page key="chapter0" name="Introduction"/>
 <page key="annexh" name="Mobile Device Impact on - and Issues related to - PHRs (Informative)"/>
 <page key="chapter2" name="Normative References"/>
+<page key="hidden" name="Only here because IG QA requires"/>
 <page key="overview" name="Overview"/>
 <page key="annexf" name="PHR Sources (Informative)"/>
 <page key="chapter7" name="PHR System Conformance Claim via Self-Attestation"/>
