@@ -5,7 +5,7 @@
     "mode": "working",
     "status": "ballot",
     "sequence": "Normative 1",
-    "title": "Personal Health Record System Functional Model, Release 2",
+    "title": "HL7 Personal Health Record System Functional Model, Release 2",
     "ci-build": "https://build.fhir.org/ig/HL7/phrsfm-ig/",
     "category": "EHR-S Family",
     "introduction": "This is the base PHR-System Functional Model used in Functional Profiles.",
