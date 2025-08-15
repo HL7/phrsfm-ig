@@ -10,5 +10,5 @@
   "title": "S.2 Financial Management (Header)",
   "status": "active",
   "description": "The purpose of this section is to provide the system support in managing financial information related to benefit plan coverage and service utilization.",
-  "purpose": ""
+  "purpose": "The PHR Account Holder (or the PHR Account Holder's Proxy) may desire to review health insurance plan coverage information, health-related financial data, and/or health-related administrative data. Additionally, the PHR Account Holder may desire to share certain clinical, financial, and/or administrative data with other stakeholdrs in order to coordinate health care service coverage and financial payments.\n\nExample(s):\nThe PHR Account Holder may desire to know whether the financial costs of an eye examination, eyeglasses, and/or contact lens are covered under the PHR Account Holder's insurance plan.\r\nThe PHR Account Holder may desire to create a report that shows the current amount of money that has been applied towards. a deductible threshold for a given insurance plan."
 }

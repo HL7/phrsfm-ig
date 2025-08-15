@@ -10,5 +10,5 @@
   "title": "S.3 Administration Management (Header)",
   "status": "active",
   "description": "The purpose of this section is to provide the system support in managing the PHR-S and the interaction with other PHR and EHR systems. It also serves as a set of functions to manage documentation related to the PHR-S as well as legal documents that affect or may affect the PHR Account Holder.",
-  "purpose": ""
+  "purpose": "The PHR Account Holder (or the PHR Account Holder's Proxy) may desire to share certain demographic information with other stakeholders. The PHR Account Holder may also desire to review and comply with the PHR system manufacturer's conditions-of-use of the PHR system and associated informational artifacts. Additionally, the PHR system could benefit the PHR Account Holder by managing copies of certain health-related documents such as End-Of-Life Care statements, Advance Directives, Consents, Authorizations, and PHR information disclosure-control statements. The PHR Account Holder may also desire to import and/or export certain PHR information.\n\nExample(s):\nThe PHR Account Holder may desire to restrict the sharing of Advance Directive information to only that of immediate family members.\r\nThe PHR Account Holder may desire to name a certain family relative as the PHR Account Holder's authorized designee."
 }

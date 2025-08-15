@@ -10,5 +10,5 @@
   "title": "S.4.6 Manage Public Health Information (Header)",
   "status": "active",
   "description": "Manage the PHR Account Holder’s use of PHR-related Public Health Information and/or services.",
-  "purpose": ""
+  "purpose": "The PHR Account Holder (or the PHR Account Holder's Proxy) may desire to access certain public health information resources, enroll in certain public health programs, and/or participate in certain health surveys.\n\nExample(s):\nThe PHR Account Holder may desire to receive a notification that a disease-specific survey will soon be conducted.\r\nThe PHR Account Holder may desire to access public health databases concerning possible water contaminants."
 }

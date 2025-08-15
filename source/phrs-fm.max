@@ -6955,7 +6955,8 @@ All functions within the Supportive Section have an identifier starting with “
       <id>PHR_R2529</id>
       <name>S.1 Provider Information</name>
       <alias>S.1</alias>
-      <notes>$ST$The purpose of this section is to provide the system support to obtain a list of providers in an area and/or within a health plan panel and then maintain, or provide access to, current provider information.$DE$$EX$</notes>
+      <notes>$ST$The purpose of this section is to provide the system support to obtain a list of providers in an area and/or within a health plan panel and then maintain, or provide access to, current provider information.$DE$From time to time the PHR Account Holder (or the PHR Account Holder's Proxy) may interact with various health care providers, provider organizations, members of health care teams, and/or health insurance coverage organizations. The PHR System could serve the PHR Account Holder by managing a readily-accessable central repository of certain information that would ease the burden of quickly recalling those people's and organizations' names, addresses, service offerings, medical specialties, performace ratings, prices, preferred communication methods (for example, phone or email address), or other identification information. Additionally, those entities and organizations may desire to contact the PHR Acoount Holder and offer notifications, incentives, wellness programs, and perhaps surveys regarding the PHR Acccount Holder's satifaction with the health care services delivered.$EX$The PHR System lists the phone number and business address of the PHR Account Holder's current and past primary care provider(s).&#xD;
+The PHR System receives an invitation from the PHR Account Holder's provider that extends an oppportunity for the PHR Account Holder to complete a survey describing the PHR Account Holder's satisfaction with the health care service delivered during a recent office visit.</notes>
       <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
@@ -7546,7 +7547,8 @@ Note: Healthcare facility transparency information that has been received or imp
       <id>PHR_R2573</id>
       <name>S.2 Financial Management</name>
       <alias>S.2</alias>
-      <notes>$ST$The purpose of this section is to provide the system support in managing financial information related to benefit plan coverage and service utilization.$DE$$EX$</notes>
+      <notes>$ST$The purpose of this section is to provide the system support in managing financial information related to benefit plan coverage and service utilization.$DE$The PHR Account Holder (or the PHR Account Holder's Proxy) may desire to review health insurance plan coverage information, health-related financial data, and/or health-related administrative data. Additionally, the PHR Account Holder may desire to share certain clinical, financial, and/or administrative data with other stakeholdrs in order to coordinate health care service coverage and financial payments.$EX$The PHR Account Holder may desire to know whether the financial costs of an eye examination, eyeglasses, and/or contact lens are covered under the PHR Account Holder's insurance plan.&#xD;
+The PHR Account Holder may desire to create a report that shows the current amount of money that has been applied towards. a deductible threshold for a given insurance plan.</notes>
       <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
@@ -8008,7 +8010,8 @@ In newer plan types such as Consumer Directed Health Plans (CDHP), this informat
       <id>PHR_R2609</id>
       <name>S.3 Administration Management</name>
       <alias>S.3</alias>
-      <notes>$ST$The purpose of this section is to provide the system support in managing the PHR-S and the interaction with other PHR and EHR systems. It also serves as a set of functions to manage documentation related to the PHR-S as well as legal documents that affect or may affect the PHR Account Holder.$DE$$EX$</notes>
+      <notes>$ST$The purpose of this section is to provide the system support in managing the PHR-S and the interaction with other PHR and EHR systems. It also serves as a set of functions to manage documentation related to the PHR-S as well as legal documents that affect or may affect the PHR Account Holder.$DE$The PHR Account Holder (or the PHR Account Holder's Proxy) may desire to share certain demographic information with other stakeholders. The PHR Account Holder may also desire to review and comply with the PHR system manufacturer's conditions-of-use of the PHR system and associated informational artifacts. Additionally, the PHR system could benefit the PHR Account Holder by managing copies of certain health-related documents such as End-Of-Life Care statements, Advance Directives, Consents, Authorizations, and PHR information disclosure-control statements. The PHR Account Holder may also desire to import and/or export certain PHR information.$EX$The PHR Account Holder may desire to restrict the sharing of Advance Directive information to only that of immediate family members.&#xD;
+The PHR Account Holder may desire to name a certain family relative as the PHR Account Holder's authorized designee.</notes>
       <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
@@ -9056,7 +9059,8 @@ Example(s): A PHR Account Holder may prefer to see summary information about med
       <id>PHR_R2691</id>
       <name>S.4 Manage Other Resources</name>
       <alias>S.4</alias>
-      <notes>$ST$The purpose of this section is to provide the system support to both allow the PHR Account Holder to participate in a variety of programs that may be directly related to areas of interest to the PHR Account Holder and to enable appropriate access and support for new, additional, or other uses of PHR information.$DE$$EX$</notes>
+      <notes>$ST$The purpose of this section is to provide the system support to both allow the PHR Account Holder to participate in a variety of programs that may be directly related to areas of interest to the PHR Account Holder and to enable appropriate access and support for new, additional, or other uses of PHR information.$DE$The PHR Account Holder (or the PHR Account Holder's Proxy) may desire to participate in certain clinic trial research/studies, to enroll in various health-related registries, and/or to serve as a donor. The PHR Account Holder may also desire to access certain public health information resources and/or enroll in certain public health programs.$EX$The PHR Account Holder may desire to donate certain body tissues or organs to various organizations.&#xD;
+The PHR Account Holder may desire to share certain health information with a cancer registry.</notes>
       <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2528</parentId>
@@ -9746,7 +9750,8 @@ Example(s): Reminders could include a recommended immunization, prophylactic gui
       <id>PHR_R2745</id>
       <name>S.4.6 Manage Public Health Information</name>
       <alias>S.4.6</alias>
-      <notes>$ST$Manage the PHR Account Holder’s use of PHR-related Public Health Information and/or services.$DE$$EX$</notes>
+      <notes>$ST$Manage the PHR Account Holder’s use of PHR-related Public Health Information and/or services.$DE$The PHR Account Holder (or the PHR Account Holder's Proxy) may desire to access certain public health information resources, enroll in certain public health programs, and/or participate in certain health surveys.$EX$The PHR Account Holder may desire to receive a notification that a disease-specific survey will soon be conducted.&#xD;
+The PHR Account Holder may desire to access public health databases concerning possible water contaminants.</notes>
       <stereotype>Header</stereotype>
       <type>Feature</type>
       <parentId>PHR_R2691</parentId>
