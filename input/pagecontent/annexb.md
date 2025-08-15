@@ -377,22 +377,22 @@
 	<tr>
 		<td align="left">Conformance</td>
 		<td align="left">fulfillment of specified requirements by a product, process, or service.</td>
-		<td align="left">HL7 EHR-S/PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
+		<td align="left">HL7 PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
 	</tr>
 	<tr>
 		<td align="left">Conformance Criteria</td>
 		<td align="left">statements of requirement indicating the behavior, action, capability that constitutes implementation of the function</td>
-		<td align="left">HL7 EHR-S/PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
+		<td align="left">HL7 PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
 	</tr>
 	<tr>
 		<td align="left">Conformance clause</td>
 		<td align="left">section of a specification that defines the requirements, criteria, or conditions to be satisfied in order to claim conformance</td>
-		<td align="left">HL7 EHR-S/PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
+		<td align="left">HL7 PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
 	</tr>
 	<tr>
 		<td align="left">Conformance statement</td>
 		<td align="left">statement associated with a specific implementation of a profile of the EHR-S or PHR-S Functional Model.</td>
-		<td align="left">HL7 EHR-S/PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
+		<td align="left">HL7 PHR-S Functional Model Chapter 3.6: Conformance Clause</td>
 	</tr>
 	<tr>
 		<td align="left">Consent, Informed Consent</td>

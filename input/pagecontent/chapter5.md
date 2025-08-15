@@ -1,4 +1,4 @@
-### Introduction (Rererence)
+### Introduction (Reference)
 
 The following is the HL7 EHR Work Group (EHR WG) -approved Conformance Clause for the PHR System
 Functional Model (PHR-S FM). As important background on conformance, please note the following:
