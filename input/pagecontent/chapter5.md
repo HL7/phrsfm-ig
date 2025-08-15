@@ -45,7 +45,7 @@ Creating a functional profile is a method for defining subsets of the PHR-S FM. 
 specification which uses the Functional Model to indicate which functions are required, desired, or
 implemented for certain PHR systems (e.g., systems characterized by their attributes such as source,
 custodian, technical approach, or level of functionality) or for other purposes (e.g., systems based on scope or
-nature of information such as chronic conditions). See the figure in Section 5.8 for representative examples.
+nature of information such as chronic conditions). See the figure in Section 3.6.8 for representative examples.
 
 Functional profiles can be created by healthcare community stakeholders with interest in using and/or
 providing a functional profile for a PHR system (e.g., Integrated Delivery Network, or an Employer or Payer
@@ -78,7 +78,7 @@ of Companion Functional Profiles, whose goal can be to meet the common (or overa
 regulation-based or realm-specific requirements.
 
 A formal process exists for registering and balloting functional profiles. Functional profiles that are submitted
-to the HL7 EHR Work Group with an attestation of conformance to Section 5, Conformance Clause, of the
+to the HL7 EHR Work Group with an attestation of conformance to Section 3.6, Conformance Clause, of the
 HL7 PHR-S FM Standard and successfully complete review by the Work Group are designated as “Registered
 functional profiles”. Registered functional profiles that undergo formal public scrutiny via the HL7 consensus
 process as an Informative EHR Work Group ballot at the Work Group level will be designated as HL7
@@ -100,7 +100,7 @@ cannot claim conformance solely to a companion functional profile. Figure 3 illu
 #### Profile Traceability <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
 Functional profiles allow for added specificity and extensibility to the FM with changes allowed to the base FM
-functions and criteria. Section 6 of this chapter defines rules for these changes. It is also required that any
+functions and criteria. Section 3.6.6 of this chapter defines rules for these changes. It is also required that any
 changes and additions be tracked. Two added columns in profiles accomplish this. One column will document
 the unique source FM row number for each item in the new profile (or source profile for a derived profile). The
 second column will provide codes for the type of changes from the source FM (or source profile). Together,
@@ -236,11 +236,11 @@ each occurrence of the Essential Future priority (e.g., EF-2015, EF-2016).
 To accommodate changes in technology as well as functional profiles’ needs, the PHR-S FM is designed for
 extensibility with respect to functions and their related criteria. Incorporation of additional functions in the
 functional profile beyond what is defined in the PHR-S FM is accommodated through a set of rules for adding
-new functions as defined in Section 5.7.3.
+new functions as defined in Section 3.6.7.3.
 
 Incorporation of additional criterion, changing the sequence of criterion and providing greater profile-specific
 detail, beyond what is defined in the FM, is accommodated through a set of rules for adding new criterion or
-changing existing criterion as defined in Section 5.5.2.
+changing existing criterion as defined in Section 3.6.5.2.
 
 ### Functional Profile Conformance <a href="https://hl7.org/fhir/versions.html#std-process" title="Normative Content" class="normative-flag">N</a>
 
@@ -281,7 +281,7 @@ indicate its priority (i.e., Essential Now, Essential Future or Optional).
     function.
     * c. If, as yet there is no ‘shall’ criterion (for the function in the PHR-S FM), then at least one of the
     ‘should’ or ‘may’ criterion **SHALL** be made mandatory, i.e., a ‘shall’ criterion.
-    * d. Adhere to the rules for referencing functions or criteria in Section 5.5.4.
+    * d. Adhere to the rules for referencing functions or criteria in Section 3.6.5.4.
 6. For any function in the PHR-S FM where one or more criteria are ‘dependent shall’ criteria, the
 functional profile for that function **SHALL**
     * a. Replicate verbatim each ‘dependent shall’ in the functional profile, regardless of whether the
@@ -291,19 +291,19 @@ functional profile for that function **SHALL**
     ‘dependent shall’ criterion.
     * c. State the specific scope of practice, organizational policy, and/or jurisdictional law which
     applies or state why these dependencies do not apply.
-7. Adhere to the rules for creating new functions in functional profiles in Section 5.7.3.
-8. Be structured in accordance with the structural requirements defined for the PHR-S FM in Section 5.6.
-9. Complete the two traceability columns, see Section 5.3.3, for any changes to functions or criteria, and
+7. Adhere to the rules for creating new functions in functional profiles in Section 3.6.7.3.
+8. Be structured in accordance with the structural requirements defined for the PHR-S FM in Section 3.6.6.
+9. Complete the two traceability columns, see Section 3.6.3.3, for any changes to functions or criteria, and
 include the following codes for type of change: (1 – sequence, 2 – optionality, 3 – content, 4 – new).
 Multiple codes are allowed to document the type of changes. For example, criterion #3 that is moved
 to #1, changed from **SHOULD** to SHALL, and with realm specifics on standards required would be
 coded as “1, 2, 3”.
-10. Be structured in accordance with the structural requirements defined for the FM in Section 5.6.1
+10. Be structured in accordance with the structural requirements defined for the FM in Section 3.6.6.1
 11. Use the Glossary Action-Verbs for modifying or creating new conformance criterion.
 
 Functional domain profiles claiming conformance to the PHR-S FM **MAY**:
 
-1. Create additional functions according to the rules specified in Section 5.7.3.
+1. Create additional functions according to the rules specified in Section 3.6.7.3.
 2. Contain conformance criteria more specific and limited in scope than those of the PHR-S FM.
 3. Replace the text ‘standard(s)-based’ found in some criteria with specific standards and/or
 specifications named at the most discrete level of designation.
@@ -320,7 +320,7 @@ Functional domain profiles claiming conformance to the PHR-S FM **SHALL NOT**:
 
 1. Specify any requirements that would contradict or cause non-conformance to the PHR-S FM.
 2. Modify the name or statement of any function in the PHR-S FM, except to allow for alignment with
-realm specific nomenclature as specified in Section 5.6.2.
+realm specific nomenclature as specified in Section 3.6.6.2.
 3. Change a mandatory conformance criteria to an optional criteria (i.e., replace the ‘shall’ within the
 criteria to ‘should’ or ‘may’) of any function in the PHR-S FM.
 4. Modify any requirements of a function not selected for the functional profile (i.e., all unselected
@@ -367,8 +367,8 @@ rejected for inclusion in a future version of the FM.
 
 Derived functional profiles claiming conformance to one or more base functional profiles **SHALL**:
 
-1. Adhere to all the rules for functional profiles as specified in Section 5.7.2.
-2. Adhere to the rules for creating new functions as specified in Section 5.7.3, if not prohibited by the
+1. Adhere to all the rules for functional profiles as specified in Section 3.6.7.2.
+2. Adhere to the rules for creating new functions as specified in Section 3.6.7.3, if not prohibited by the
 base functional profile.
 3. Identify the base functional profiles from which it is derived.
 4. For each function inherited from a base functional profile, retain and not change mandatory
@@ -403,12 +403,12 @@ for these functions (which are unimplemented) would not be performed.
 
 Companion functional profiles that adhere to the Rules for Functional profiles **SHALL** claim conformance to
 the version of the PHR-S FM from which it was derived. Companion functional profiles will follow the section
-5.7.2 Rules for Domain Functional Profiles and the section 5.7.4 Rules for Derived Functional Profiles, except
+5.7.2 Rules for Domain Functional Profiles and the Section 3.6.7.4 Rules for Derived Functional Profiles, except
 for the exceptions and addition described below:
 
 Companion functional profiles claiming FM conformance **SHALL**:
 
-1. Adhere to section 5.7.3 for adding new functions,
+1. Adhere to Section 3.6.7.3 for adding new functions,
 2. Contain a conformance clause which
     * Defines at least one domain functional profile for which the companion functional profile can
     be linked that PHR systems must satisfy in order to claim conformance, or state any specific
@@ -430,12 +430,12 @@ Essential Future, or Optional).
 5. For any function in the FM where one or more criteria are ‘dependent shall’ criteria, the
 companion functional profile **MAY** elect to ignore the criterion, but if selected for that function
 SHALL follow the rules for "Functional profiles claiming PHR-S FM conformance SHALL" list in
-section 5.7.2.
+Section 3.6.7.2.
 
 Companion functional profiles claiming conformance to the FM **MAY**:
 
 1. Ignore a ‘shall’, ‘‘should’ or ‘may’ criterion in the FM (i.e., not include it in the functional profile).
-There are no exceptions to section 5.7.4 for Derived Companion Functional Profiles
+There are no exceptions to Section 3.6.7.4 for Derived Companion Functional Profiles
 
 ### Use Cases and Samples (Reference)
 
@@ -480,7 +480,7 @@ to reflect their situational information.
 A vendor of a PHR system wants to claim conformance to the PHR-S FM.
 
 The vendor identifies and lists all the functions that are in his product. The vendor adds a description
-and a conformance clause (see samples in section 5.8.2). This is the vendor’s functional profile. If the
+and a conformance clause (see samples in Section 3.6.8.2). This is the vendor’s functional profile. If the
 vendor has actually implemented all the functions listed, then this is equivalent to ‘Essential Now’ and
 these functions are mandatory. Vendor features that are not in the PHR-S FM **MAY** be added as
 added functions or added criteria – within the rules of sections 5.7.2 and 5.7.3 above. If functions that
@@ -499,7 +499,7 @@ functional profiles.
 ##### Developing a Conformance Clause
 
 To aid functional profile developers in developing a conformance clause for their domain functional profile,
-as required by Section 5.7.2 rule #3, the following fictional examples are offered. Note: in these examples,
+as required by Section 3.6.7.2 rule #3, the following fictional examples are offered. Note: in these examples,
 the keywords **‘SHALL’**, **‘SHOULD’**, and **‘MAY’** are capitalized and bold. This is a convention to draw
 attention to the keywords.
 
@@ -675,7 +675,7 @@ apply to multiple ‘dependent shall’ criteria.
 
 * Add additional criteria – regardless of whether a dependency exists or not.<br/>
 It is always permissible for a functional profile to add new criteria. Add new criteria that are derived
-from the ‘dependent shall’. Use any keyword: ‘shall’, ‘should’ or ‘may’ (see Section 5.4) in these new
+from the ‘dependent shall’. Use any keyword: ‘shall’, ‘should’ or ‘may’ (see Section 3.6.4) in these new
 criteria.
 
 Examples:

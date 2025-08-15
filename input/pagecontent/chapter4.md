@@ -6,7 +6,7 @@ four sections in order to describe a given system, and allows for further charac
 assignment of priorities to each function in the profile (see Figure 1). While the PHR-S FM should contain all
 reasonably anticipated PHR-S functions, it is not intended to comprise the entire list of all functions that may
 be found in any specific PHR-S. Again, functional profiles will be developed to constrain the functions for an
-intended use (see Section 5.1). This document defines the PHR-S Functional Model and describes the
+intended use (see Section 3.6.1). This document defines the PHR-S Functional Model and describes the
 general use of profiles and priorities (see Reference Material for examples of stakeholders that might create
 profiles).
 
