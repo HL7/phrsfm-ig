@@ -7,11 +7,6 @@ This is a PHR-S FM specification that uses FHIR R5 Requirements resource to defi
 
 The content comes from ISO/HL7 16527 as the most recently balloted version of the PHR-S FM. The ISO version is identical except that it has new graphics and we fixed some minor errata.
 
-<div class="note-to-balloters">
-<b>Targetting May 2025 ballot</b>
-This is the publication of the PHR-S Functional Model using the Common HL7 Toolset (FHIR IG Tooling).
-</div>
-
 ### Introduction
 
 Start here: [Introduction section](chapter0.html).
