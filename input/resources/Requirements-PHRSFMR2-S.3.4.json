@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_3_4_Manage_Data_Masking_for_Sensitive_or_Selective_Information",
   "title": "S.3.4 Manage Data Masking for Sensitive or Selective Information (Function)",
   "status": "active",

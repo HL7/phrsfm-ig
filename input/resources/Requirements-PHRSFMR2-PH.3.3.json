@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_3_3_Manage_Provider_Initiated_Care_Plans",
   "title": "PH.3.3 Manage Provider-Initiated Care Plans (Function)",
   "status": "active",

@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_3_3_Manage_Legal_and_other_Related_Documents",
   "title": "S.3.3 Manage Legal and other Related Documents (Header)",
   "status": "active",

@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_6_7_Patient_Specific_Care__Instructions__Care_Plans__Treatment_Plans__Guidelines_and_Protocols",
   "title": "PH.6.7 Patient-Specific Care, Instructions, Care Plans, Treatment Plans, Guidelines and Protocols (Function)",
   "status": "active",

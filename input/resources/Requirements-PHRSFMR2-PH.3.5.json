@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_3_5_Manage_Tools_and_Functions_to_Assist_Self_Care",
   "title": "PH.3.5 Manage Tools and Functions to Assist Self Care (Header)",
   "status": "active",

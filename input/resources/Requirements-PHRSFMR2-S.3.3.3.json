@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_3_3_3_Manage_Documents_for_Personal_Representation",
   "title": "S.3.3.3 Manage Documents for Personal Representation (Function)",
   "status": "active",

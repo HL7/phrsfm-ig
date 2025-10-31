@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_4_1_2_Manage_De_Identified_Data_Request_Process",
   "title": "S.4.1.2 Manage De-Identified Data Request Process (Function)",
   "status": "active",

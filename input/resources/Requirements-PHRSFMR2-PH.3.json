@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_3_Wellness__Preventive_Medicine__and_Self_Care",
   "title": "PH.3 Wellness, Preventive Medicine, and Self Care (Header)",
   "status": "active",

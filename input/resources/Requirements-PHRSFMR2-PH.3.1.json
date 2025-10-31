@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMHeader"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_3_1_Manage_Personal_Clinical_Measurements_and_Observations",
   "title": "PH.3.1 Manage Personal Clinical Measurements and Observations (Header)",
   "status": "active",

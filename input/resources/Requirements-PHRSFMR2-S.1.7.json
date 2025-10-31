@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_1_7_Manage_Surveys_on_the_Healthcare_Experience",
   "title": "S.1.7 Manage Surveys on the Healthcare Experience (Function)",
   "status": "active",

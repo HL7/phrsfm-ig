@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_3_1_2_Communication_with_Home_Monitoring_Devices",
   "title": "PH.3.1.2 Communication with Home Monitoring Devices (Function)",
   "status": "active",

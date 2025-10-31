@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_4_5_Manage_PHR_Account_Holder_Reminder_Information_Updates",
   "title": "S.4.5 Manage PHR Account Holder Reminder Information Updates (Function)",
   "status": "active",

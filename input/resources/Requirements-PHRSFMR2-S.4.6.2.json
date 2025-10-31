@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_4_6_2_Manage_Access_to_Public_Health_Information_Resources",
   "title": "S.4.6.2 Manage Access to Public Health Information Resources (Function)",
   "status": "active",

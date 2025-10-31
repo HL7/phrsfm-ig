@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_2_4_Produce_and_Present_Ad_Hoc_Views_of_the_Personal_Health_Record",
   "title": "PH.2.4 Produce and Present Ad Hoc Views of the Personal Health Record (Function)",
   "status": "active",

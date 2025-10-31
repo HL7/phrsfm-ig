@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_2_5_4_Manage_Allergy__Intolerance__and_Adverse_Reaction_List",
   "title": "PH.2.5.4 Manage Allergy, Intolerance, and Adverse Reaction List (Function)",
   "status": "active",

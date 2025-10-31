@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_5_4_Integration_with_Third_Party_Clinical_Decision_Support_Services",
   "title": "PH.5.4 Integration with Third Party Clinical Decision Support Services (Function)",
   "status": "active",

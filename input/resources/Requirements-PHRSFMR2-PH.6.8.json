@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_6_8_Manage_Patient_Specific_Care_and_Treatment_Plans",
   "title": "PH.6.8 Manage Patient-Specific Care and Treatment Plans (Function)",
   "status": "active",

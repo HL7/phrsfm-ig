@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_4_6_6_Enrollment_in_Public_Health_Surveys",
   "title": "S.4.6.6 Enrollment in Public Health Surveys (Function)",
   "status": "active",

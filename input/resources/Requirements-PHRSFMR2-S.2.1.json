@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_2_1_Capture_and_Read_Health_Insurance_Account_and_Benefit_Information",
   "title": "S.2.1 Capture and Read Health Insurance Account and Benefit Information (Function)",
   "status": "active",

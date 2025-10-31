@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_5_6_Manage_Updated_Orders__Recommendations__or_Alternative_Care_Plans",
   "title": "PH.5.6 Manage Updated Orders, Recommendations, or Alternative Care Plans (Function)",
   "status": "active",

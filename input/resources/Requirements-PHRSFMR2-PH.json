@@ -8,6 +8,10 @@
   },
   "extension": [
     {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
       "url": "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/requirements-actors",
       "valueString": "The principal users of Personal Health functions are expected to be individuals referenced as PHR Account Holders; the patient or subject-of-care and healthcare providers will have access to certain functions to view, update or make corrections to their Personal Health Record. The PHR Account Holder will receive support for making healthcare-related decisions, as well as support from the PHR-S and EHR-S to enable effective electronic communication between providers, and between the provider and the PHR Account Holder or PHR Account Holder’s designated representative.$EX$$AC$"
     }

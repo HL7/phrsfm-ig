@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_2_2_Manage_Health_Insurance_Plan_Benefit_Information",
   "title": "S.2.2 Manage Health Insurance Plan Benefit Information (Function)",
   "status": "active",

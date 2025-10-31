@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_6_2_Manage_Self_Assessments__i_e___Symptoms_",
   "title": "PH.6.2 Manage Self-Assessments (i.e., Symptoms) (Function)",
   "status": "active",

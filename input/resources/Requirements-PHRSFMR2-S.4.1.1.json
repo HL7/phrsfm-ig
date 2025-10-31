@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "S_4_1_1_Capture_Genomic_Proteomic_Data_and_Documentation_from_External_Clinical_Sources",
   "title": "S.4.1.1 Capture Genomic/Proteomic Data and Documentation from External Clinical Sources (Function)",
   "status": "active",

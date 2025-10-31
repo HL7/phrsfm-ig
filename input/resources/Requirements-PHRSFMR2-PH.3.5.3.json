@@ -6,6 +6,12 @@
       "http://hl7.org/ehrs/uv/phrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    }
+  ],
   "name": "PH_3_5_3_Manage_a_Registry_and_Directory_of_Actors",
   "title": "PH.3.5.3 Manage a Registry and Directory of Actors (Function)",
   "status": "active",
