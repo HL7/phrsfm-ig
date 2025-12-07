@@ -2,10 +2,9 @@
     "package-id": "hl7.ehrs.uv.phrsfmr2",
     "version": "2.0.1",
     "path": "http://hl7.org/ehrs/uv/phrsfmr2/Normative1",
-    "mode": "working",
+    "mode": "milestone",
     "status": "normative",
     "sequence": "Normative 1",
-    "title": "HL7 Personal Health Record System Functional Model, Release 2.0.1",
     "desc": "This is the normative release of the migrated content from pdf",
     "changes": "changes.html"
 }
