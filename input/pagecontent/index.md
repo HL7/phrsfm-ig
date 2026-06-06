@@ -7,6 +7,18 @@ This is a PHR-S FM specification that uses FHIR R5 Requirements resource to defi
 
 The content comes from ISO/HL7 16527 as the most recently balloted version of the PHR-S FM. The ISO version is identical except that it has new graphics and we fixed some minor errata.
 
+![ANSI Approved Logo](ansi-approved.gif)
+
+|===
+|Formal Name: |HL7 Personal Health Record System Functional Model, Release 2<br/>(revision and redesignation of ANSI/HL7 EHR, R2-2020 (R????))
+|ANSI Designation: |ANSI/HL7 PHR-S FM R2.0.1-2026
+|Date of Approval: |2026-??-??
+|===
+{: .grid .table .table-striped}
+
+EHR-S FM R2 is an ANSI Normative Standard. ANSI has certificated that the portions of this specification marked Normative have met its requirements for development of a formal standard.
+
+
 ### Introduction
 
 Start here: [Introduction section](chapter0.html).
