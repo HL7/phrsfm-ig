@@ -17,8 +17,8 @@ PH.3.1.2#01,https://www.hl7.org/fhir/observation.html
 PH.3.2#01,https://www.hl7.org/fhir/careplan.html
 PH.3.3#01,https://www.hl7.org/fhir/careplan.html
 PH.3.4#01,https://www.hl7.org/fhir/medication.html
-PH.3.5#01,http://fhir.org/guides/argonaut/scheduling/
-PH.3.5.1#01,http://fhir.org/guides/argonaut/scheduling/
+PH.3.5#01,https://fhir.org/guides/argonaut/scheduling/
+PH.3.5.1#01,https://fhir.org/guides/argonaut/scheduling/
 PH.3.5.2#01,https://www.hl7.org/fhir/task.html
 PH.3.5.3#01,https://www.hl7.org/fhir/practitioner.html
 PH.3.5.4#01,https://www.hl7.org/fhir/communication.html

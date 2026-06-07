@@ -33,7 +33,7 @@
       "conditionality": false,
       "requirement": "The system MAY maintain a health calendar function for recording and displaying scheduled health appointments or events.",
       "satisfiedBy": [
-        "http://fhir.org/guides/argonaut/scheduling/"
+        "https://fhir.org/guides/argonaut/scheduling/"
       ]
     },
     {
