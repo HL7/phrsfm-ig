@@ -10,13 +10,13 @@ The content comes from ISO/HL7 16527 as the most recently balloted version of th
 ![ANSI Approved Logo](ansi-approved.gif)
 
 |===
-|Formal Name: |HL7 Personal Health Record System Functional Model, Release 2<br/>(revision and redesignation of ANSI/HL7 EHR, R2-2020 (R????))
-|ANSI Designation: |ANSI/HL7 PHR-S FM R2.0.1-2026
-|Date of Approval: |2026-??-??
+|Formal Name: |HL7 Personal Health Record System Functional Model, Release 2<br/>(revision and redesignation of ANSI/HL7 PHRSFM, R2-2021)
+|ANSI Designation: |ANSI/HL7 PHRSFM, R2.0.1-2026
+|Date of Approval: |2026-08-06
 |===
 {: .grid .table .table-striped}
 
-EHR-S FM R2 is an ANSI Normative Standard. ANSI has certificated that the portions of this specification marked Normative have met its requirements for development of a formal standard.
+PHR-S FM R2 is an ANSI Normative Standard. ANSI has certificated that the portions of this specification marked Normative have met its requirements for development of a formal standard.
 
 
 ### Introduction
