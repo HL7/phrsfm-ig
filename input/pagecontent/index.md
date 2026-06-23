@@ -12,7 +12,7 @@ The content comes from ISO/HL7 16527 as the most recently balloted version of th
 |===
 |Formal Name: |HL7 Personal Health Record System Functional Model, Release 2<br/>(revision and redesignation of ANSI/HL7 PHRSFM, R2-2021)
 |ANSI Designation: |ANSI/HL7 PHRSFM, R2.0.1-2026
-|Date of Approval: |2026-08-06
+|Date of Approval: |2026-06-08
 |===
 {: .grid .table .table-striped}
 
